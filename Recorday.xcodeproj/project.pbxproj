@@ -15,6 +15,7 @@
 		16B91C5827CD7988005C05A8 /* RecordListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16B91C5727CD7988005C05A8 /* RecordListViewController.swift */; };
 		16B91C5B27CD79B2005C05A8 /* Record.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16B91C5A27CD79B2005C05A8 /* Record.swift */; };
 		16B91C5F27CD847B005C05A8 /* RecordListViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 16B91C5E27CD847B005C05A8 /* RecordListViewController.storyboard */; };
+		16B91C6427CD9C50005C05A8 /* TagListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16B91C6327CD9C50005C05A8 /* TagListView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		16B91C5727CD7988005C05A8 /* RecordListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordListViewController.swift; sourceTree = "<group>"; };
 		16B91C5A27CD79B2005C05A8 /* Record.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Record.swift; sourceTree = "<group>"; };
 		16B91C5E27CD847B005C05A8 /* RecordListViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = RecordListViewController.storyboard; sourceTree = "<group>"; };
+		16B91C6327CD9C50005C05A8 /* TagListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagListView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,7 +48,8 @@
 			children = (
 				16B91C5327CD6FBC005C05A8 /* AppDelegate */,
 				16B91C5927CD79A2005C05A8 /* Model */,
-				16B91C5427CD793D005C05A8 /* RecordListViewController */,
+				16B91C6127CD9C11005C05A8 /* ViewController */,
+				16B91C6027CD88D1005C05A8 /* View */,
 				16B91C3E27CD6FB0005C05A8 /* Recorday */,
 				16B91C3D27CD6FB0005C05A8 /* Products */,
 			);
@@ -95,6 +98,30 @@
 				16B91C5A27CD79B2005C05A8 /* Record.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		16B91C6027CD88D1005C05A8 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				16B91C6227CD9C31005C05A8 /* TagListView */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		16B91C6127CD9C11005C05A8 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				16B91C5427CD793D005C05A8 /* RecordListViewController */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		16B91C6227CD9C31005C05A8 /* TagListView */ = {
+			isa = PBXGroup;
+			children = (
+				16B91C6327CD9C50005C05A8 /* TagListView.swift */,
+			);
+			path = TagListView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -169,6 +196,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				16B91C6427CD9C50005C05A8 /* TagListView.swift in Sources */,
 				16B91C4027CD6FB0005C05A8 /* AppDelegate.swift in Sources */,
 				16B91C5827CD7988005C05A8 /* RecordListViewController.swift in Sources */,
 				16B91C5B27CD79B2005C05A8 /* Record.swift in Sources */,

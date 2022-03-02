@@ -15,9 +15,53 @@
                     <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Mood" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Hma-qW-H6D">
+                                <rect key="frame" x="20" y="64" width="374" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Activities" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="k3M-2s-YH3">
+                                <rect key="frame" x="20" y="114" width="374" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Weather" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fZo-6z-KiL">
+                                <rect key="frame" x="20" y="164" width="374" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NQM-gl-oSw">
+                                <rect key="frame" x="20" y="214" width="374" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="tinted" title="Button"/>
+                                <connections>
+                                    <action selector="addButtonTapped:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="6Fz-kO-ZKk"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="fZo-6z-KiL" secondAttribute="trailing" constant="20" id="2hx-Mg-jLe"/>
+                            <constraint firstItem="fZo-6z-KiL" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="4G0-l7-i1g"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="k3M-2s-YH3" secondAttribute="trailing" constant="20" id="6mj-bU-oSo"/>
+                            <constraint firstItem="NQM-gl-oSw" firstAttribute="top" secondItem="fZo-6z-KiL" secondAttribute="bottom" constant="16" id="FP5-68-51P"/>
+                            <constraint firstItem="Hma-qW-H6D" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="KGW-kf-T7j"/>
+                            <constraint firstItem="fZo-6z-KiL" firstAttribute="top" secondItem="k3M-2s-YH3" secondAttribute="bottom" constant="16" id="MHY-PP-ILp"/>
+                            <constraint firstItem="Hma-qW-H6D" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="20" id="RkG-0E-tvT"/>
+                            <constraint firstItem="k3M-2s-YH3" firstAttribute="top" secondItem="Hma-qW-H6D" secondAttribute="bottom" constant="16" id="TIV-Qb-2pI"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="Hma-qW-H6D" secondAttribute="trailing" constant="20" id="g6h-39-it4"/>
+                            <constraint firstItem="k3M-2s-YH3" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="tAY-g3-TwU"/>
+                            <constraint firstItem="NQM-gl-oSw" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="wn7-s3-HgI"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="NQM-gl-oSw" secondAttribute="trailing" constant="20" id="zgh-Mq-tCT"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="activitiesTextField" destination="k3M-2s-YH3" id="uat-XW-MWt"/>
+                        <outlet property="moodTextField" destination="Hma-qW-H6D" id="UKs-ih-pQl"/>
+                        <outlet property="weatherTextField" destination="fZo-6z-KiL" id="Jxy-p2-shg"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

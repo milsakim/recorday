@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="19574" systemVersion="21D62" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Activity" representedClassName="Activity" syncable="YES">
+        <attribute name="title" attributeType="String"/>
+        <relationship name="dailyRecords" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="DailyRecord" inverseName="activities" inverseEntity="DailyRecord"/>
+    </entity>
+    <entity name="DailyRecord" representedClassName="DailyRecord" syncable="YES">
+        <attribute name="id" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="mood" attributeType="String"/>
+        <attribute name="timeStamp" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="weather" optional="YES" attributeType="String"/>
+        <relationship name="activities" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Activity" inverseName="dailyRecords" inverseEntity="Activity"/>
+    </entity>
+    <elements>
+        <element name="DailyRecord" positionX="-63" positionY="-18" width="128" height="104"/>
+        <element name="Activity" positionX="-54" positionY="18" width="128" height="59"/>
+    </elements>
+</model>

@@ -9,14 +9,17 @@
 /* Begin PBXBuildFile section */
 		1629522327CF5C3E00E599E4 /* CreateDailyRecordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1629522227CF5C3E00E599E4 /* CreateDailyRecordViewController.swift */; };
 		1629522527CF5E0D00E599E4 /* CreateDailyRecordViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1629522427CF5E0D00E599E4 /* CreateDailyRecordViewController.storyboard */; };
-		1629522827CF638400E599E4 /* AddActivityTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1629522727CF638400E599E4 /* AddActivityTableViewCell.swift */; };
+		1629525827CF9F6D00E599E4 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1629525627CF9F6D00E599E4 /* Model.xcdatamodeld */; };
+		1629526127CFA66500E599E4 /* DailyRecord+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1629525D27CFA66500E599E4 /* DailyRecord+CoreDataClass.swift */; };
+		1629526227CFA66500E599E4 /* DailyRecord+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1629525E27CFA66500E599E4 /* DailyRecord+CoreDataProperties.swift */; };
+		1629526327CFA66500E599E4 /* Activity+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1629525F27CFA66500E599E4 /* Activity+CoreDataClass.swift */; };
+		1629526427CFA66500E599E4 /* Activity+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1629526027CFA66500E599E4 /* Activity+CoreDataProperties.swift */; };
 		16B91C4027CD6FB0005C05A8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16B91C3F27CD6FB0005C05A8 /* AppDelegate.swift */; };
 		16B91C4227CD6FB0005C05A8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16B91C4127CD6FB0005C05A8 /* SceneDelegate.swift */; };
 		16B91C4727CD6FB0005C05A8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 16B91C4527CD6FB0005C05A8 /* Main.storyboard */; };
 		16B91C4927CD6FB2005C05A8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 16B91C4827CD6FB2005C05A8 /* Assets.xcassets */; };
 		16B91C4C27CD6FB2005C05A8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 16B91C4A27CD6FB2005C05A8 /* LaunchScreen.storyboard */; };
 		16B91C5827CD7988005C05A8 /* RecordListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16B91C5727CD7988005C05A8 /* RecordListViewController.swift */; };
-		16B91C5B27CD79B2005C05A8 /* Record.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16B91C5A27CD79B2005C05A8 /* Record.swift */; };
 		16B91C5F27CD847B005C05A8 /* RecordListViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 16B91C5E27CD847B005C05A8 /* RecordListViewController.storyboard */; };
 		16B91C6427CD9C50005C05A8 /* TagListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16B91C6327CD9C50005C05A8 /* TagListView.swift */; };
 		16E44BAC27CDEE9B00EAD05B /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16E44BAB27CDEE9B00EAD05B /* CloudKit.framework */; };
@@ -25,7 +28,11 @@
 /* Begin PBXFileReference section */
 		1629522227CF5C3E00E599E4 /* CreateDailyRecordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateDailyRecordViewController.swift; sourceTree = "<group>"; };
 		1629522427CF5E0D00E599E4 /* CreateDailyRecordViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CreateDailyRecordViewController.storyboard; sourceTree = "<group>"; };
-		1629522727CF638400E599E4 /* AddActivityTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddActivityTableViewCell.swift; sourceTree = "<group>"; };
+		1629525727CF9F6D00E599E4 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		1629525D27CFA66500E599E4 /* DailyRecord+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DailyRecord+CoreDataClass.swift"; sourceTree = "<group>"; };
+		1629525E27CFA66500E599E4 /* DailyRecord+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DailyRecord+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		1629525F27CFA66500E599E4 /* Activity+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Activity+CoreDataClass.swift"; sourceTree = "<group>"; };
+		1629526027CFA66500E599E4 /* Activity+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Activity+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		16B91C3C27CD6FB0005C05A8 /* Recorday.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Recorday.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		16B91C3F27CD6FB0005C05A8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		16B91C4127CD6FB0005C05A8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -34,7 +41,6 @@
 		16B91C4B27CD6FB2005C05A8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		16B91C4D27CD6FB2005C05A8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		16B91C5727CD7988005C05A8 /* RecordListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordListViewController.swift; sourceTree = "<group>"; };
-		16B91C5A27CD79B2005C05A8 /* Record.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Record.swift; sourceTree = "<group>"; };
 		16B91C5E27CD847B005C05A8 /* RecordListViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = RecordListViewController.storyboard; sourceTree = "<group>"; };
 		16B91C6327CD9C50005C05A8 /* TagListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagListView.swift; sourceTree = "<group>"; };
 		16E44BA927CDC00400EAD05B /* Recorday.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Recorday.entitlements; sourceTree = "<group>"; };
@@ -56,27 +62,54 @@
 		1629522127CF5B5300E599E4 /* CreateDailyRecord */ = {
 			isa = PBXGroup;
 			children = (
+				1629522927CF63AB00E599E4 /* Extension */,
 				1629522227CF5C3E00E599E4 /* CreateDailyRecordViewController.swift */,
 				1629522427CF5E0D00E599E4 /* CreateDailyRecordViewController.storyboard */,
 			);
 			path = CreateDailyRecord;
 			sourceTree = "<group>";
 		};
-		1629522627CF636000E599E4 /* Cells */ = {
+		1629522927CF63AB00E599E4 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
-				1629522727CF638400E599E4 /* AddActivityTableViewCell.swift */,
 			);
-			path = Cells;
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		1629522A27CF65DC00E599E4 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		1629525C27CFA53100E599E4 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				1629526527CFA6D500E599E4 /* Model */,
+				1629525627CF9F6D00E599E4 /* Model.xcdatamodeld */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		1629526527CFA6D500E599E4 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1629525D27CFA66500E599E4 /* DailyRecord+CoreDataClass.swift */,
+				1629525E27CFA66500E599E4 /* DailyRecord+CoreDataProperties.swift */,
+				1629525F27CFA66500E599E4 /* Activity+CoreDataClass.swift */,
+				1629526027CFA66500E599E4 /* Activity+CoreDataProperties.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		16B91C3327CD6FB0005C05A8 = {
 			isa = PBXGroup;
 			children = (
 				16B91C5327CD6FBC005C05A8 /* AppDelegate */,
-				16B91C5927CD79A2005C05A8 /* Model */,
 				16B91C6127CD9C11005C05A8 /* ViewController */,
 				16B91C6027CD88D1005C05A8 /* View */,
+				1629525C27CFA53100E599E4 /* CoreData */,
 				16B91C3E27CD6FB0005C05A8 /* Recorday */,
 				16B91C3D27CD6FB0005C05A8 /* Products */,
 				16E44BAA27CDEE9B00EAD05B /* Frameworks */,
@@ -115,24 +148,16 @@
 		16B91C5427CD793D005C05A8 /* RecordListViewController */ = {
 			isa = PBXGroup;
 			children = (
+				1629522A27CF65DC00E599E4 /* Extension */,
 				16B91C5727CD7988005C05A8 /* RecordListViewController.swift */,
 				16B91C5E27CD847B005C05A8 /* RecordListViewController.storyboard */,
 			);
 			path = RecordListViewController;
 			sourceTree = "<group>";
 		};
-		16B91C5927CD79A2005C05A8 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				16B91C5A27CD79B2005C05A8 /* Record.swift */,
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
 		16B91C6027CD88D1005C05A8 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				1629522627CF636000E599E4 /* Cells */,
 				16B91C6227CD9C31005C05A8 /* TagListView */,
 			);
 			path = View;
@@ -141,8 +166,8 @@
 		16B91C6127CD9C11005C05A8 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
-				1629522127CF5B5300E599E4 /* CreateDailyRecord */,
 				16B91C5427CD793D005C05A8 /* RecordListViewController */,
+				1629522127CF5B5300E599E4 /* CreateDailyRecord */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -237,11 +262,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				16B91C6427CD9C50005C05A8 /* TagListView.swift in Sources */,
+				1629526127CFA66500E599E4 /* DailyRecord+CoreDataClass.swift in Sources */,
+				1629526427CFA66500E599E4 /* Activity+CoreDataProperties.swift in Sources */,
 				1629522327CF5C3E00E599E4 /* CreateDailyRecordViewController.swift in Sources */,
+				1629526327CFA66500E599E4 /* Activity+CoreDataClass.swift in Sources */,
 				16B91C4027CD6FB0005C05A8 /* AppDelegate.swift in Sources */,
+				1629525827CF9F6D00E599E4 /* Model.xcdatamodeld in Sources */,
 				16B91C5827CD7988005C05A8 /* RecordListViewController.swift in Sources */,
-				1629522827CF638400E599E4 /* AddActivityTableViewCell.swift in Sources */,
-				16B91C5B27CD79B2005C05A8 /* Record.swift in Sources */,
+				1629526227CFA66500E599E4 /* DailyRecord+CoreDataProperties.swift in Sources */,
 				16B91C4227CD6FB0005C05A8 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -464,6 +492,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		1629525627CF9F6D00E599E4 /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				1629525727CF9F6D00E599E4 /* Model.xcdatamodel */,
+			);
+			currentVersion = 1629525727CF9F6D00E599E4 /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 16B91C3427CD6FB0005C05A8 /* Project object */;
 }

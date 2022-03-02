@@ -6,8 +6,21 @@
 //
 
 import UIKit
+import CoreData
 
 class RecordListViewController: UIViewController {
+    
+    // MARK: - Property
+    
+    var persistentContainer: NSPersistentContainer?
+    
+    // MARK: - Deinit
+    
+    deinit {
+        if persistentContainer != nil {
+            persistentContainer = nil
+        }
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()

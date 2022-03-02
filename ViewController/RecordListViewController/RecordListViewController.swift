@@ -24,8 +24,10 @@ class RecordListViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        print(#function)
+        if persistentContainer != nil {
+            print("persistentContainer is not nil")
+        }
     }
     
     @IBAction func createDailyRecord(_ sender: Any) {

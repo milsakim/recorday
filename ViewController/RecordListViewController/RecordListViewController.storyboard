@@ -68,6 +68,12 @@
                                                 <constraint firstItem="Jwk-wS-Saf" firstAttribute="leading" secondItem="fcL-ek-WQP" secondAttribute="leadingMargin" id="taS-l9-SOa"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="activitiesLabel" destination="ujO-zn-k5Q" id="hZR-12-KaW"/>
+                                            <outlet property="idLabel" destination="Jjd-Xf-kYG" id="0B1-Wb-Pgb"/>
+                                            <outlet property="moodLabel" destination="Jwk-wS-Saf" id="kEb-Cf-CTP"/>
+                                            <outlet property="weatherLabel" destination="WhE-KP-fWG" id="UxZ-bn-Rce"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>

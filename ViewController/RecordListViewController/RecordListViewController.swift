@@ -27,6 +27,8 @@ class RecordListViewController: UIViewController {
         print(#function)
     }
 
+    // MARK: - View Life Cycle
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         print(#function)

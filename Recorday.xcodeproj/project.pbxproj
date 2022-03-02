@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1629522327CF5C3E00E599E4 /* CreateDailyRecordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1629522227CF5C3E00E599E4 /* CreateDailyRecordViewController.swift */; };
 		16B91C4027CD6FB0005C05A8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16B91C3F27CD6FB0005C05A8 /* AppDelegate.swift */; };
 		16B91C4227CD6FB0005C05A8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16B91C4127CD6FB0005C05A8 /* SceneDelegate.swift */; };
 		16B91C4727CD6FB0005C05A8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 16B91C4527CD6FB0005C05A8 /* Main.storyboard */; };
@@ -20,6 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1629522227CF5C3E00E599E4 /* CreateDailyRecordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateDailyRecordViewController.swift; sourceTree = "<group>"; };
 		16B91C3C27CD6FB0005C05A8 /* Recorday.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Recorday.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		16B91C3F27CD6FB0005C05A8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		16B91C4127CD6FB0005C05A8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -47,6 +49,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1629522127CF5B5300E599E4 /* CreateDailyRecord */ = {
+			isa = PBXGroup;
+			children = (
+				1629522227CF5C3E00E599E4 /* CreateDailyRecordViewController.swift */,
+			);
+			path = CreateDailyRecord;
+			sourceTree = "<group>";
+		};
 		16B91C3327CD6FB0005C05A8 = {
 			isa = PBXGroup;
 			children = (
@@ -117,6 +127,7 @@
 		16B91C6127CD9C11005C05A8 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				1629522127CF5B5300E599E4 /* CreateDailyRecord */,
 				16B91C5427CD793D005C05A8 /* RecordListViewController */,
 			);
 			path = ViewController;
@@ -211,6 +222,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				16B91C6427CD9C50005C05A8 /* TagListView.swift in Sources */,
+				1629522327CF5C3E00E599E4 /* CreateDailyRecordViewController.swift in Sources */,
 				16B91C4027CD6FB0005C05A8 /* AppDelegate.swift in Sources */,
 				16B91C5827CD7988005C05A8 /* RecordListViewController.swift in Sources */,
 				16B91C5B27CD79B2005C05A8 /* Record.swift in Sources */,

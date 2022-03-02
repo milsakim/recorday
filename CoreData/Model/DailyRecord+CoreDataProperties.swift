@@ -16,7 +16,7 @@ extension DailyRecord {
         return NSFetchRequest<DailyRecord>(entityName: "DailyRecord")
     }
 
-    @NSManaged public var id: UUID?
+    @NSManaged public var id: UUID
     @NSManaged public var timeStamp: Double
     @NSManaged public var mood: String?
     @NSManaged public var weather: String?

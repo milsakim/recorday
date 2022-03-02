@@ -2,7 +2,7 @@
 //  Activity+CoreDataProperties.swift
 //  Recorday
 //
-//  Created by HyeJee Kim on 2022/03/02.
+//  Created by HyeJee Kim on 2022/03/03.
 //
 //
 
@@ -17,6 +17,7 @@ extension Activity {
     }
 
     @NSManaged public var title: String?
+    @NSManaged public var id: UUID?
     @NSManaged public var dailyRecords: NSSet?
 
 }

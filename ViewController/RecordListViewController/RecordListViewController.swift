@@ -12,22 +12,24 @@ class RecordListViewController: UIViewController {
     
     // MARK: - Property
     
-    var persistentContainer: NSPersistentContainer?
+    var dailyRecords: [DailyRecord] = []
+    
+    // MARK: - Outlet
+    
+    @IBOutlet weak var tableView: UITableView!
     
     // MARK: - Deinit
     
     deinit {
-        if persistentContainer != nil {
-            persistentContainer = nil
+        if !dailyRecords.isEmpty {
+            dailyRecords.removeAll()
         }
+        print(#function)
     }
 
     override func viewDidLoad() {
         super.viewDidLoad()
         print(#function)
-        if persistentContainer != nil {
-            print("persistentContainer is not nil")
-        }
     }
     
     @IBAction func createDailyRecord(_ sender: Any) {

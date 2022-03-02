@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		1629522327CF5C3E00E599E4 /* CreateDailyRecordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1629522227CF5C3E00E599E4 /* CreateDailyRecordViewController.swift */; };
 		1629522527CF5E0D00E599E4 /* CreateDailyRecordViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1629522427CF5E0D00E599E4 /* CreateDailyRecordViewController.storyboard */; };
+		1629522827CF638400E599E4 /* AddActivityTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1629522727CF638400E599E4 /* AddActivityTableViewCell.swift */; };
 		16B91C4027CD6FB0005C05A8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16B91C3F27CD6FB0005C05A8 /* AppDelegate.swift */; };
 		16B91C4227CD6FB0005C05A8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16B91C4127CD6FB0005C05A8 /* SceneDelegate.swift */; };
 		16B91C4727CD6FB0005C05A8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 16B91C4527CD6FB0005C05A8 /* Main.storyboard */; };
@@ -24,6 +25,7 @@
 /* Begin PBXFileReference section */
 		1629522227CF5C3E00E599E4 /* CreateDailyRecordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateDailyRecordViewController.swift; sourceTree = "<group>"; };
 		1629522427CF5E0D00E599E4 /* CreateDailyRecordViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CreateDailyRecordViewController.storyboard; sourceTree = "<group>"; };
+		1629522727CF638400E599E4 /* AddActivityTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddActivityTableViewCell.swift; sourceTree = "<group>"; };
 		16B91C3C27CD6FB0005C05A8 /* Recorday.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Recorday.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		16B91C3F27CD6FB0005C05A8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		16B91C4127CD6FB0005C05A8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -58,6 +60,14 @@
 				1629522427CF5E0D00E599E4 /* CreateDailyRecordViewController.storyboard */,
 			);
 			path = CreateDailyRecord;
+			sourceTree = "<group>";
+		};
+		1629522627CF636000E599E4 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				1629522727CF638400E599E4 /* AddActivityTableViewCell.swift */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 		16B91C3327CD6FB0005C05A8 = {
@@ -122,6 +132,7 @@
 		16B91C6027CD88D1005C05A8 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				1629522627CF636000E599E4 /* Cells */,
 				16B91C6227CD9C31005C05A8 /* TagListView */,
 			);
 			path = View;
@@ -229,6 +240,7 @@
 				1629522327CF5C3E00E599E4 /* CreateDailyRecordViewController.swift in Sources */,
 				16B91C4027CD6FB0005C05A8 /* AppDelegate.swift in Sources */,
 				16B91C5827CD7988005C05A8 /* RecordListViewController.swift in Sources */,
+				1629522827CF638400E599E4 /* AddActivityTableViewCell.swift in Sources */,
 				16B91C5B27CD79B2005C05A8 /* Record.swift in Sources */,
 				16B91C4227CD6FB0005C05A8 /* SceneDelegate.swift in Sources */,
 			);

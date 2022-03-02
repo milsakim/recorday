@@ -15,15 +15,18 @@ class RecordListViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    @IBAction func createDailyRecord(_ sender: Any) {
+        print(#function)
+        
+        let storyboard: UIStoryboard = UIStoryboard(name: "CreateDailyRecordViewController", bundle: .main)
+        
+        if let createDailyRecordVC: CreateDailyRecordViewController = storyboard.instantiateViewController(withIdentifier: "CreateDailyRecordViewController") as? CreateDailyRecordViewController {
+//            createDailyRecordVC.modalPresentationStyle = .fullScreen
+            self.present(createDailyRecordVC, animated: true, completion: nil)
+        }
+        else {
+            print("fail")
+        }
     }
-    */
-
+    
 }

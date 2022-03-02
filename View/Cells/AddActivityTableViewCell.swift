@@ -8,10 +8,15 @@
 import UIKit
 
 class AddActivityTableViewCell: UITableViewCell {
+    
+    // MARK: - Outlet
+    
+    @IBOutlet weak var stackView: UIStackView!
+    
 
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+        print(#function)
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {

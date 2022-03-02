@@ -12,8 +12,9 @@
 		1629525827CF9F6D00E599E4 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1629525627CF9F6D00E599E4 /* Model.xcdatamodeld */; };
 		1629526127CFA66500E599E4 /* DailyRecord+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1629525D27CFA66500E599E4 /* DailyRecord+CoreDataClass.swift */; };
 		1629526227CFA66500E599E4 /* DailyRecord+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1629525E27CFA66500E599E4 /* DailyRecord+CoreDataProperties.swift */; };
-		1629526327CFA66500E599E4 /* Activity+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1629525F27CFA66500E599E4 /* Activity+CoreDataClass.swift */; };
-		1629526427CFA66500E599E4 /* Activity+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1629526027CFA66500E599E4 /* Activity+CoreDataProperties.swift */; };
+		1629526A27CFBF4300E599E4 /* Activity+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1629526827CFBF4300E599E4 /* Activity+CoreDataClass.swift */; };
+		1629526B27CFBF4300E599E4 /* Activity+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1629526927CFBF4300E599E4 /* Activity+CoreDataProperties.swift */; };
+		1629526D27D0291E00E599E4 /* DailyRecordTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1629526C27D0291E00E599E4 /* DailyRecordTableViewCell.swift */; };
 		16B91C4027CD6FB0005C05A8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16B91C3F27CD6FB0005C05A8 /* AppDelegate.swift */; };
 		16B91C4227CD6FB0005C05A8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16B91C4127CD6FB0005C05A8 /* SceneDelegate.swift */; };
 		16B91C4727CD6FB0005C05A8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 16B91C4527CD6FB0005C05A8 /* Main.storyboard */; };
@@ -31,8 +32,9 @@
 		1629525727CF9F6D00E599E4 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 		1629525D27CFA66500E599E4 /* DailyRecord+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DailyRecord+CoreDataClass.swift"; sourceTree = "<group>"; };
 		1629525E27CFA66500E599E4 /* DailyRecord+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DailyRecord+CoreDataProperties.swift"; sourceTree = "<group>"; };
-		1629525F27CFA66500E599E4 /* Activity+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Activity+CoreDataClass.swift"; sourceTree = "<group>"; };
-		1629526027CFA66500E599E4 /* Activity+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Activity+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		1629526827CFBF4300E599E4 /* Activity+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Activity+CoreDataClass.swift"; sourceTree = "<group>"; };
+		1629526927CFBF4300E599E4 /* Activity+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Activity+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		1629526C27D0291E00E599E4 /* DailyRecordTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyRecordTableViewCell.swift; sourceTree = "<group>"; };
 		16B91C3C27CD6FB0005C05A8 /* Recorday.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Recorday.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		16B91C3F27CD6FB0005C05A8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		16B91C4127CD6FB0005C05A8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -95,10 +97,10 @@
 		1629526527CFA6D500E599E4 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				1629526827CFBF4300E599E4 /* Activity+CoreDataClass.swift */,
+				1629526927CFBF4300E599E4 /* Activity+CoreDataProperties.swift */,
 				1629525D27CFA66500E599E4 /* DailyRecord+CoreDataClass.swift */,
 				1629525E27CFA66500E599E4 /* DailyRecord+CoreDataProperties.swift */,
-				1629525F27CFA66500E599E4 /* Activity+CoreDataClass.swift */,
-				1629526027CFA66500E599E4 /* Activity+CoreDataProperties.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -159,6 +161,7 @@
 			isa = PBXGroup;
 			children = (
 				16B91C6227CD9C31005C05A8 /* TagListView */,
+				1629526C27D0291E00E599E4 /* DailyRecordTableViewCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -263,10 +266,11 @@
 			files = (
 				16B91C6427CD9C50005C05A8 /* TagListView.swift in Sources */,
 				1629526127CFA66500E599E4 /* DailyRecord+CoreDataClass.swift in Sources */,
-				1629526427CFA66500E599E4 /* Activity+CoreDataProperties.swift in Sources */,
+				1629526D27D0291E00E599E4 /* DailyRecordTableViewCell.swift in Sources */,
+				1629526B27CFBF4300E599E4 /* Activity+CoreDataProperties.swift in Sources */,
 				1629522327CF5C3E00E599E4 /* CreateDailyRecordViewController.swift in Sources */,
-				1629526327CFA66500E599E4 /* Activity+CoreDataClass.swift in Sources */,
 				16B91C4027CD6FB0005C05A8 /* AppDelegate.swift in Sources */,
+				1629526A27CFBF4300E599E4 /* Activity+CoreDataClass.swift in Sources */,
 				1629525827CF9F6D00E599E4 /* Model.xcdatamodeld in Sources */,
 				16B91C5827CD7988005C05A8 /* RecordListViewController.swift in Sources */,
 				1629526227CFA66500E599E4 /* DailyRecord+CoreDataProperties.swift in Sources */,

@@ -12,13 +12,14 @@ import CoreData
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
-    lazy var persistentContainer: NSPersistentContainer = {
-        let container: NSPersistentContainer = NSPersistentContainer(name: "Model")
+    lazy var persistentContainer: NSPersistentCloudKitContainer = {
+        let container: NSPersistentCloudKitContainer = NSPersistentCloudKitContainer(name: "Model")
         container.loadPersistentStores { description, error in
             if let error = error {
                 fatalError("Unable to load persistent store: \(error)")
             }
         }
+        container.viewContext.automaticallyMergesChangesFromParent = true
         return container
     }()
 

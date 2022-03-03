@@ -10,12 +10,11 @@
 		1629522327CF5C3E00E599E4 /* CreateDailyRecordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1629522227CF5C3E00E599E4 /* CreateDailyRecordViewController.swift */; };
 		1629522527CF5E0D00E599E4 /* CreateDailyRecordViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1629522427CF5E0D00E599E4 /* CreateDailyRecordViewController.storyboard */; };
 		1629525827CF9F6D00E599E4 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1629525627CF9F6D00E599E4 /* Model.xcdatamodeld */; };
-		1629526127CFA66500E599E4 /* DailyRecord+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1629525D27CFA66500E599E4 /* DailyRecord+CoreDataClass.swift */; };
-		1629526227CFA66500E599E4 /* DailyRecord+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1629525E27CFA66500E599E4 /* DailyRecord+CoreDataProperties.swift */; };
 		1629526A27CFBF4300E599E4 /* Activity+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1629526827CFBF4300E599E4 /* Activity+CoreDataClass.swift */; };
 		1629526B27CFBF4300E599E4 /* Activity+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1629526927CFBF4300E599E4 /* Activity+CoreDataProperties.swift */; };
 		1629526D27D0291E00E599E4 /* DailyRecordTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1629526C27D0291E00E599E4 /* DailyRecordTableViewCell.swift */; };
 		1629527027D02A9900E599E4 /* RecordListVC+UITableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1629526F27D02A9900E599E4 /* RecordListVC+UITableViewDataSource.swift */; };
+		1629527327D02BC000E599E4 /* RecordListVC+SetUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1629527227D02BC000E599E4 /* RecordListVC+SetUp.swift */; };
 		16B91C4027CD6FB0005C05A8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16B91C3F27CD6FB0005C05A8 /* AppDelegate.swift */; };
 		16B91C4227CD6FB0005C05A8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16B91C4127CD6FB0005C05A8 /* SceneDelegate.swift */; };
 		16B91C4727CD6FB0005C05A8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 16B91C4527CD6FB0005C05A8 /* Main.storyboard */; };
@@ -24,6 +23,9 @@
 		16B91C5827CD7988005C05A8 /* RecordListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16B91C5727CD7988005C05A8 /* RecordListViewController.swift */; };
 		16B91C5F27CD847B005C05A8 /* RecordListViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 16B91C5E27CD847B005C05A8 /* RecordListViewController.storyboard */; };
 		16B91C6427CD9C50005C05A8 /* TagListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16B91C6327CD9C50005C05A8 /* TagListView.swift */; };
+		16BF2DF827D119E700242B07 /* DailyRecord+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16BF2DF627D119E700242B07 /* DailyRecord+CoreDataClass.swift */; };
+		16BF2DF927D119E700242B07 /* DailyRecord+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16BF2DF727D119E700242B07 /* DailyRecord+CoreDataProperties.swift */; };
+		16BF2DFC27D11BB600242B07 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16BF2DFB27D11BB600242B07 /* CoreDataManager.swift */; };
 		16E44BAC27CDEE9B00EAD05B /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16E44BAB27CDEE9B00EAD05B /* CloudKit.framework */; };
 /* End PBXBuildFile section */
 
@@ -31,12 +33,11 @@
 		1629522227CF5C3E00E599E4 /* CreateDailyRecordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateDailyRecordViewController.swift; sourceTree = "<group>"; };
 		1629522427CF5E0D00E599E4 /* CreateDailyRecordViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CreateDailyRecordViewController.storyboard; sourceTree = "<group>"; };
 		1629525727CF9F6D00E599E4 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
-		1629525D27CFA66500E599E4 /* DailyRecord+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DailyRecord+CoreDataClass.swift"; sourceTree = "<group>"; };
-		1629525E27CFA66500E599E4 /* DailyRecord+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DailyRecord+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		1629526827CFBF4300E599E4 /* Activity+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Activity+CoreDataClass.swift"; sourceTree = "<group>"; };
 		1629526927CFBF4300E599E4 /* Activity+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Activity+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		1629526C27D0291E00E599E4 /* DailyRecordTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyRecordTableViewCell.swift; sourceTree = "<group>"; };
 		1629526F27D02A9900E599E4 /* RecordListVC+UITableViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RecordListVC+UITableViewDataSource.swift"; sourceTree = "<group>"; };
+		1629527227D02BC000E599E4 /* RecordListVC+SetUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RecordListVC+SetUp.swift"; sourceTree = "<group>"; };
 		16B91C3C27CD6FB0005C05A8 /* Recorday.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Recorday.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		16B91C3F27CD6FB0005C05A8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		16B91C4127CD6FB0005C05A8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -47,6 +48,9 @@
 		16B91C5727CD7988005C05A8 /* RecordListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordListViewController.swift; sourceTree = "<group>"; };
 		16B91C5E27CD847B005C05A8 /* RecordListViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = RecordListViewController.storyboard; sourceTree = "<group>"; };
 		16B91C6327CD9C50005C05A8 /* TagListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagListView.swift; sourceTree = "<group>"; };
+		16BF2DF627D119E700242B07 /* DailyRecord+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DailyRecord+CoreDataClass.swift"; sourceTree = "<group>"; };
+		16BF2DF727D119E700242B07 /* DailyRecord+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DailyRecord+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		16BF2DFB27D11BB600242B07 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
 		16E44BA927CDC00400EAD05B /* Recorday.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Recorday.entitlements; sourceTree = "<group>"; };
 		16E44BAB27CDEE9B00EAD05B /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
@@ -84,6 +88,7 @@
 			isa = PBXGroup;
 			children = (
 				1629526F27D02A9900E599E4 /* RecordListVC+UITableViewDataSource.swift */,
+				1629527227D02BC000E599E4 /* RecordListVC+SetUp.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -93,6 +98,7 @@
 			children = (
 				1629526527CFA6D500E599E4 /* Model */,
 				1629525627CF9F6D00E599E4 /* Model.xcdatamodeld */,
+				16BF2DFB27D11BB600242B07 /* CoreDataManager.swift */,
 			);
 			path = CoreData;
 			sourceTree = "<group>";
@@ -100,10 +106,10 @@
 		1629526527CFA6D500E599E4 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				16BF2DF627D119E700242B07 /* DailyRecord+CoreDataClass.swift */,
+				16BF2DF727D119E700242B07 /* DailyRecord+CoreDataProperties.swift */,
 				1629526827CFBF4300E599E4 /* Activity+CoreDataClass.swift */,
 				1629526927CFBF4300E599E4 /* Activity+CoreDataProperties.swift */,
-				1629525D27CFA66500E599E4 /* DailyRecord+CoreDataClass.swift */,
-				1629525E27CFA66500E599E4 /* DailyRecord+CoreDataProperties.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -267,18 +273,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				16BF2DF827D119E700242B07 /* DailyRecord+CoreDataClass.swift in Sources */,
 				16B91C6427CD9C50005C05A8 /* TagListView.swift in Sources */,
-				1629526127CFA66500E599E4 /* DailyRecord+CoreDataClass.swift in Sources */,
 				1629526D27D0291E00E599E4 /* DailyRecordTableViewCell.swift in Sources */,
 				1629526B27CFBF4300E599E4 /* Activity+CoreDataProperties.swift in Sources */,
 				1629522327CF5C3E00E599E4 /* CreateDailyRecordViewController.swift in Sources */,
 				16B91C4027CD6FB0005C05A8 /* AppDelegate.swift in Sources */,
 				1629526A27CFBF4300E599E4 /* Activity+CoreDataClass.swift in Sources */,
+				16BF2DF927D119E700242B07 /* DailyRecord+CoreDataProperties.swift in Sources */,
 				1629525827CF9F6D00E599E4 /* Model.xcdatamodeld in Sources */,
 				16B91C5827CD7988005C05A8 /* RecordListViewController.swift in Sources */,
-				1629526227CFA66500E599E4 /* DailyRecord+CoreDataProperties.swift in Sources */,
 				1629527027D02A9900E599E4 /* RecordListVC+UITableViewDataSource.swift in Sources */,
 				16B91C4227CD6FB0005C05A8 /* SceneDelegate.swift in Sources */,
+				16BF2DFC27D11BB600242B07 /* CoreDataManager.swift in Sources */,
+				1629527327D02BC000E599E4 /* RecordListVC+SetUp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

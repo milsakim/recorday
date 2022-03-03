@@ -26,12 +26,25 @@ class RecordListViewController: UIViewController {
         }
         print(#function)
     }
-
+    
     // MARK: - View Life Cycle
     
     override func viewDidLoad() {
         super.viewDidLoad()
         print(#function)
+        self.generalSetUp()
+    }
+    
+    // MARK: - Set Up RecordListViewController
+    
+    func generalSetUp() {
+        self.setUpTableView()
+        
+        if let fetchResult = AppDelegate.sharedAppDelegate.coreDataManager.fetchDailyRecords() {
+            self.dailyRecords = fetchResult
+        }
+
+        NotificationCenter.default.addObserver(self, selector: #selector(fetchChanges), name: .NSPersistentStoreRemoteChange, object: AppDelegate.sharedAppDelegate.coreDataManager.persistentContainer.persistentStoreCoordinator)
     }
     
     @IBAction func createDailyRecord(_ sender: Any) {
@@ -40,11 +53,37 @@ class RecordListViewController: UIViewController {
         let storyboard: UIStoryboard = UIStoryboard(name: "CreateDailyRecordViewController", bundle: .main)
         
         if let createDailyRecordVC: CreateDailyRecordViewController = storyboard.instantiateViewController(withIdentifier: "CreateDailyRecordViewController") as? CreateDailyRecordViewController {
-//            createDailyRecordVC.modalPresentationStyle = .fullScreen
             self.present(createDailyRecordVC, animated: true, completion: nil)
         }
-        else {
-            print("fail")
+    }
+    
+    @IBAction func reloadDataButtonTapped(_ sender: Any) {
+        print("--- \(#function) ---")
+        
+        for dailyRecord in dailyRecords {
+            AppDelegate.sharedAppDelegate.coreDataManager.persistentContainer.viewContext.delete(dailyRecord)
+        }
+        
+        do {
+            try AppDelegate.sharedAppDelegate.coreDataManager.persistentContainer.viewContext.save()
+            dailyRecords = []
+            DispatchQueue.main.async {
+                self.tableView.reloadData()
+            }
+        }
+        catch {
+            print("--- Fail to delete ---")
+        }
+    }
+    
+    @objc func fetchChanges() {
+        print("--- \(#function) ---")
+        DispatchQueue.main.async {
+//            let newFetchResult = self.fetchDailyRecords()
+            if let newFetchResult: [DailyRecord] = AppDelegate.sharedAppDelegate.coreDataManager.fetchDailyRecords() {
+                self.dailyRecords = newFetchResult
+                self.tableView.reloadData()
+            }
         }
     }
     

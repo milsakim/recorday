@@ -30,4 +30,29 @@ class CoreDataManager {
         return container
     }()
     
+    lazy var managedContext: NSManagedObjectContext = {
+        return self.persistentContainer.viewContext
+    }()
+    
+}
+
+// MARK: -
+
+extension CoreDataManager {
+    
+    func fetchDailyRecords() -> [DailyRecord]? {
+        print("--- \(#function) ---")
+        do {
+            let fetchRequest: NSFetchRequest<DailyRecord> = DailyRecord.fetchRequest()
+            let fetchResult: [DailyRecord] = try managedContext.fetch(fetchRequest)
+            print("--- Fetch result count: \(fetchResult.count) ---")
+            return fetchResult
+        }
+        catch {
+            print("--- Failed to fetch DailyRecords: \(error) ---")
+        }
+        
+        return nil
+    }
+    
 }

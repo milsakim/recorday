@@ -11,10 +11,10 @@ class DailyRecordTableViewCell: UITableViewCell {
     
     // MARK: - Outlet
     
-    @IBOutlet weak var idLabel: UILabel!
+    @IBOutlet weak var moodImageView: UIImageView!
     @IBOutlet weak var moodLabel: UILabel!
-    @IBOutlet weak var activitiesLabel: UILabel!
-    @IBOutlet weak var weatherLabel: UILabel!
+    @IBOutlet weak var timeLabel: UILabel!
+    @IBOutlet weak var tagCollectionView: UICollectionView!
     
     override func awakeFromNib() {
         super.awakeFromNib()

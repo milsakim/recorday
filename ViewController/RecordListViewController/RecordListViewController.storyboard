@@ -129,9 +129,9 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
+                                            <outlet property="activityCollectionView" destination="A9j-X3-iY2" id="mMe-pv-6Sw"/>
                                             <outlet property="moodImageView" destination="U18-Or-dj4" id="ybD-ig-fbn"/>
                                             <outlet property="moodLabel" destination="iZS-g7-7Gb" id="Nqd-CH-qCM"/>
-                                            <outlet property="tagCollectionView" destination="A9j-X3-iY2" id="mMe-pv-6Sw"/>
                                             <outlet property="timeLabel" destination="lGb-7O-pxI" id="Sw8-3s-4C9"/>
                                         </connections>
                                     </tableViewCell>

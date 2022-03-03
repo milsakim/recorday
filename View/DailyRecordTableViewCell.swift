@@ -14,7 +14,11 @@ class DailyRecordTableViewCell: UITableViewCell {
     @IBOutlet weak var moodImageView: UIImageView!
     @IBOutlet weak var moodLabel: UILabel!
     @IBOutlet weak var timeLabel: UILabel!
-    @IBOutlet weak var tagCollectionView: UICollectionView!
+    @IBOutlet weak var activityCollectionView: UICollectionView!
+    
+    // MARK: - Property
+    
+    var activityTitles: [String] = []
     
     override func awakeFromNib() {
         super.awakeFromNib()

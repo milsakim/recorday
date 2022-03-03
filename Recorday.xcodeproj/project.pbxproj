@@ -96,7 +96,10 @@
 		1629525C27CFA53100E599E4 /* CoreData */ = {
 			isa = PBXGroup;
 			children = (
-				1629526527CFA6D500E599E4 /* Model */,
+				16BF2DF627D119E700242B07 /* DailyRecord+CoreDataClass.swift */,
+				16BF2DF727D119E700242B07 /* DailyRecord+CoreDataProperties.swift */,
+				1629526827CFBF4300E599E4 /* Activity+CoreDataClass.swift */,
+				1629526927CFBF4300E599E4 /* Activity+CoreDataProperties.swift */,
 				1629525627CF9F6D00E599E4 /* Model.xcdatamodeld */,
 				16BF2DFB27D11BB600242B07 /* CoreDataManager.swift */,
 			);
@@ -106,10 +109,6 @@
 		1629526527CFA6D500E599E4 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				16BF2DF627D119E700242B07 /* DailyRecord+CoreDataClass.swift */,
-				16BF2DF727D119E700242B07 /* DailyRecord+CoreDataProperties.swift */,
-				1629526827CFBF4300E599E4 /* Activity+CoreDataClass.swift */,
-				1629526927CFBF4300E599E4 /* Activity+CoreDataProperties.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -120,6 +119,7 @@
 				16B91C5327CD6FBC005C05A8 /* AppDelegate */,
 				16B91C6127CD9C11005C05A8 /* ViewController */,
 				16B91C6027CD88D1005C05A8 /* View */,
+				1629526527CFA6D500E599E4 /* Model */,
 				1629525C27CFA53100E599E4 /* CoreData */,
 				16B91C3E27CD6FB0005C05A8 /* Recorday */,
 				16B91C3D27CD6FB0005C05A8 /* Products */,

@@ -7,21 +7,26 @@
 
 import UIKit
 import CoreData
+import CloudKit
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
-
-
-    lazy var persistentContainer: NSPersistentCloudKitContainer = {
-        let container: NSPersistentCloudKitContainer = NSPersistentCloudKitContainer(name: "Model")
-        container.loadPersistentStores { description, error in
-            if let error = error {
-                fatalError("Unable to load persistent store: \(error)")
-            }
+    
+    // MARK: - Property
+    
+    static let sharedAppDelegate: AppDelegate = {
+        guard let appDelegate: AppDelegate = UIApplication.shared.delegate as? AppDelegate else {
+            fatalError("--- Failed to cast app delegate as AppDelegate ---")
         }
-        container.viewContext.automaticallyMergesChangesFromParent = true
-        return container
+        
+        return appDelegate
     }()
+    
+    lazy var coreDataManager: CoreDataManager = {
+        return CoreDataManager()
+    }()
+    
+    // MARK: - Initializing the App
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
@@ -41,6 +46,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Called when the user discards a scene session.
         // If any sessions were discarded while the application was not running, this will be called shortly after application:didFinishLaunchingWithOptions.
         // Use this method to release any resources that were specific to the discarded scenes, as they will not return.
+    }
+    
+    // MARK: - Handling Remote Notification
+    
+    func application(_ application: UIApplication, didReceiveRemoteNotification userInfo: [AnyHashable : Any], fetchCompletionHandler completionHandler: @escaping (UIBackgroundFetchResult) -> Void) {
+        print("--- \(#function): \(userInfo) ---")
+        if let notification = CKNotification(fromRemoteNotificationDictionary: userInfo) {
+            print("--- CloudKit database changed: \(notification.description) ---")
+        }
     }
 
 

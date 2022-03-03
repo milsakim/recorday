@@ -105,6 +105,9 @@
                                                                     <constraint firstItem="phD-5X-UaH" firstAttribute="top" secondItem="Ngb-oR-EXq" secondAttribute="top" id="fen-Qp-GdK"/>
                                                                 </constraints>
                                                             </collectionViewCellContentView>
+                                                            <connections>
+                                                                <outlet property="titleLabel" destination="7sJ-ep-q8h" id="Dkt-Bj-cGy"/>
+                                                            </connections>
                                                         </collectionViewCell>
                                                     </cells>
                                                 </collectionView>

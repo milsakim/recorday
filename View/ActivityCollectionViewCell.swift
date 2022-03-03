@@ -9,4 +9,8 @@ import UIKit
 
 class ActivityCollectionViewCell: UICollectionViewCell {
     
+    // MARK: - Outlet
+    
+    @IBOutlet weak var titleLabel: UILabel!
+    
 }

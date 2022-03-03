@@ -33,14 +33,19 @@ class DailyRecordTableViewCell: UITableViewCell {
 
 }
 
-extension DailyRecord: UICollectionViewDataSource {
+extension DailyRecordTableViewCell: UICollectionViewDataSource {
     
     public func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        <#code#>
+        return self.activityTitles.count
     }
     
     public func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        <#code#>
+        if let cell: ActivityCollectionViewCell = collectionView.dequeueReusableCell(withReuseIdentifier: "ActivityCollectionViewCell", for: indexPath) as? ActivityCollectionViewCell {
+            cell.titleLabel.text = self.activityTitles[indexPath.item]
+            return cell
+        }
+        
+        return UICollectionViewCell()
     }
     
 }

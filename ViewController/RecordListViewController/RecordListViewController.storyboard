@@ -44,17 +44,17 @@
                                                     </constraints>
                                                 </imageView>
                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="B6i-fa-KO4">
-                                                    <rect key="frame" x="88" y="16" width="322" height="60"/>
+                                                    <rect key="frame" x="88" y="16" width="298" height="60"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="iZS-g7-7Gb">
-                                                            <rect key="frame" x="0.0" y="0.0" width="322" height="32"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="298" height="32"/>
                                                             <color key="backgroundColor" systemColor="systemGreenColor"/>
                                                             <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="lGb-7O-pxI">
-                                                            <rect key="frame" x="0.0" y="32" width="322" height="28"/>
+                                                            <rect key="frame" x="0.0" y="32" width="298" height="28"/>
                                                             <color key="backgroundColor" systemColor="systemOrangeColor"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                             <color key="textColor" systemColor="systemGrayColor"/>
@@ -63,7 +63,7 @@
                                                     </subviews>
                                                 </stackView>
                                                 <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="A9j-X3-iY2">
-                                                    <rect key="frame" x="20" y="84" width="390" height="145"/>
+                                                    <rect key="frame" x="20" y="84" width="366" height="145"/>
                                                     <color key="backgroundColor" systemColor="systemYellowColor"/>
                                                     <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="MzZ-Ob-gdW">
                                                         <size key="itemSize" width="128" height="128"/>
@@ -90,8 +90,8 @@
                                                 <constraint firstItem="A9j-X3-iY2" firstAttribute="top" secondItem="U18-Or-dj4" secondAttribute="bottom" constant="8" symbolic="YES" id="VbC-m7-aNA"/>
                                                 <constraint firstItem="A9j-X3-iY2" firstAttribute="top" secondItem="U18-Or-dj4" secondAttribute="bottom" constant="8" symbolic="YES" id="X4H-Y6-3xN"/>
                                                 <constraint firstItem="B6i-fa-KO4" firstAttribute="bottom" secondItem="U18-Or-dj4" secondAttribute="bottom" id="dpR-tI-Fx7"/>
-                                                <constraint firstItem="A9j-X3-iY2" firstAttribute="trailing" secondItem="fcL-ek-WQP" secondAttribute="trailingMargin" constant="16" id="esR-vp-yb6"/>
-                                                <constraint firstItem="B6i-fa-KO4" firstAttribute="trailing" secondItem="fcL-ek-WQP" secondAttribute="trailingMargin" constant="16" id="hC3-0Y-1kU"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="A9j-X3-iY2" secondAttribute="trailing" constant="8" id="esR-vp-yb6"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="B6i-fa-KO4" secondAttribute="trailing" constant="8" id="hC3-0Y-1kU"/>
                                                 <constraint firstItem="U18-Or-dj4" firstAttribute="top" secondItem="fcL-ek-WQP" secondAttribute="top" constant="16" id="jGw-RB-NKn"/>
                                                 <constraint firstItem="B6i-fa-KO4" firstAttribute="top" secondItem="U18-Or-dj4" secondAttribute="top" id="r8E-Gc-JA6"/>
                                                 <constraint firstItem="A9j-X3-iY2" firstAttribute="bottom" secondItem="fcL-ek-WQP" secondAttribute="bottomMargin" id="te4-Yw-lc1"/>

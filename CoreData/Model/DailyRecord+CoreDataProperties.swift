@@ -2,7 +2,7 @@
 //  DailyRecord+CoreDataProperties.swift
 //  Recorday
 //
-//  Created by HyeJee Kim on 2022/03/02.
+//  Created by HyeJee Kim on 2022/03/04.
 //
 //
 
@@ -16,10 +16,11 @@ extension DailyRecord {
         return NSFetchRequest<DailyRecord>(entityName: "DailyRecord")
     }
 
-    @NSManaged public var id: UUID
-    @NSManaged public var timeStamp: Double
+    @NSManaged public var id: UUID?
     @NSManaged public var mood: String?
+    @NSManaged public var timeStamp: Double
     @NSManaged public var weather: String?
+    @NSManaged public var note: String?
     @NSManaged public var activities: NSSet?
 
 }

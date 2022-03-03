@@ -8,12 +8,13 @@
     <entity name="DailyRecord" representedClassName="DailyRecord" syncable="YES">
         <attribute name="id" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
         <attribute name="mood" optional="YES" attributeType="String"/>
+        <attribute name="note" optional="YES" attributeType="String"/>
         <attribute name="timeStamp" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
         <attribute name="weather" optional="YES" attributeType="String"/>
         <relationship name="activities" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Activity" inverseName="dailyRecords" inverseEntity="Activity"/>
     </entity>
     <elements>
         <element name="Activity" positionX="-54" positionY="18" width="128" height="74"/>
-        <element name="DailyRecord" positionX="-63" positionY="-18" width="128" height="104"/>
+        <element name="DailyRecord" positionX="-63" positionY="-18" width="128" height="119"/>
     </elements>
 </model>

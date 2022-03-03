@@ -34,75 +34,50 @@ class CreateDailyRecordViewController: UIViewController {
     }
     
     @IBAction func addButtonTapped(_ sender: Any) {
-        print(#function)
+        print("--- \(#function) ---")
         
-        guard let appDelegate: AppDelegate = UIApplication.shared.delegate as? AppDelegate else {
-            print("Fail to reference app delegate")
-            return
-        }
+        let dailyRecord: DailyRecord = DailyRecord(context: AppDelegate.sharedAppDelegate.coreDataManager.managedContext)
+        dailyRecord.id = UUID()
+        dailyRecord.timeStamp = Date().timeIntervalSince1970
+        dailyRecord.mood = moodTextField.text
+        dailyRecord.weather = weatherTextField.text
+        dailyRecord.note = "This is sample note for \(dailyRecord.id?.uuidString ?? "No ID")"
         
-        print("Success to reference app delegate")
-        
-        // Create daily record
-        if let dailyRecordEntity: NSEntityDescription = NSEntityDescription.entity(forEntityName: "DailyRecord", in: appDelegate.persistentContainer.viewContext),
-           let activityEntity: NSEntityDescription = NSEntityDescription.entity(forEntityName: "Activity", in: appDelegate.persistentContainer.viewContext) {
-            let activity: NSManagedObject = NSManagedObject(entity: activityEntity, insertInto: appDelegate.persistentContainer.viewContext)
-            activity.setValue(activitiesTextField.text, forKey: "title")
-            activity.setValue(UUID(), forKey: "id")
-            
-            let dailyRecord: NSManagedObject = NSManagedObject(entity: dailyRecordEntity, insertInto: appDelegate.persistentContainer.viewContext)
-            dailyRecord.setValue(UUID(), forKey: "id")
-            dailyRecord.setValue(Date().timeIntervalSince1970, forKey: "timeStamp")
-            dailyRecord.setValue(moodTextField.text, forKey: "mood")
-            dailyRecord.setValue(weatherTextField.text, forKey: "weather")
-            
-            
-            dailyRecord.setValue(NSSet(object: activity), forKey: "activities")
-            activity.setValue(NSSet(object: dailyRecord), forKey: "dailyRecords")
-        }
-        
-        do {
-            try appDelegate.persistentContainer.viewContext.save()
-        } catch {
-            print("Fail to save: \(error)")
-        }
-    }
-    
-    func createTestData() {
-        print(#function)
-        
-        guard let appDelegate: AppDelegate = UIApplication.shared.delegate as? AppDelegate else {
-            print("Fail to reference app delegate")
-            return
-        }
-        
-        print("Success to reference app delegate")
-        
-        if let dailyRecordEntity: NSEntityDescription = NSEntityDescription.entity(forEntityName: "DailyRecord", in: appDelegate.persistentContainer.viewContext),
-           let activityEntity: NSEntityDescription = NSEntityDescription.entity(forEntityName: "Activity", in: appDelegate.persistentContainer.viewContext) {
-            let earlySleep: NSManagedObject = NSManagedObject(entity: activityEntity, insertInto: appDelegate.persistentContainer.viewContext)
-            earlySleep.setValue("Early Sleep", forKey: "title")
-            earlySleep.setValue(UUID(), forKey: "id")
-            let drinkCoffee: NSManagedObject = NSManagedObject(entity: activityEntity, insertInto: appDelegate.persistentContainer.viewContext)
-            drinkCoffee.setValue("Drink Coffee", forKey: "title")
-            drinkCoffee.setValue(UUID(), forKey: "id")
-            
-            let dailyRecord: NSManagedObject = NSManagedObject(entity: dailyRecordEntity, insertInto: appDelegate.persistentContainer.viewContext)
-            dailyRecord.setValue(UUID(), forKey: "id")
-            dailyRecord.setValue(Date().timeIntervalSince1970, forKey: "timeStamp")
-            dailyRecord.setValue("joyful", forKey: "mood")
-            dailyRecord.setValue("sunny", forKey: "weather")
-            
-            
-            dailyRecord.setValue(NSSet(array: [earlySleep, drinkCoffee]), forKey: "activities")
-            earlySleep.setValue(NSSet(object: dailyRecord), forKey: "dailyRecords")
-            drinkCoffee.setValue(NSSet(object: dailyRecord), forKey: "dailyRecords")
+        if let activityStrings: [String] = activitiesTextField.text?.split(separator: " ").map({ String($0) }) {
+            for activityString in activityStrings {
+                let activityFetchRequest: NSFetchRequest<Activity> = Activity.fetchRequest()
+                activityFetchRequest.predicate = NSPredicate(format: "title == %@", activityString)
+                
+                do {
+                    let fetchResult: [Activity] = try AppDelegate.sharedAppDelegate.coreDataManager.managedContext.fetch(activityFetchRequest)
+                    if fetchResult.isEmpty {
+                        let activity: Activity = Activity(context: AppDelegate.sharedAppDelegate.coreDataManager.managedContext)
+                        activity.id = UUID()
+                        activity.title = activityString
+                        
+                        dailyRecord.addToActivities(activity)
+                        activity.addToDailyRecords(dailyRecord)
+                    }
+                    else {
+                        dailyRecord.addToActivities(fetchResult[0])
+                        fetchResult[0].addToDailyRecords(dailyRecord)
+                    }
+                }
+                catch {
+                    print("--- Fetch error: \(error) ---")
+                }
+            }
         }
         
         do {
-            try appDelegate.persistentContainer.viewContext.save()
-        } catch {
-            print("Fail to save: \(error)")
+            try AppDelegate.sharedAppDelegate.coreDataManager.managedContext.save()
+            
+            if let tabBarController = self.presentingViewController as? UITabBarController, let presentingViewController = tabBarController.viewControllers?[0] as? RecordListViewController {
+                presentingViewController.dismiss(animated: true, completion: { presentingViewController.fetchChanges() })
+            }
+        }
+        catch {
+            print("--- Failed to save contest: \(error) ---")
         }
     }
 

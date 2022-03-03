@@ -18,24 +18,6 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
         print(#function)
         guard let _ = (scene as? UIWindowScene) else { return }
-        
-        if window == nil {
-            print("window is nil")
-        }
-        else {
-            print("window is not nil")
-        }
-        
-        if let rootVC: RecordListViewController = window?.rootViewController as? RecordListViewController {
-            guard let appDelegate: AppDelegate = UIApplication.shared.delegate as? AppDelegate else {
-                return
-            }
-            
-            rootVC.persistentContainer = appDelegate.persistentContainer
-        }
-        else {
-            print("Root view controller is not initialized yet")
-        }
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {

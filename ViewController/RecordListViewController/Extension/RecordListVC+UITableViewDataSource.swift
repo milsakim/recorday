@@ -15,7 +15,7 @@ extension RecordListViewController: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        print(#function)
+        print("--- \(#function): \(indexPath) ---")
         if let cell: DailyRecordTableViewCell = tableView.dequeueReusableCell(withIdentifier: "DailyRecordTableViewCell", for: indexPath) as? DailyRecordTableViewCell {
             cell.moodLabel.text = self.dailyRecords[indexPath.row].mood
             
@@ -23,6 +23,10 @@ extension RecordListViewController: UITableViewDataSource {
             let dateFormatter: DateFormatter = DateFormatter()
             dateFormatter.dateFormat = "yyyy-MM-dd 'at' HH:mm"
             cell.timeLabel.text = dateFormatter.string(from: date)
+            
+            if let activities = self.dailyRecords[indexPath.row].activities?.compactMap({ $0 as? Activity}) {
+                cell.activityTitles = activities.compactMap({ $0.title })
+            }
            
             return cell
         }

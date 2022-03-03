@@ -72,12 +72,38 @@
                                                         <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                                     </collectionViewFlowLayout>
                                                     <cells>
-                                                        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="0HP-9N-EQP">
-                                                            <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                                        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ActivityCollectionViewCell" id="0HP-9N-EQP" customClass="ActivityCollectionViewCell" customModule="Recorday" customModuleProvider="target">
+                                                            <rect key="frame" x="0.0" y="0.0" width="57.5" height="26.5"/>
                                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                             <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="Ngb-oR-EXq">
-                                                                <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="57.5" height="26.5"/>
                                                                 <autoresizingMask key="autoresizingMask"/>
+                                                                <subviews>
+                                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="phD-5X-UaH">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="57.5" height="26.5"/>
+                                                                        <subviews>
+                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7sJ-ep-q8h">
+                                                                                <rect key="frame" x="8" y="3" width="41.5" height="20.5"/>
+                                                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                                <nil key="textColor"/>
+                                                                                <nil key="highlightedColor"/>
+                                                                            </label>
+                                                                        </subviews>
+                                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                                        <constraints>
+                                                                            <constraint firstItem="7sJ-ep-q8h" firstAttribute="top" secondItem="phD-5X-UaH" secondAttribute="top" constant="3" id="PVc-an-Ojb"/>
+                                                                            <constraint firstItem="7sJ-ep-q8h" firstAttribute="leading" secondItem="phD-5X-UaH" secondAttribute="leading" constant="8" id="UXg-jc-mo1"/>
+                                                                            <constraint firstAttribute="trailing" secondItem="7sJ-ep-q8h" secondAttribute="trailing" constant="8" id="oSl-Tg-vm8"/>
+                                                                            <constraint firstAttribute="bottom" secondItem="7sJ-ep-q8h" secondAttribute="bottom" constant="3" id="riH-bP-Byg"/>
+                                                                        </constraints>
+                                                                    </view>
+                                                                </subviews>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="bottom" secondItem="phD-5X-UaH" secondAttribute="bottom" id="6A3-28-KXY"/>
+                                                                    <constraint firstAttribute="trailing" secondItem="phD-5X-UaH" secondAttribute="trailing" id="Y5O-7Q-r6K"/>
+                                                                    <constraint firstItem="phD-5X-UaH" firstAttribute="leading" secondItem="Ngb-oR-EXq" secondAttribute="leading" id="fYv-z8-Wzn"/>
+                                                                    <constraint firstItem="phD-5X-UaH" firstAttribute="top" secondItem="Ngb-oR-EXq" secondAttribute="top" id="fen-Qp-GdK"/>
+                                                                </constraints>
                                                             </collectionViewCellContentView>
                                                         </collectionViewCell>
                                                     </cells>

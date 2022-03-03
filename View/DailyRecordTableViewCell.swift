@@ -23,6 +23,7 @@ class DailyRecordTableViewCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
+        self.activityCollectionView.dataSource = self
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {

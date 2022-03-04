@@ -71,6 +71,7 @@ class CreateDailyRecordViewController: UIViewController {
 extension CreateDailyRecordViewController: MoodButtonDelegate {
     
     func didSelect(of mood: Mood) {
+        print("--- \(#function): \(mood) ---")
         switch mood {
         case .angry:
             self.selectedMood = .angry
@@ -86,6 +87,7 @@ extension CreateDailyRecordViewController: MoodButtonDelegate {
     }
     
     func didDeselect(of mood: Mood) {
+        print("--- \(#function): \(mood) ---")
         switch mood {
         case .angry:
             if self.selectedMood == .angry {

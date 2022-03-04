@@ -27,6 +27,7 @@
 		16BF2DF927D119E700242B07 /* DailyRecord+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16BF2DF727D119E700242B07 /* DailyRecord+CoreDataProperties.swift */; };
 		16BF2DFC27D11BB600242B07 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16BF2DFB27D11BB600242B07 /* CoreDataManager.swift */; };
 		16BF2DFF27D1852400242B07 /* ActivityCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16BF2DFE27D1852400242B07 /* ActivityCollectionViewCell.swift */; };
+		16BF2E0227D1C3C700242B07 /* MoodButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16BF2E0127D1C3C700242B07 /* MoodButton.swift */; };
 		16E44BAC27CDEE9B00EAD05B /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16E44BAB27CDEE9B00EAD05B /* CloudKit.framework */; };
 /* End PBXBuildFile section */
 
@@ -53,6 +54,7 @@
 		16BF2DF727D119E700242B07 /* DailyRecord+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DailyRecord+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		16BF2DFB27D11BB600242B07 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
 		16BF2DFE27D1852400242B07 /* ActivityCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityCollectionViewCell.swift; sourceTree = "<group>"; };
+		16BF2E0127D1C3C700242B07 /* MoodButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoodButton.swift; sourceTree = "<group>"; };
 		16E44BA927CDC00400EAD05B /* Recorday.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Recorday.entitlements; sourceTree = "<group>"; };
 		16E44BAB27CDEE9B00EAD05B /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
@@ -171,6 +173,7 @@
 		16B91C6027CD88D1005C05A8 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				16BF2E0027D1C3AD00242B07 /* MoodButton */,
 				16B91C6227CD9C31005C05A8 /* TagListView */,
 				1629526C27D0291E00E599E4 /* DailyRecordTableViewCell.swift */,
 				16BF2DFE27D1852400242B07 /* ActivityCollectionViewCell.swift */,
@@ -193,6 +196,14 @@
 				16B91C6327CD9C50005C05A8 /* TagListView.swift */,
 			);
 			path = TagListView;
+			sourceTree = "<group>";
+		};
+		16BF2E0027D1C3AD00242B07 /* MoodButton */ = {
+			isa = PBXGroup;
+			children = (
+				16BF2E0127D1C3C700242B07 /* MoodButton.swift */,
+			);
+			path = MoodButton;
 			sourceTree = "<group>";
 		};
 		16E44BAA27CDEE9B00EAD05B /* Frameworks */ = {
@@ -282,6 +293,7 @@
 				1629526B27CFBF4300E599E4 /* Activity+CoreDataProperties.swift in Sources */,
 				1629522327CF5C3E00E599E4 /* CreateDailyRecordViewController.swift in Sources */,
 				16BF2DFF27D1852400242B07 /* ActivityCollectionViewCell.swift in Sources */,
+				16BF2E0227D1C3C700242B07 /* MoodButton.swift in Sources */,
 				16B91C4027CD6FB0005C05A8 /* AppDelegate.swift in Sources */,
 				1629526A27CFBF4300E599E4 /* Activity+CoreDataClass.swift in Sources */,
 				16BF2DF927D119E700242B07 /* DailyRecord+CoreDataProperties.swift in Sources */,

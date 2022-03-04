@@ -58,3 +58,17 @@ class CreateDailyRecordViewController: UIViewController {
     }
     
 }
+
+// MARK: - Mood Button Delegate
+
+extension CreateDailyRecordViewController: MoodButtonDelegate {
+    
+    func didSelect(of mood: Mood) {
+        <#code#>
+    }
+    
+    func didDeselect(of mood: Mood) {
+        <#code#>
+    }
+    
+}

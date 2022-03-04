@@ -52,7 +52,8 @@ class RecordListViewController: UIViewController {
         
         let storyboard: UIStoryboard = UIStoryboard(name: "CreateDailyRecordViewController", bundle: .main)
         
-        if let createDailyRecordVC: CreateDailyRecordViewController = storyboard.instantiateViewController(withIdentifier: "CreateDailyRecordViewController") as? CreateDailyRecordViewController {
+        if let createDailyRecordVC: UINavigationController = storyboard.instantiateViewController(withIdentifier: "CreateDailyRecordNav") as? UINavigationController {
+            createDailyRecordVC.modalPresentationStyle = .fullScreen
             self.present(createDailyRecordVC, animated: true, completion: nil)
         }
     }

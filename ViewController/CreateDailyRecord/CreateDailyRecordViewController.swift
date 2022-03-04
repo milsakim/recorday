@@ -14,7 +14,6 @@ class CreateDailyRecordViewController: UIViewController {
     
     @IBOutlet weak var nextButton: UIButton!
     
-    
     // MARK: - Property
     
     var persistentContainer: NSPersistentContainer?
@@ -29,6 +28,10 @@ class CreateDailyRecordViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+    }
+    
+    private func generalSetUp() {
+        
     }
     
     @IBAction func cancelButtonTapped(_ sender: Any) {

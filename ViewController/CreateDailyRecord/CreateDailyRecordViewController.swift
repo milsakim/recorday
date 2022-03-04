@@ -36,6 +36,7 @@ class CreateDailyRecordViewController: UIViewController {
     
     private func generalSetUp() {
         nextButton.isEnabled = false
+        self.setUpMoodButtons()
     }
     
     private func setUpMoodButtons() {

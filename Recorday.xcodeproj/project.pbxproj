@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1629522327CF5C3E00E599E4 /* MoodSelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1629522227CF5C3E00E599E4 /* MoodSelectionViewController.swift */; };
-		1629522527CF5E0D00E599E4 /* CreateDailyRecordViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1629522427CF5E0D00E599E4 /* CreateDailyRecordViewController.storyboard */; };
+		1629522527CF5E0D00E599E4 /* CreatingDailyRecord.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1629522427CF5E0D00E599E4 /* CreatingDailyRecord.storyboard */; };
 		1629525827CF9F6D00E599E4 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1629525627CF9F6D00E599E4 /* Model.xcdatamodeld */; };
 		1629526A27CFBF4300E599E4 /* Activity+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1629526827CFBF4300E599E4 /* Activity+CoreDataClass.swift */; };
 		1629526B27CFBF4300E599E4 /* Activity+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1629526927CFBF4300E599E4 /* Activity+CoreDataProperties.swift */; };
@@ -35,7 +35,7 @@
 
 /* Begin PBXFileReference section */
 		1629522227CF5C3E00E599E4 /* MoodSelectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoodSelectionViewController.swift; sourceTree = "<group>"; };
-		1629522427CF5E0D00E599E4 /* CreateDailyRecordViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CreateDailyRecordViewController.storyboard; sourceTree = "<group>"; };
+		1629522427CF5E0D00E599E4 /* CreatingDailyRecord.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CreatingDailyRecord.storyboard; sourceTree = "<group>"; };
 		1629525727CF9F6D00E599E4 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 		1629526827CFBF4300E599E4 /* Activity+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Activity+CoreDataClass.swift"; sourceTree = "<group>"; };
 		1629526927CFBF4300E599E4 /* Activity+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Activity+CoreDataProperties.swift"; sourceTree = "<group>"; };
@@ -80,7 +80,7 @@
 			children = (
 				1629522927CF63AB00E599E4 /* Extension */,
 				1629522227CF5C3E00E599E4 /* MoodSelectionViewController.swift */,
-				1629522427CF5E0D00E599E4 /* CreateDailyRecordViewController.storyboard */,
+				1629522427CF5E0D00E599E4 /* CreatingDailyRecord.storyboard */,
 			);
 			path = CreateDailyRecord;
 			sourceTree = "<group>";
@@ -288,7 +288,7 @@
 			files = (
 				16B91C5F27CD847B005C05A8 /* RecordListViewController.storyboard in Resources */,
 				16B91C4C27CD6FB2005C05A8 /* LaunchScreen.storyboard in Resources */,
-				1629522527CF5E0D00E599E4 /* CreateDailyRecordViewController.storyboard in Resources */,
+				1629522527CF5E0D00E599E4 /* CreatingDailyRecord.storyboard in Resources */,
 				16B91C4927CD6FB2005C05A8 /* Assets.xcassets in Resources */,
 				16B91C4727CD6FB0005C05A8 /* Main.storyboard in Resources */,
 			);

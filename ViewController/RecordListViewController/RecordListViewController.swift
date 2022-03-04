@@ -50,7 +50,7 @@ class RecordListViewController: UIViewController {
     @IBAction func createDailyRecord(_ sender: Any) {
         print(#function)
         
-        let storyboard: UIStoryboard = UIStoryboard(name: "CreateDailyRecordViewController", bundle: .main)
+        let storyboard: UIStoryboard = UIStoryboard(name: "CreatingDailyRecord", bundle: .main)
         
         if let createDailyRecordVC: UINavigationController = storyboard.instantiateViewController(withIdentifier: "CreateDailyRecordNav") as? UINavigationController {
             createDailyRecordVC.modalPresentationStyle = .fullScreen

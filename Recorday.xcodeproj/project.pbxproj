@@ -29,6 +29,7 @@
 		16BF2DFF27D1852400242B07 /* ActivityCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16BF2DFE27D1852400242B07 /* ActivityCollectionViewCell.swift */; };
 		16BF2E0227D1C3C700242B07 /* MoodButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16BF2E0127D1C3C700242B07 /* MoodButton.swift */; };
 		16BF2E0427D1D0C300242B07 /* Mood.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16BF2E0327D1D0C300242B07 /* Mood.swift */; };
+		16BF2E0827D1EEE200242B07 /* SelectingActivitiesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16BF2E0727D1EEE200242B07 /* SelectingActivitiesViewController.swift */; };
 		16E44BAC27CDEE9B00EAD05B /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16E44BAB27CDEE9B00EAD05B /* CloudKit.framework */; };
 /* End PBXBuildFile section */
 
@@ -57,6 +58,7 @@
 		16BF2DFE27D1852400242B07 /* ActivityCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityCollectionViewCell.swift; sourceTree = "<group>"; };
 		16BF2E0127D1C3C700242B07 /* MoodButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoodButton.swift; sourceTree = "<group>"; };
 		16BF2E0327D1D0C300242B07 /* Mood.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mood.swift; sourceTree = "<group>"; };
+		16BF2E0727D1EEE200242B07 /* SelectingActivitiesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectingActivitiesViewController.swift; sourceTree = "<group>"; };
 		16E44BA927CDC00400EAD05B /* Recorday.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Recorday.entitlements; sourceTree = "<group>"; };
 		16E44BAB27CDEE9B00EAD05B /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
@@ -187,6 +189,7 @@
 		16B91C6127CD9C11005C05A8 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				16BF2E0627D1EE6200242B07 /* SelectingActivitiesViewController */,
 				16B91C5427CD793D005C05A8 /* RecordListViewController */,
 				1629522127CF5B5300E599E4 /* CreateDailyRecord */,
 			);
@@ -207,6 +210,14 @@
 				16BF2E0127D1C3C700242B07 /* MoodButton.swift */,
 			);
 			path = MoodButton;
+			sourceTree = "<group>";
+		};
+		16BF2E0627D1EE6200242B07 /* SelectingActivitiesViewController */ = {
+			isa = PBXGroup;
+			children = (
+				16BF2E0727D1EEE200242B07 /* SelectingActivitiesViewController.swift */,
+			);
+			path = SelectingActivitiesViewController;
 			sourceTree = "<group>";
 		};
 		16E44BAA27CDEE9B00EAD05B /* Frameworks */ = {
@@ -294,6 +305,7 @@
 				16B91C6427CD9C50005C05A8 /* TagListView.swift in Sources */,
 				1629526D27D0291E00E599E4 /* DailyRecordTableViewCell.swift in Sources */,
 				1629526B27CFBF4300E599E4 /* Activity+CoreDataProperties.swift in Sources */,
+				16BF2E0827D1EEE200242B07 /* SelectingActivitiesViewController.swift in Sources */,
 				1629522327CF5C3E00E599E4 /* MoodSelectionViewController.swift in Sources */,
 				16BF2E0427D1D0C300242B07 /* Mood.swift in Sources */,
 				16BF2DFF27D1852400242B07 /* ActivityCollectionViewCell.swift in Sources */,

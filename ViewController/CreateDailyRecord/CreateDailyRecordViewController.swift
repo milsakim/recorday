@@ -22,7 +22,33 @@ class CreateDailyRecordViewController: UIViewController {
     
     // MARK: - Property
     
-    var selectedMood: Mood?
+    var selectedMood: Mood? {
+        willSet {
+            if let selectedMood = selectedMood {
+                switch selectedMood {
+                case .angry:
+                    angryMoodButton.isSelected = false
+                case .bad:
+                    badMoodButton.isSelected = false
+                case .expressionless:
+                    expressionlessMoodButton.isSelected = false
+                case .good:
+                    goodMoodButton.isSelected = false
+                case .happy:
+                    happyMoodButton.isSelected = false
+                }
+            }
+        }
+        
+        didSet {
+            if selectedMood != nil {
+                self.nextButton.isEnabled = true
+            }
+            else {
+                self.nextButton.isEnabled = false
+            }
+        }
+    }
     
     // MARK: - Deinit
     
@@ -73,6 +99,11 @@ extension CreateDailyRecordViewController: MoodButtonDelegate {
     
     func didSelect(of mood: Mood) {
         print("--- \(#function): \(mood) ---")
+        
+        if self.selectedMood != nil {
+            self.selectedMood = nil
+        }
+        
         switch mood {
         case .angry:
             self.selectedMood = .angry

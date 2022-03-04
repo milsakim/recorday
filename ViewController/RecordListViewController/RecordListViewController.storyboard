@@ -66,7 +66,7 @@
                                                     <rect key="frame" x="20" y="84" width="366" height="145"/>
                                                     <color key="backgroundColor" systemColor="systemYellowColor"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="height" constant="100" id="24F-yT-D25"/>
+                                                        <constraint firstAttribute="height" constant="100" id="rU5-NM-zXk"/>
                                                     </constraints>
                                                     <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="MzZ-Ob-gdW">
                                                         <size key="itemSize" width="128" height="128"/>
@@ -117,17 +117,14 @@
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="A9j-X3-iY2" firstAttribute="leading" secondItem="fcL-ek-WQP" secondAttribute="leadingMargin" id="B8C-dm-Fb4"/>
-                                                <constraint firstItem="A9j-X3-iY2" firstAttribute="leading" secondItem="fcL-ek-WQP" secondAttribute="leadingMargin" id="IG1-Bf-8Jt"/>
                                                 <constraint firstItem="B6i-fa-KO4" firstAttribute="leading" secondItem="U18-Or-dj4" secondAttribute="trailing" constant="8" symbolic="YES" id="IuL-gH-gm8"/>
                                                 <constraint firstItem="A9j-X3-iY2" firstAttribute="top" secondItem="U18-Or-dj4" secondAttribute="bottom" constant="8" symbolic="YES" id="VbC-m7-aNA"/>
-                                                <constraint firstItem="A9j-X3-iY2" firstAttribute="top" secondItem="U18-Or-dj4" secondAttribute="bottom" constant="8" symbolic="YES" id="X4H-Y6-3xN"/>
                                                 <constraint firstItem="B6i-fa-KO4" firstAttribute="bottom" secondItem="U18-Or-dj4" secondAttribute="bottom" id="dpR-tI-Fx7"/>
                                                 <constraint firstAttribute="trailingMargin" secondItem="A9j-X3-iY2" secondAttribute="trailing" constant="8" id="esR-vp-yb6"/>
                                                 <constraint firstAttribute="trailingMargin" secondItem="B6i-fa-KO4" secondAttribute="trailing" constant="8" id="hC3-0Y-1kU"/>
                                                 <constraint firstItem="U18-Or-dj4" firstAttribute="top" secondItem="fcL-ek-WQP" secondAttribute="top" constant="16" id="jGw-RB-NKn"/>
                                                 <constraint firstItem="B6i-fa-KO4" firstAttribute="top" secondItem="U18-Or-dj4" secondAttribute="top" id="r8E-Gc-JA6"/>
                                                 <constraint firstItem="A9j-X3-iY2" firstAttribute="bottom" secondItem="fcL-ek-WQP" secondAttribute="bottomMargin" id="te4-Yw-lc1"/>
-                                                <constraint firstItem="A9j-X3-iY2" firstAttribute="bottom" secondItem="fcL-ek-WQP" secondAttribute="bottomMargin" id="uQR-xO-5xe"/>
                                                 <constraint firstItem="U18-Or-dj4" firstAttribute="leading" secondItem="fcL-ek-WQP" secondAttribute="leading" constant="20" symbolic="YES" id="yio-FK-heC"/>
                                             </constraints>
                                         </tableViewCellContentView>

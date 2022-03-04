@@ -16,6 +16,7 @@ class CreateDailyRecordViewController: UIViewController {
     
     // MARK: - Property
     
+    var isMoodSelected: Bool = false
     
     // MARK: - Deinit
     

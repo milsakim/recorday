@@ -7,6 +7,10 @@
 
 import UIKit
 
+protocol MoodButtonDelegate: AnyObject {
+    
+}
+
 class MoodButton: UIImageView {
     
     // MARK: - Property

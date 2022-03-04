@@ -119,6 +119,11 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="angryMoodButton" destination="mKA-n8-r4h" id="7aY-Wi-DLl"/>
+                        <outlet property="badMoodButton" destination="Qiy-G0-RFs" id="KNe-DN-jTU"/>
+                        <outlet property="expressionlessMoodButton" destination="iiQ-eb-3ss" id="tTj-ud-zqi"/>
+                        <outlet property="goodMoodButton" destination="wPE-gH-JZ6" id="FwR-Ki-vRP"/>
+                        <outlet property="happyMoodButton" destination="Q46-pe-aB0" id="va0-Z2-FRh"/>
                         <outlet property="nextButton" destination="NQM-gl-oSw" id="Dnm-cS-571"/>
                     </connections>
                 </viewController>

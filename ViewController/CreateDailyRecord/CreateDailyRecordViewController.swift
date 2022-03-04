@@ -13,10 +13,15 @@ class CreateDailyRecordViewController: UIViewController {
     // MARK: - Outlet
     
     @IBOutlet weak var nextButton: UIButton!
+    @IBOutlet weak var angryMoodButton: MoodButton!
+    @IBOutlet weak var badMoodButton: MoodButton!
+    @IBOutlet weak var expressionlessMoodButton: MoodButton!
+    @IBOutlet weak var goodMoodButton: MoodButton!
+    @IBOutlet weak var happyMoodButton: MoodButton!
     
     // MARK: - Property
     
-    var isMoodSelected: Bool = false
+    var selectedMood: Mood?
     
     // MARK: - Deinit
     

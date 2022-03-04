@@ -8,8 +8,8 @@
 import UIKit
 
 protocol MoodButtonDelegate: AnyObject {
-    func didSelect()
-    func didDeselect()
+    func didSelect(of mood: Mood)
+    func didDeselect(of mood: Mood)
 }
 
 class MoodButton: UIImageView {

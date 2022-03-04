@@ -28,6 +28,7 @@ class CreateDailyRecordViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.generalSetUp()
     }
     
     private func generalSetUp() {

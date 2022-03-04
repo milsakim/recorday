@@ -13,6 +13,7 @@ class CreateDailyRecordViewController: UIViewController {
     // MARK: - Outlet
     
     @IBOutlet weak var nextButton: UIButton!
+    
     @IBOutlet weak var angryMoodButton: MoodButton!
     @IBOutlet weak var badMoodButton: MoodButton!
     @IBOutlet weak var expressionlessMoodButton: MoodButton!
@@ -38,7 +39,6 @@ class CreateDailyRecordViewController: UIViewController {
     }
     
     private func setUpMoodButtons() {
-        
     }
     
     @IBAction func cancelButtonTapped(_ sender: Any) {

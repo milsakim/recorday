@@ -80,6 +80,7 @@ class RecordListViewController: UIViewController {
         print("--- \(#function) ---")
         DispatchQueue.main.async {
 //            let newFetchResult = self.fetchDailyRecords()
+            print("--- \(#function): main queue ---")
             if let newFetchResult: [DailyRecord] = AppDelegate.sharedAppDelegate.coreDataManager.fetchDailyRecords() {
                 self.dailyRecords = newFetchResult
                 self.tableView.reloadData()

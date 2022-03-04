@@ -63,9 +63,9 @@ class MoodButton: UIImageView {
         }
     }
     
-    // MARK: -
+    // MARK: - Updating Image
     
-    func updateImage() {
+    private func updateImage() {
         if isSelected {
             guard let selectedImage = selectedImage else {
                 return

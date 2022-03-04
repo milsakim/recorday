@@ -1,5 +1,5 @@
 //
-//  CreateDailyRecordViewController.swift
+//  MoodSelectionViewController.swift
 //  Recorday
 //
 //  Created by HyeJee Kim on 2022/03/02.
@@ -8,7 +8,7 @@
 import UIKit
 import CoreData
 
-class CreateDailyRecordViewController: UIViewController {
+class MoodSelectionViewController: UIViewController {
     
     // MARK: - Outlet
     
@@ -95,7 +95,7 @@ class CreateDailyRecordViewController: UIViewController {
 
 // MARK: - Mood Button Delegate
 
-extension CreateDailyRecordViewController: MoodButtonDelegate {
+extension MoodSelectionViewController: MoodButtonDelegate {
     
     func didSelect(of mood: Mood) {
         print("--- \(#function): \(mood) ---")

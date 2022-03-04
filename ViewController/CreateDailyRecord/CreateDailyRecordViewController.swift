@@ -37,6 +37,10 @@ class CreateDailyRecordViewController: UIViewController {
         nextButton.isEnabled = false
     }
     
+    private func setUpMoodButtons() {
+        
+    }
+    
     @IBAction func cancelButtonTapped(_ sender: Any) {
         guard let navigationController = self.navigationController else {
             return

@@ -8,5 +8,9 @@
 import Foundation
 
 enum Mood {
-    
+    case angry
+    case bad
+    case expressionless
+    case good
+    case happy
 }

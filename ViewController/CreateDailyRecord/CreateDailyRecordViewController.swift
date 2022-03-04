@@ -39,6 +39,12 @@ class CreateDailyRecordViewController: UIViewController {
     }
     
     private func setUpMoodButtons() {
+        // set mood
+        angryMoodButton.mood = .angry
+        badMoodButton.mood = .bad
+        expressionlessMoodButton.mood = .expressionless
+        goodMoodButton.mood = .good
+        happyMoodButton.mood = .happy
     }
     
     @IBAction func cancelButtonTapped(_ sender: Any) {

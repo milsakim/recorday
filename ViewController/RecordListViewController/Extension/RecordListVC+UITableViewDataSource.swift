@@ -24,10 +24,12 @@ extension RecordListViewController: UITableViewDataSource {
             dateFormatter.dateFormat = "yyyy-MM-dd 'at' HH:mm"
             cell.timeLabel.text = dateFormatter.string(from: date)
             
-            if let activities = self.dailyRecords[indexPath.row].activities?.compactMap({ $0 as? Activity}) {
+            if let activities = self.dailyRecords[indexPath.row].activities?.compactMap({ $0 as? Activity }) {
                 cell.activityTitles = activities.compactMap({ $0.title })
+                cell.activityCollectionView.reloadData()
             }
            
+            print("--- collection view content size: \(cell.activityCollectionView.contentSize) ---")
             return cell
         }
         

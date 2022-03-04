@@ -24,6 +24,8 @@ class MoodButton: UIImageView {
     
     var delegate: MoodButtonDelegate?
     
+    var mood: Mood?
+    
     @IBInspectable var normalImage: UIImage?
     @IBInspectable var selectedImage: UIImage?
     
@@ -62,21 +64,27 @@ class MoodButton: UIImageView {
     override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
         print("--- \(#function) ---")
         
-        defer {
-            self.updateImage()
-        }
-        
         if self.isSelected {
             self.isSelected = false
+            
+            if let mood = mood {
+                delegate?.didDeselect(of: mood)
+            }
         }
         else {
             self.isSelected = true
+            
+            if let mood = mood {
+                delegate?.didSelect(of: mood)
+            }
         }
     }
     
     // MARK: - Updating Image
     
     private func updateImage() {
+        print("--- \(#function) ---")
+        
         if isSelected {
             guard let selectedImage = selectedImage else {
                 return

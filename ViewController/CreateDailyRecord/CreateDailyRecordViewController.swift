@@ -16,14 +16,10 @@ class CreateDailyRecordViewController: UIViewController {
     
     // MARK: - Property
     
-    var persistentContainer: NSPersistentContainer?
     
     // MARK: - Deinit
     
     deinit {
-        if persistentContainer != nil {
-            persistentContainer = nil
-        }
     }
 
     override func viewDidLoad() {

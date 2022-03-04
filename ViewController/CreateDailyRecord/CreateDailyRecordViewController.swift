@@ -32,7 +32,7 @@ class CreateDailyRecordViewController: UIViewController {
     }
     
     private func generalSetUp() {
-        
+        nextButton.isEnabled = false
     }
     
     @IBAction func cancelButtonTapped(_ sender: Any) {

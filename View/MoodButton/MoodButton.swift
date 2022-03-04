@@ -21,6 +21,8 @@ class MoodButton: UIImageView {
         }
     }
     
+    var delegate: MoodButtonDelegate?
+    
     @IBInspectable var normalImage: UIImage?
     @IBInspectable var selectedImage: UIImage?
     
@@ -45,6 +47,10 @@ class MoodButton: UIImageView {
         
         if self.image != nil {
             self.image = nil
+        }
+        
+        if delegate != nil {
+            delegate = nil
         }
         
         print("--- \(#function) ---")

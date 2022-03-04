@@ -81,4 +81,14 @@ class CreateDailyRecordViewController: UIViewController {
         }
     }
 
+    @IBAction func cancelButtonTapped(_ sender: Any) {
+        guard let navigationController = self.navigationController else {
+            return
+        }
+        
+        if let presentingViewController = navigationController.presentingViewController {
+            presentingViewController.dismiss(animated: true, completion: nil)
+        }
+    }
+    
 }

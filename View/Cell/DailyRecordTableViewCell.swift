@@ -13,11 +13,12 @@ class DailyRecordTableViewCell: UITableViewCell {
 
     @IBOutlet weak var moodLabelBackgroundView: UIView!
     @IBOutlet weak var timeLabel: UILabel!
-    @IBOutlet weak var activitiesLabel: UILabel!
+    @IBOutlet weak var notes: UILabel!
     @IBOutlet weak var activitiesLabelBackgroundView: UIView!
     @IBOutlet weak var moodLabel: UILabel!
     @IBOutlet weak var topContinuousLine: UIView!
     @IBOutlet weak var bottonContinuousLine: UIView!
+    
     // MARK: - Property
     
     var activityTitles: [String] = [] {
@@ -32,7 +33,7 @@ class DailyRecordTableViewCell: UITableViewCell {
                 }
             }
             
-            activitiesLabel.text = activitiesString
+            notes.text = activitiesString
         }
     }
     
@@ -50,11 +51,18 @@ class DailyRecordTableViewCell: UITableViewCell {
     override func prepareForReuse() {
         super.prepareForReuse()
         self.activityTitles.removeAll()
+        self.topContinuousLine.isHidden = false
+        self.topContinuousLine.isHidden = false
     }
     
 }
 
 extension DailyRecordTableViewCell {
+    
+    public enum CellType {
+        case first
+        case last
+    }
     
     public func setMood(of id: String?) {
         if let id: String = id, let mood: Mood = Mood.moods.filter({ $0.id == id }).first {
@@ -64,6 +72,15 @@ extension DailyRecordTableViewCell {
         else {
             self.moodLabel.text = Mood.moods[Mood.moods.count - 1].emoji
             self.moodLabelBackgroundView.backgroundColor = Mood.moods[Mood.moods.count - 1].color
+        }
+    }
+    
+    public func setContinuousLines(as type: CellType) {
+        switch type {
+        case .first:
+            self.topContinuousLine.isHidden = true
+        case .last:
+            self.bottonContinuousLine.isHidden = true
         }
     }
     

@@ -42,6 +42,13 @@ extension RecordListViewController: UITableViewDataSource {
         
         cell.setMood(of: dailyRecord.mood)
         
+        if indexPath.row == 0 {
+            cell.setContinuousLines(as: .first)
+        }
+        else if let sections = fetchController.sections, indexPath.row == sections[indexPath.section].numberOfObjects - 1 {
+            cell.setContinuousLines(as: .last)
+        }
+        
         // set up date & time
         let timeStamp: TimeInterval = fetchController.object(at: indexPath).date + fetchController.object(at: indexPath).time
         cell.timeLabel.text = self.dateFormatter.string(from: Date(timeIntervalSince1970: timeStamp))

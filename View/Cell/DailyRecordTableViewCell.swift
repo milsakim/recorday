@@ -57,13 +57,14 @@ class DailyRecordTableViewCell: UITableViewCell {
 extension DailyRecordTableViewCell {
     
     public func setMood(of id: String?) {
-        guard let id: String = id,
-              let mood: Mood = Mood.moods.filter({ $0.id == id }).first else {
-            return
+        if let id: String = id, let mood: Mood = Mood.moods.filter({ $0.id == id }).first {
+            self.moodLabel.text = mood.emoji
+            self.moodLabelBackgroundView.backgroundColor = mood.color
         }
-        
-        self.moodLabel.text = mood.emoji
-        self.moodLabelBackgroundView.backgroundColor = mood.color
+        else {
+            self.moodLabel.text = Mood.moods[Mood.moods.count - 1].emoji
+            self.moodLabelBackgroundView.backgroundColor = Mood.moods[Mood.moods.count - 1].color
+        }
     }
     
 }

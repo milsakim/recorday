@@ -22,7 +22,7 @@ class MoodButton: UIImageView {
         }
     }
     
-    var delegate: MoodButtonDelegate?
+    weak var delegate: MoodButtonDelegate?
     
     var mood: Mood?
     
@@ -33,7 +33,6 @@ class MoodButton: UIImageView {
     
     required init?(coder: NSCoder) {
         super.init(coder: coder)
-        print("--- \(#function) ---")
         self.isUserInteractionEnabled = true
     }
     
@@ -56,7 +55,7 @@ class MoodButton: UIImageView {
             delegate = nil
         }
         
-        print("--- \(#function) ---")
+        print("--- \(#function) MoodButton ---")
     }
 
     // MARK: - Responding to Touch Events

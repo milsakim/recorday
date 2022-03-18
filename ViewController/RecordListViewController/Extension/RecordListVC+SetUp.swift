@@ -11,6 +11,8 @@ extension RecordListViewController {
     
     func setUpTableView() {
         self.tableView.dataSource = self
+        tableView.rowHeight = UITableView.automaticDimension
+        tableView.estimatedRowHeight = 300
     }
     
 }

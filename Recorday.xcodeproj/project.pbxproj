@@ -23,14 +23,30 @@
 		16B91C5827CD7988005C05A8 /* RecordListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16B91C5727CD7988005C05A8 /* RecordListViewController.swift */; };
 		16B91C5F27CD847B005C05A8 /* RecordListViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 16B91C5E27CD847B005C05A8 /* RecordListViewController.storyboard */; };
 		16B91C6427CD9C50005C05A8 /* TagListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16B91C6327CD9C50005C05A8 /* TagListView.swift */; };
-		16BF2DF827D119E700242B07 /* DailyRecord+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16BF2DF627D119E700242B07 /* DailyRecord+CoreDataClass.swift */; };
-		16BF2DF927D119E700242B07 /* DailyRecord+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16BF2DF727D119E700242B07 /* DailyRecord+CoreDataProperties.swift */; };
 		16BF2DFC27D11BB600242B07 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16BF2DFB27D11BB600242B07 /* CoreDataManager.swift */; };
 		16BF2DFF27D1852400242B07 /* ActivityCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16BF2DFE27D1852400242B07 /* ActivityCollectionViewCell.swift */; };
 		16BF2E0227D1C3C700242B07 /* MoodButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16BF2E0127D1C3C700242B07 /* MoodButton.swift */; };
 		16BF2E0427D1D0C300242B07 /* Mood.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16BF2E0327D1D0C300242B07 /* Mood.swift */; };
 		16BF2E0827D1EEE200242B07 /* SelectingActivitiesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16BF2E0727D1EEE200242B07 /* SelectingActivitiesViewController.swift */; };
+		16CE95FB27D8BC9900897FFA /* DailyRecord+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16CE95F927D8BC9900897FFA /* DailyRecord+CoreDataClass.swift */; };
+		16CE95FC27D8BC9900897FFA /* DailyRecord+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16CE95FA27D8BC9900897FFA /* DailyRecord+CoreDataProperties.swift */; };
+		16DD0DF627D5EDD800F26FE7 /* SelectingActivitiesVC+Setup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16DD0DF527D5EDD800F26FE7 /* SelectingActivitiesVC+Setup.swift */; };
+		16DD0E1C27D5F86A00F26FE7 /* SelectingActiviesVC+Action.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16DD0E1B27D5F86A00F26FE7 /* SelectingActiviesVC+Action.swift */; };
+		16DD0E1E27D6013A00F26FE7 /* MoodSelectionVC+Setup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16DD0E1D27D6013A00F26FE7 /* MoodSelectionVC+Setup.swift */; };
+		16DD0E2127D602A600F26FE7 /* MoodSelectionVC+Action.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16DD0E2027D602A600F26FE7 /* MoodSelectionVC+Action.swift */; };
+		16DD0E2627D624E500F26FE7 /* SelectingActivitiesVC+TableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16DD0E2527D624E500F26FE7 /* SelectingActivitiesVC+TableViewDataSource.swift */; };
+		16DD0E2827D63F2100F26FE7 /* RecordListVC+Action.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16DD0E2727D63F2100F26FE7 /* RecordListVC+Action.swift */; };
 		16E44BAC27CDEE9B00EAD05B /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16E44BAB27CDEE9B00EAD05B /* CloudKit.framework */; };
+		5646275227E0681200BEA213 /* MoodCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5646275027E0681200BEA213 /* MoodCollectionViewCell.swift */; };
+		5646275327E0681200BEA213 /* MoodCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5646275127E0681200BEA213 /* MoodCollectionViewCell.xib */; };
+		5646275627E06A8700BEA213 /* UIColor+hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5646275527E06A8700BEA213 /* UIColor+hex.swift */; };
+		5646275827E06BD700BEA213 /* MoodSelectionCollectionViewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5646275727E06BD700BEA213 /* MoodSelectionCollectionViewLayout.swift */; };
+		5646275E27E07A4800BEA213 /* ActivityInputTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5646275C27E07A4800BEA213 /* ActivityInputTableViewCell.swift */; };
+		5646275F27E07A4800BEA213 /* ActivityInputTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5646275D27E07A4800BEA213 /* ActivityInputTableViewCell.xib */; };
+		567D000727D9DB3300B4EDE3 /* RecordListVC+FetchedResultsControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 567D000627D9DB3300B4EDE3 /* RecordListVC+FetchedResultsControllerDelegate.swift */; };
+		56B7CC0927E1C5150083B541 /* ActivityInputViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56B7CC0827E1C5150083B541 /* ActivityInputViewController.swift */; };
+		56BD4A9227DA38290050055C /* TagCollectionViewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56BD4A9127DA38290050055C /* TagCollectionViewLayout.swift */; };
+		56D2EDBC27DBA09800A83EA0 /* MoodSelectionVC+CollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56D2EDBB27DBA09800A83EA0 /* MoodSelectionVC+CollectionView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,15 +68,32 @@
 		16B91C5727CD7988005C05A8 /* RecordListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordListViewController.swift; sourceTree = "<group>"; };
 		16B91C5E27CD847B005C05A8 /* RecordListViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = RecordListViewController.storyboard; sourceTree = "<group>"; };
 		16B91C6327CD9C50005C05A8 /* TagListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagListView.swift; sourceTree = "<group>"; };
-		16BF2DF627D119E700242B07 /* DailyRecord+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DailyRecord+CoreDataClass.swift"; sourceTree = "<group>"; };
-		16BF2DF727D119E700242B07 /* DailyRecord+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DailyRecord+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		16BF2DFB27D11BB600242B07 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
 		16BF2DFE27D1852400242B07 /* ActivityCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityCollectionViewCell.swift; sourceTree = "<group>"; };
 		16BF2E0127D1C3C700242B07 /* MoodButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoodButton.swift; sourceTree = "<group>"; };
 		16BF2E0327D1D0C300242B07 /* Mood.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mood.swift; sourceTree = "<group>"; };
 		16BF2E0727D1EEE200242B07 /* SelectingActivitiesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectingActivitiesViewController.swift; sourceTree = "<group>"; };
+		16CE95F927D8BC9900897FFA /* DailyRecord+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DailyRecord+CoreDataClass.swift"; sourceTree = "<group>"; };
+		16CE95FA27D8BC9900897FFA /* DailyRecord+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DailyRecord+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		16D6A45F27D77BA4004BE58E /* Model 2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "Model 2.xcdatamodel"; sourceTree = "<group>"; };
+		16DD0DF527D5EDD800F26FE7 /* SelectingActivitiesVC+Setup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SelectingActivitiesVC+Setup.swift"; sourceTree = "<group>"; };
+		16DD0E1B27D5F86A00F26FE7 /* SelectingActiviesVC+Action.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SelectingActiviesVC+Action.swift"; sourceTree = "<group>"; };
+		16DD0E1D27D6013A00F26FE7 /* MoodSelectionVC+Setup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MoodSelectionVC+Setup.swift"; sourceTree = "<group>"; };
+		16DD0E2027D602A600F26FE7 /* MoodSelectionVC+Action.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MoodSelectionVC+Action.swift"; sourceTree = "<group>"; };
+		16DD0E2527D624E500F26FE7 /* SelectingActivitiesVC+TableViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SelectingActivitiesVC+TableViewDataSource.swift"; sourceTree = "<group>"; };
+		16DD0E2727D63F2100F26FE7 /* RecordListVC+Action.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RecordListVC+Action.swift"; sourceTree = "<group>"; };
 		16E44BA927CDC00400EAD05B /* Recorday.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Recorday.entitlements; sourceTree = "<group>"; };
 		16E44BAB27CDEE9B00EAD05B /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
+		5646275027E0681200BEA213 /* MoodCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoodCollectionViewCell.swift; sourceTree = "<group>"; };
+		5646275127E0681200BEA213 /* MoodCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MoodCollectionViewCell.xib; sourceTree = "<group>"; };
+		5646275527E06A8700BEA213 /* UIColor+hex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+hex.swift"; sourceTree = "<group>"; };
+		5646275727E06BD700BEA213 /* MoodSelectionCollectionViewLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoodSelectionCollectionViewLayout.swift; sourceTree = "<group>"; };
+		5646275C27E07A4800BEA213 /* ActivityInputTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityInputTableViewCell.swift; sourceTree = "<group>"; };
+		5646275D27E07A4800BEA213 /* ActivityInputTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ActivityInputTableViewCell.xib; sourceTree = "<group>"; };
+		567D000627D9DB3300B4EDE3 /* RecordListVC+FetchedResultsControllerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RecordListVC+FetchedResultsControllerDelegate.swift"; sourceTree = "<group>"; };
+		56B7CC0827E1C5150083B541 /* ActivityInputViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityInputViewController.swift; sourceTree = "<group>"; };
+		56BD4A9127DA38290050055C /* TagCollectionViewLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagCollectionViewLayout.swift; sourceTree = "<group>"; };
+		56D2EDBB27DBA09800A83EA0 /* MoodSelectionVC+CollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MoodSelectionVC+CollectionView.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,19 +108,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		1629522127CF5B5300E599E4 /* CreateDailyRecord */ = {
+		1629522127CF5B5300E599E4 /* MoodSelectionViewController */ = {
 			isa = PBXGroup;
 			children = (
 				1629522927CF63AB00E599E4 /* Extension */,
 				1629522227CF5C3E00E599E4 /* MoodSelectionViewController.swift */,
-				1629522427CF5E0D00E599E4 /* CreatingDailyRecord.storyboard */,
 			);
-			path = CreateDailyRecord;
+			path = MoodSelectionViewController;
 			sourceTree = "<group>";
 		};
 		1629522927CF63AB00E599E4 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
+				16DD0E1D27D6013A00F26FE7 /* MoodSelectionVC+Setup.swift */,
+				16DD0E2027D602A600F26FE7 /* MoodSelectionVC+Action.swift */,
+				56D2EDBB27DBA09800A83EA0 /* MoodSelectionVC+CollectionView.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -97,6 +132,8 @@
 			children = (
 				1629526F27D02A9900E599E4 /* RecordListVC+UITableViewDataSource.swift */,
 				1629527227D02BC000E599E4 /* RecordListVC+SetUp.swift */,
+				16DD0E2727D63F2100F26FE7 /* RecordListVC+Action.swift */,
+				567D000627D9DB3300B4EDE3 /* RecordListVC+FetchedResultsControllerDelegate.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -104,10 +141,7 @@
 		1629525C27CFA53100E599E4 /* CoreData */ = {
 			isa = PBXGroup;
 			children = (
-				16BF2DF627D119E700242B07 /* DailyRecord+CoreDataClass.swift */,
-				16BF2DF727D119E700242B07 /* DailyRecord+CoreDataProperties.swift */,
-				1629526827CFBF4300E599E4 /* Activity+CoreDataClass.swift */,
-				1629526927CFBF4300E599E4 /* Activity+CoreDataProperties.swift */,
+				567D000527D9D7AB00B4EDE3 /* ManagedObject */,
 				1629525627CF9F6D00E599E4 /* Model.xcdatamodeld */,
 				16BF2DFB27D11BB600242B07 /* CoreDataManager.swift */,
 			);
@@ -122,6 +156,17 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		165B11B727D5EBBD00E29193 /* CreatingDailyRecord */ = {
+			isa = PBXGroup;
+			children = (
+				1629522127CF5B5300E599E4 /* MoodSelectionViewController */,
+				16BF2E0627D1EE6200242B07 /* SelectingActivitiesViewController */,
+				56B7CC0727E1C4BF0083B541 /* ActivityInputViewController */,
+				1629522427CF5E0D00E599E4 /* CreatingDailyRecord.storyboard */,
+			);
+			path = CreatingDailyRecord;
+			sourceTree = "<group>";
+		};
 		16B91C3327CD6FB0005C05A8 = {
 			isa = PBXGroup;
 			children = (
@@ -130,6 +175,7 @@
 				16B91C6027CD88D1005C05A8 /* View */,
 				1629526527CFA6D500E599E4 /* Model */,
 				1629525C27CFA53100E599E4 /* CoreData */,
+				5646275427E06A6600BEA213 /* Global */,
 				16B91C3E27CD6FB0005C05A8 /* Recorday */,
 				16B91C3D27CD6FB0005C05A8 /* Products */,
 				16E44BAA27CDEE9B00EAD05B /* Frameworks */,
@@ -178,10 +224,10 @@
 		16B91C6027CD88D1005C05A8 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				56BD4A8F27DA37E60050055C /* Layout */,
+				56BD4A9027DA37F10050055C /* Cell */,
 				16BF2E0027D1C3AD00242B07 /* MoodButton */,
 				16B91C6227CD9C31005C05A8 /* TagListView */,
-				1629526C27D0291E00E599E4 /* DailyRecordTableViewCell.swift */,
-				16BF2DFE27D1852400242B07 /* ActivityCollectionViewCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -189,9 +235,8 @@
 		16B91C6127CD9C11005C05A8 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
-				16BF2E0627D1EE6200242B07 /* SelectingActivitiesViewController */,
 				16B91C5427CD793D005C05A8 /* RecordListViewController */,
-				1629522127CF5B5300E599E4 /* CreateDailyRecord */,
+				165B11B727D5EBBD00E29193 /* CreatingDailyRecord */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -215,9 +260,20 @@
 		16BF2E0627D1EE6200242B07 /* SelectingActivitiesViewController */ = {
 			isa = PBXGroup;
 			children = (
+				16DD0DF427D5EDC100F26FE7 /* Extension */,
 				16BF2E0727D1EEE200242B07 /* SelectingActivitiesViewController.swift */,
 			);
 			path = SelectingActivitiesViewController;
+			sourceTree = "<group>";
+		};
+		16DD0DF427D5EDC100F26FE7 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				16DD0DF527D5EDD800F26FE7 /* SelectingActivitiesVC+Setup.swift */,
+				16DD0E1B27D5F86A00F26FE7 /* SelectingActiviesVC+Action.swift */,
+				16DD0E2527D624E500F26FE7 /* SelectingActivitiesVC+TableViewDataSource.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 		16E44BAA27CDEE9B00EAD05B /* Frameworks */ = {
@@ -226,6 +282,71 @@
 				16E44BAB27CDEE9B00EAD05B /* CloudKit.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5646274F27E067F700BEA213 /* MoodCollectionViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				5646275027E0681200BEA213 /* MoodCollectionViewCell.swift */,
+				5646275127E0681200BEA213 /* MoodCollectionViewCell.xib */,
+			);
+			path = MoodCollectionViewCell;
+			sourceTree = "<group>";
+		};
+		5646275427E06A6600BEA213 /* Global */ = {
+			isa = PBXGroup;
+			children = (
+				5646275527E06A8700BEA213 /* UIColor+hex.swift */,
+			);
+			path = Global;
+			sourceTree = "<group>";
+		};
+		5646275927E079D900BEA213 /* ActivityInputTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				5646275C27E07A4800BEA213 /* ActivityInputTableViewCell.swift */,
+				5646275D27E07A4800BEA213 /* ActivityInputTableViewCell.xib */,
+			);
+			path = ActivityInputTableViewCell;
+			sourceTree = "<group>";
+		};
+		567D000527D9D7AB00B4EDE3 /* ManagedObject */ = {
+			isa = PBXGroup;
+			children = (
+				16CE95F927D8BC9900897FFA /* DailyRecord+CoreDataClass.swift */,
+				16CE95FA27D8BC9900897FFA /* DailyRecord+CoreDataProperties.swift */,
+				1629526827CFBF4300E599E4 /* Activity+CoreDataClass.swift */,
+				1629526927CFBF4300E599E4 /* Activity+CoreDataProperties.swift */,
+			);
+			path = ManagedObject;
+			sourceTree = "<group>";
+		};
+		56B7CC0727E1C4BF0083B541 /* ActivityInputViewController */ = {
+			isa = PBXGroup;
+			children = (
+				56B7CC0827E1C5150083B541 /* ActivityInputViewController.swift */,
+			);
+			path = ActivityInputViewController;
+			sourceTree = "<group>";
+		};
+		56BD4A8F27DA37E60050055C /* Layout */ = {
+			isa = PBXGroup;
+			children = (
+				56BD4A9127DA38290050055C /* TagCollectionViewLayout.swift */,
+				5646275727E06BD700BEA213 /* MoodSelectionCollectionViewLayout.swift */,
+			);
+			path = Layout;
+			sourceTree = "<group>";
+		};
+		56BD4A9027DA37F10050055C /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				5646275927E079D900BEA213 /* ActivityInputTableViewCell */,
+				5646274F27E067F700BEA213 /* MoodCollectionViewCell */,
+				1629526C27D0291E00E599E4 /* DailyRecordTableViewCell.swift */,
+				16BF2DFE27D1852400242B07 /* ActivityCollectionViewCell.swift */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -287,8 +408,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				16B91C5F27CD847B005C05A8 /* RecordListViewController.storyboard in Resources */,
+				5646275327E0681200BEA213 /* MoodCollectionViewCell.xib in Resources */,
 				16B91C4C27CD6FB2005C05A8 /* LaunchScreen.storyboard in Resources */,
 				1629522527CF5E0D00E599E4 /* CreatingDailyRecord.storyboard in Resources */,
+				5646275F27E07A4800BEA213 /* ActivityInputTableViewCell.xib in Resources */,
 				16B91C4927CD6FB2005C05A8 /* Assets.xcassets in Resources */,
 				16B91C4727CD6FB0005C05A8 /* Main.storyboard in Resources */,
 			);
@@ -301,22 +424,36 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				16BF2DF827D119E700242B07 /* DailyRecord+CoreDataClass.swift in Sources */,
+				16DD0E2827D63F2100F26FE7 /* RecordListVC+Action.swift in Sources */,
 				16B91C6427CD9C50005C05A8 /* TagListView.swift in Sources */,
 				1629526D27D0291E00E599E4 /* DailyRecordTableViewCell.swift in Sources */,
 				1629526B27CFBF4300E599E4 /* Activity+CoreDataProperties.swift in Sources */,
 				16BF2E0827D1EEE200242B07 /* SelectingActivitiesViewController.swift in Sources */,
 				1629522327CF5C3E00E599E4 /* MoodSelectionViewController.swift in Sources */,
+				567D000727D9DB3300B4EDE3 /* RecordListVC+FetchedResultsControllerDelegate.swift in Sources */,
+				16DD0E1C27D5F86A00F26FE7 /* SelectingActiviesVC+Action.swift in Sources */,
+				56B7CC0927E1C5150083B541 /* ActivityInputViewController.swift in Sources */,
 				16BF2E0427D1D0C300242B07 /* Mood.swift in Sources */,
+				16DD0DF627D5EDD800F26FE7 /* SelectingActivitiesVC+Setup.swift in Sources */,
+				5646275227E0681200BEA213 /* MoodCollectionViewCell.swift in Sources */,
+				16CE95FB27D8BC9900897FFA /* DailyRecord+CoreDataClass.swift in Sources */,
+				56BD4A9227DA38290050055C /* TagCollectionViewLayout.swift in Sources */,
 				16BF2DFF27D1852400242B07 /* ActivityCollectionViewCell.swift in Sources */,
 				16BF2E0227D1C3C700242B07 /* MoodButton.swift in Sources */,
 				16B91C4027CD6FB0005C05A8 /* AppDelegate.swift in Sources */,
 				1629526A27CFBF4300E599E4 /* Activity+CoreDataClass.swift in Sources */,
-				16BF2DF927D119E700242B07 /* DailyRecord+CoreDataProperties.swift in Sources */,
+				16DD0E2627D624E500F26FE7 /* SelectingActivitiesVC+TableViewDataSource.swift in Sources */,
+				16DD0E1E27D6013A00F26FE7 /* MoodSelectionVC+Setup.swift in Sources */,
 				1629525827CF9F6D00E599E4 /* Model.xcdatamodeld in Sources */,
+				16DD0E2127D602A600F26FE7 /* MoodSelectionVC+Action.swift in Sources */,
 				16B91C5827CD7988005C05A8 /* RecordListViewController.swift in Sources */,
 				1629527027D02A9900E599E4 /* RecordListVC+UITableViewDataSource.swift in Sources */,
+				5646275E27E07A4800BEA213 /* ActivityInputTableViewCell.swift in Sources */,
+				56D2EDBC27DBA09800A83EA0 /* MoodSelectionVC+CollectionView.swift in Sources */,
+				16CE95FC27D8BC9900897FFA /* DailyRecord+CoreDataProperties.swift in Sources */,
 				16B91C4227CD6FB0005C05A8 /* SceneDelegate.swift in Sources */,
+				5646275827E06BD700BEA213 /* MoodSelectionCollectionViewLayout.swift in Sources */,
+				5646275627E06A8700BEA213 /* UIColor+hex.swift in Sources */,
 				16BF2DFC27D11BB600242B07 /* CoreDataManager.swift in Sources */,
 				1629527327D02BC000E599E4 /* RecordListVC+SetUp.swift in Sources */,
 			);
@@ -545,9 +682,10 @@
 		1629525627CF9F6D00E599E4 /* Model.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
+				16D6A45F27D77BA4004BE58E /* Model 2.xcdatamodel */,
 				1629525727CF9F6D00E599E4 /* Model.xcdatamodel */,
 			);
-			currentVersion = 1629525727CF9F6D00E599E4 /* Model.xcdatamodel */;
+			currentVersion = 16D6A45F27D77BA4004BE58E /* Model 2.xcdatamodel */;
 			path = Model.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;

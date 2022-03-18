@@ -10,21 +10,54 @@ import CoreData
 
 class RecordListViewController: UIViewController {
     
-    // MARK: - Property
-    
-    var dailyRecords: [DailyRecord] = []
-    
     // MARK: - Outlet
     
     @IBOutlet weak var tableView: UITableView!
     
+    // MARK: - Property
+    
+//    var dailyRecords: [DailyRecord] = []
+    
+    lazy var fetchedResultsController: NSFetchedResultsController<DailyRecord>? = {
+        let context = AppDelegate.sharedAppDelegate.coreDataManager.managedContext
+        let fetchRequest: NSFetchRequest = DailyRecord.fetchRequest()
+        fetchRequest.sortDescriptors = [NSSortDescriptor(key: #keyPath(DailyRecord.date), ascending: false), NSSortDescriptor(key: #keyPath(DailyRecord.time), ascending: false)]
+        
+        let fetchedResultsController: NSFetchedResultsController = NSFetchedResultsController(fetchRequest: fetchRequest, managedObjectContext: context, sectionNameKeyPath: #keyPath(DailyRecord.date), cacheName: nil)
+        fetchedResultsController.delegate = self
+        
+        do {
+            try fetchedResultsController.performFetch()
+        } catch  {
+            print("--- Fetched result")
+        }
+        
+        return fetchedResultsController
+    }()
+    
+    let dateFormatter: DateFormatter = {
+        let dateFormatter: DateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "HH:mm"
+        return dateFormatter
+    }()
+    
+    // MARK: - Initializer
+    
+    required init?(coder: NSCoder) {
+        super.init(coder: coder)
+        print("--- RecordListViewController \(#function) ---")
+        self.title = "Records"
+        self.tabBarItem = UITabBarItem(title: "Home", image: UIImage(systemName: "doc.on.doc"), selectedImage: UIImage(systemName: "doc.on.doc"))
+    }
+    
     // MARK: - Deinit
     
     deinit {
-        if !dailyRecords.isEmpty {
-            dailyRecords.removeAll()
-        }
-        print(#function)
+//        if !dailyRecords.isEmpty {
+//            dailyRecords.removeAll()
+//        }
+        
+        print("--- deinit RecordListViewController ---")
     }
     
     // MARK: - View Life Cycle
@@ -32,61 +65,20 @@ class RecordListViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         print(#function)
-        self.generalSetUp()
+        self.commonInit()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        print(#function)
+        self.fetchChanges()
     }
     
     // MARK: - Set Up RecordListViewController
     
-    func generalSetUp() {
+    func commonInit() {
         self.setUpTableView()
-        
-        if let fetchResult = AppDelegate.sharedAppDelegate.coreDataManager.fetchDailyRecords() {
-            self.dailyRecords = fetchResult
-        }
-
         NotificationCenter.default.addObserver(self, selector: #selector(fetchChanges), name: .NSPersistentStoreRemoteChange, object: AppDelegate.sharedAppDelegate.coreDataManager.persistentContainer.persistentStoreCoordinator)
-    }
-    
-    @IBAction func createDailyRecord(_ sender: Any) {
-        print(#function)
-        
-        let storyboard: UIStoryboard = UIStoryboard(name: "CreatingDailyRecord", bundle: .main)
-        
-        if let createDailyRecordVC: UINavigationController = storyboard.instantiateViewController(withIdentifier: "CreateDailyRecordNav") as? UINavigationController {
-            createDailyRecordVC.modalPresentationStyle = .fullScreen
-            self.present(createDailyRecordVC, animated: true, completion: nil)
-        }
-    }
-    
-    @IBAction func reloadDataButtonTapped(_ sender: Any) {
-        print("--- \(#function) ---")
-        
-        for dailyRecord in dailyRecords {
-            AppDelegate.sharedAppDelegate.coreDataManager.persistentContainer.viewContext.delete(dailyRecord)
-        }
-        
-        do {
-            try AppDelegate.sharedAppDelegate.coreDataManager.persistentContainer.viewContext.save()
-            dailyRecords = []
-            DispatchQueue.main.async {
-                self.tableView.reloadData()
-            }
-        }
-        catch {
-            print("--- Fail to delete ---")
-        }
-    }
-    
-    @objc func fetchChanges() {
-        print("--- \(#function) ---")
-        DispatchQueue.main.async {
-//            let newFetchResult = self.fetchDailyRecords()
-            print("--- \(#function): main queue ---")
-            if let newFetchResult: [DailyRecord] = AppDelegate.sharedAppDelegate.coreDataManager.fetchDailyRecords() {
-                self.dailyRecords = newFetchResult
-                self.tableView.reloadData()
-            }
-        }
     }
     
 }

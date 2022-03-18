@@ -43,13 +43,12 @@ extension CoreDataManager {
     func fetchDailyRecords() -> [DailyRecord]? {
         print("--- \(#function) ---")
         let fetchRequest: NSFetchRequest<DailyRecord> = DailyRecord.fetchRequest()
-        let sortDescriptor: NSSortDescriptor = NSSortDescriptor(key: "timeStamp", ascending: false)
-        fetchRequest.sortDescriptors = [sortDescriptor]
+        fetchRequest.sortDescriptors = [NSSortDescriptor(key: #keyPath(DailyRecord.date), ascending: false), NSSortDescriptor(key: #keyPath(DailyRecord.time), ascending: false)]
         
         do {
             let fetchResult: [DailyRecord] = try managedContext.fetch(fetchRequest)
             print("--- Fetch result count: \(fetchResult.count) ---")
-            print("--- Fetch result: \(fetchResult) ---")
+            print("--- Fetch result: \(fetchResult.compactMap({ $0.id?.uuidString }).joined(separator: ", ")) ---")
             return fetchResult
         }
         catch {

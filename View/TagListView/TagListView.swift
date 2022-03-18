@@ -17,7 +17,7 @@ class TagListView: UIView {
     // MARK: - Deinitialize
     
     deinit {
-        print(#function)
+        print("--- deinit TagListView ---")
     }
     
     override func draw(_ rect: CGRect) {

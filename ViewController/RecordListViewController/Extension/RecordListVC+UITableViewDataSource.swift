@@ -11,7 +11,7 @@ import CoreData
 extension RecordListViewController: UITableViewDataSource {
     
     func numberOfSections(in tableView: UITableView) -> Int {
-        print("--- \(#function) \(self.fetchedResultsController?.sections?.count) ---")
+        print("--- \(#function) ---")
         
         guard let fetchController = self.fetchedResultsController else {
             return 0
@@ -38,44 +38,16 @@ extension RecordListViewController: UITableViewDataSource {
             return UITableViewCell(style: .default, reuseIdentifier: nil)
         }
         
+        let dailyRecord: DailyRecord = fetchController.object(at: indexPath)
+        
+        cell.setMood(of: dailyRecord.mood)
+        
         // set up date & time
         let timeStamp: TimeInterval = fetchController.object(at: indexPath).date + fetchController.object(at: indexPath).time
         cell.timeLabel.text = self.dateFormatter.string(from: Date(timeIntervalSince1970: timeStamp))
         
         cell.activitiesLabelBackgroundView.layer.cornerRadius = 10.0
-
-        // set up mood image & mood titme
-        /*
-        if let moodInt: Int = Int(fetchController.object(at: indexPath).mood ?? "-1") {
-            switch Mood(rawValue: moodInt) {
-            case .angry:
-                cell.moodLabel.text = "😠"
-                cell.moodLabelBackgroundView.layer.cornerRadius = 25
-                cell.moodLabelBackgroundView.backgroundColor = UIColor(named: "angry-background")
-            case .bad:
-                cell.moodLabel.text = "🙁"
-                cell.moodLabelBackgroundView.layer.cornerRadius = 25
-                cell.moodLabelBackgroundView.backgroundColor = UIColor(named: "bad-background")
-            case .expressionless:
-                cell.moodLabel.text = "😕"
-                cell.moodLabelBackgroundView.layer.cornerRadius = 25
-                cell.moodLabelBackgroundView.backgroundColor = UIColor(named: "expressionless-background")
-            case .good:
-                cell.moodLabel.text = "🙂"
-                cell.moodLabelBackgroundView.layer.cornerRadius = 25
-                cell.moodLabelBackgroundView.backgroundColor = UIColor(named: "good-background")
-            case .happy:
-                cell.moodLabel.text = "😄"
-                cell.moodLabelBackgroundView.layer.cornerRadius = 25
-                cell.moodLabelBackgroundView.backgroundColor = UIColor(named: "happy-background")
-            default:
-                cell.moodLabel.text = "😎"
-                cell.moodLabelBackgroundView.layer.cornerRadius = 25
-                cell.moodLabelBackgroundView.layer.borderColor = UIColor(named: "angry-stroke")?.cgColor
-                cell.moodLabelBackgroundView.backgroundColor = UIColor(named: "angry-background")
-            }
-        }
-        */
+        
         
         // set up activities
         if let activities = fetchController.object(at: indexPath).activities?.compactMap({ $0 as? Activity }) {

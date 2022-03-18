@@ -7,24 +7,6 @@
 
 import UIKit
 
-/*
-enum Mood: Int, CaseIterable {
-    
-    static let angryEmoji: String = "mood-angry"
-    static let badEmoji: String = "mood-bad"
-    static let expressionlessEmoji: String = "mood-expressionless"
-    static let goodEmoji: String = "mood-good"
-    static let happyEmoji: String = "mood-happy"
-    
-    case angry = 0
-    case bad = 100
-    case expressionless = 200
-    case good = 300
-    case happy = 400
-    
-}
-*/
-
 struct Mood {
     
     static var moods: [Mood] = {

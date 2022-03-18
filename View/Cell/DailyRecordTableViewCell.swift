@@ -10,9 +10,7 @@ import UIKit
 class DailyRecordTableViewCell: UITableViewCell {
     
     // MARK: - Outlet
-    
-//    @IBOutlet weak var moodImageView: UIImageView!
-//    @IBOutlet weak var moodLabel: UILabel!
+
     @IBOutlet weak var moodLabelBackgroundView: UIView!
     @IBOutlet weak var timeLabel: UILabel!
     @IBOutlet weak var activitiesLabel: UILabel!
@@ -39,8 +37,8 @@ class DailyRecordTableViewCell: UITableViewCell {
     }
     
     override func awakeFromNib() {
-        print("--- \(#function) ---")
         super.awakeFromNib()
+        moodLabelBackgroundView.layer.cornerRadius = 25
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
@@ -53,5 +51,19 @@ class DailyRecordTableViewCell: UITableViewCell {
         super.prepareForReuse()
         self.activityTitles.removeAll()
     }
+    
+}
 
+extension DailyRecordTableViewCell {
+    
+    public func setMood(of id: String?) {
+        guard let id: String = id,
+              let mood: Mood = Mood.moods.filter({ $0.id == id }).first else {
+            return
+        }
+        
+        self.moodLabel.text = mood.emoji
+        self.moodLabelBackgroundView.backgroundColor = mood.color
+    }
+    
 }

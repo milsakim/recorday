@@ -16,8 +16,6 @@ class RecordListViewController: UIViewController {
     
     // MARK: - Property
     
-//    var dailyRecords: [DailyRecord] = []
-    
     lazy var fetchedResultsController: NSFetchedResultsController<DailyRecord>? = {
         let context = AppDelegate.sharedAppDelegate.coreDataManager.managedContext
         let fetchRequest: NSFetchRequest = DailyRecord.fetchRequest()
@@ -29,7 +27,7 @@ class RecordListViewController: UIViewController {
         do {
             try fetchedResultsController.performFetch()
         } catch  {
-            print("--- Fetched result")
+            print("--- Fetched result ---")
         }
         
         return fetchedResultsController
@@ -53,10 +51,6 @@ class RecordListViewController: UIViewController {
     // MARK: - Deinit
     
     deinit {
-//        if !dailyRecords.isEmpty {
-//            dailyRecords.removeAll()
-//        }
-        
         print("--- deinit RecordListViewController ---")
     }
     

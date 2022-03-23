@@ -12,8 +12,8 @@ class MoodSelectionViewController: UIViewController {
     // MARK: - Outlet
     
     @IBOutlet weak var nextButton: UIButton!
-    
     @IBOutlet weak var moodCollectionView: UICollectionView!
+    @IBOutlet weak var datePicker: UIDatePicker!
     
     // MARK: - Property
     
@@ -50,6 +50,7 @@ class MoodSelectionViewController: UIViewController {
         nextButton.isEnabled = false
         setupNaviation()
         setupCollectionView()
+        setupDatePicker()
         createDailyRecord()
     }
     

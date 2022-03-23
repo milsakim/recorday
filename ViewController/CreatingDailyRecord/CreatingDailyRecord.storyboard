@@ -64,6 +64,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="WBb-Tw-6eL"/>
                     <connections>
+                        <outlet property="datePicker" destination="Fha-A5-oYz" id="pf5-WD-PEh"/>
                         <outlet property="moodCollectionView" destination="cGN-O4-Gqz" id="iY9-Cq-8GT"/>
                         <outlet property="nextButton" destination="NQM-gl-oSw" id="Dnm-cS-571"/>
                     </connections>

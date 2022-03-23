@@ -34,6 +34,10 @@ extension MoodSelectionViewController {
         moodCollectionView.delegate = self
         moodCollectionView.register(UINib(nibName: "MoodCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: MoodCollectionViewCell.resueID)
     }
+    
+    func setupDatePicker() {
+        datePicker.maximumDate = Date()
+    }
 
     func createDailyRecord() {
         if self.dailyRecord == nil {

@@ -24,18 +24,10 @@ extension SelectingActivitiesViewController {
     @IBAction func saveButtonTapped(_ sender: Any) {
         print("--- \(#function) ---")
         
-//        self.dailyRecord?.timeStamp = Date().timeIntervalSince1970
-        
-        let currentDate: Date = Date()
-        let dateFormatter: DateFormatter = DateFormatter()
-        dateFormatter.dateFormat = "yyyy-MM-dd"
-        let dateString: String = dateFormatter.string(from: currentDate)
-        
-        if let dateTimeStamp: TimeInterval = dateFormatter.date(from: dateString)?.timeIntervalSince1970 {
-            self.dailyRecord?.date = dateTimeStamp
-            self.dailyRecord?.time = currentDate.timeIntervalSince1970 - dateTimeStamp
+        guard let dailyRecord = self.dailyRecord else {
+            return
         }
-        
+
         if let activityInputCell: ActivityInputTableViewCell = tableView.cellForRow(at: IndexPath(row: 0, section: 0)) as? ActivityInputTableViewCell {
             let activityTitles: [String] = activityInputCell.activityInputTextView.text.split(separator: " ").map({ String($0) })
             

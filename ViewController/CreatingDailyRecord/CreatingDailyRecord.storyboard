@@ -21,6 +21,9 @@
                                 <subviews>
                                     <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" style="compact" translatesAutoresizingMaskIntoConstraints="NO" id="Fha-A5-oYz">
                                         <rect key="frame" x="0.0" y="0.0" width="350" height="31"/>
+                                        <connections>
+                                            <action selector="datePickerValueChanged:" destination="Y6W-OH-hqX" eventType="valueChanged" id="DVC-v6-q0G"/>
+                                        </connections>
                                     </datePicker>
                                     <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="cGN-O4-Gqz">
                                         <rect key="frame" x="0.0" y="111" width="350" height="533"/>

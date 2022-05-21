@@ -17,7 +17,28 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // If using a storyboard, the `window` property will automatically be initialized and attached to the scene.
         // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
         print(#function)
-        guard let _ = (scene as? UIWindowScene) else { return }
+        guard let windowScene = (scene as? UIWindowScene) else { return }
+        
+        self.window = UIWindow(windowScene: windowScene)
+        
+        if !UserDefaults.standard.bool(forKey: UserDefaultsKey.isLaunchedBefore) {
+            // on-boarding screen 띄우기
+            let storyboard: UIStoryboard = UIStoryboard(name: "OnBoardingViewController", bundle: .main)
+            
+            if let onboardingListVC: OnBoardingViewController = storyboard.instantiateViewController(withIdentifier: OnBoardingViewController.reuseID) as? OnBoardingViewController {
+                self.window?.rootViewController = onboardingListVC
+            }
+
+            // UserDefaultsKey.isLaunchedBefore를 true로 바꾸기
+        }
+        else {
+            let storyboard: UIStoryboard = UIStoryboard(name: "RecordListViewController", bundle: .main)
+            if let recordListVC: RecordListViewController = storyboard.instantiateViewController(withIdentifier: RecordListViewController.storyboardID) as? RecordListViewController {
+                self.window?.rootViewController = UINavigationController(rootViewController: recordListVC)
+            }
+        }
+        
+        self.window?.makeKeyAndVisible()
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {

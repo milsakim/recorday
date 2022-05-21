@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="20086" systemVersion="21E258" minimumToolsVersion="Automatic" sourceLanguage="Swift" usedWithCloudKit="YES" userDefinedModelVersionIdentifier="">
+    <entity name="DailyRecord" representedClassName="DailyRecord" syncable="YES">
+        <attribute name="id" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="mood" optional="YES" attributeType="String"/>
+        <attribute name="note" optional="YES" attributeType="String"/>
+        <attribute name="timestamp" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <relationship name="day" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Day" inverseName="dailyRecords" inverseEntity="Day"/>
+        <relationship name="tags" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Tag" inverseName="dailyRecords" inverseEntity="Tag"/>
+    </entity>
+    <entity name="Day" representedClassName="Day" syncable="YES">
+        <attribute name="timestamp" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="weatherIconID" optional="YES" attributeType="String"/>
+        <attribute name="weatherID" optional="YES" attributeType="String"/>
+        <relationship name="dailyRecords" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="DailyRecord" inverseName="day" inverseEntity="DailyRecord"/>
+    </entity>
+    <entity name="Tag" representedClassName="Tag" syncable="YES">
+        <attribute name="id" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="title" optional="YES" attributeType="String"/>
+        <relationship name="dailyRecords" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="DailyRecord" inverseName="tags" inverseEntity="DailyRecord"/>
+    </entity>
+    <elements>
+        <element name="DailyRecord" positionX="-63" positionY="-18" width="128" height="119"/>
+        <element name="Day" positionX="-45" positionY="54" width="128" height="89"/>
+        <element name="Tag" positionX="-54" positionY="18" width="128" height="74"/>
+    </elements>
+</model>

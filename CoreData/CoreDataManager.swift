@@ -17,6 +17,16 @@ class CoreDataManager {
         
         if let description: NSPersistentStoreDescription = container.persistentStoreDescriptions.first {
             description.setOption(true as NSNumber, forKey: NSPersistentStoreRemoteChangeNotificationPostOptionKey)
+            description.setOption(true as NSNumber, forKey: NSPersistentHistoryTrackingKey)
+            
+            /*
+            let isICloudSyncEnabled = NSUbiquitousKeyValueStore.default.bool(forKey: UserDefaultsKey.isICloudSyncEnabled)
+            
+            if !isICloudSyncEnabled {
+                description.cloudKitContainerOptions = nil
+                print("iCloud Sync Disabled")
+            }
+            */
         }
         
         container.loadPersistentStores { loadedStoreDescription, error in
@@ -36,26 +46,43 @@ class CoreDataManager {
     
 }
 
-// MARK: -
-
 extension CoreDataManager {
     
-    func fetchDailyRecords() -> [DailyRecord]? {
-        print("--- \(#function) ---")
-        let fetchRequest: NSFetchRequest<DailyRecord> = DailyRecord.fetchRequest()
-        fetchRequest.sortDescriptors = [NSSortDescriptor(key: #keyPath(DailyRecord.date), ascending: false), NSSortDescriptor(key: #keyPath(DailyRecord.time), ascending: false)]
-        
+    func fetchAllTagTitles() -> [String]? {
+        let tagFetchRequest: NSFetchRequest<Tag> = Tag.fetchRequest()
+        tagFetchRequest.sortDescriptors = [NSSortDescriptor(keyPath: \Tag.title, ascending: true)]
         do {
-            let fetchResult: [DailyRecord] = try managedContext.fetch(fetchRequest)
-            print("--- Fetch result count: \(fetchResult.count) ---")
-            print("--- Fetch result: \(fetchResult.compactMap({ $0.id?.uuidString }).joined(separator: ", ")) ---")
-            return fetchResult
+            let fetchResult: [Tag] = try self.managedContext.fetch(tagFetchRequest)
+            
+            return fetchResult.compactMap({ $0.title })
         }
         catch {
-            print("--- Failed to fetch DailyRecords: \(error) ---")
+            print("--- Failed to fetch tags ---")
+            return nil
+        }
+    }
+    
+    func setUpContainer(with isICloudSyncEnabled: Bool) {
+        let container: NSPersistentCloudKitContainer = NSPersistentCloudKitContainer(name: "Model")
+        
+        if let description: NSPersistentStoreDescription = container.persistentStoreDescriptions.first {
+            description.setOption(true as NSNumber, forKey: NSPersistentStoreRemoteChangeNotificationPostOptionKey)
+            description.setOption(true as NSNumber, forKey: NSPersistentHistoryTrackingKey)
+
+            if !isICloudSyncEnabled {
+                description.cloudKitContainerOptions = nil
+            }
         }
         
-        return nil
+        container.loadPersistentStores { loadedStoreDescription, error in
+            if let error = error {
+                fatalError("--- Failed to load persistent store: \(error)")
+            }
+        }
+        
+        container.viewContext.automaticallyMergesChangesFromParent = true
+        
+        self.persistentContainer = container
     }
     
 }

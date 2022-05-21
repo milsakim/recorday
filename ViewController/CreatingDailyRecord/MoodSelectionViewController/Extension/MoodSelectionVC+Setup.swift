@@ -24,7 +24,7 @@ extension MoodSelectionViewController {
         
         // left bar button item
         navigationItem.leftBarButtonItem = UIBarButtonItem(image: UIImage(named: "cancel-button"), style: .plain, target: self, action: #selector(cancelButtonTapped))
-        navigationItem.leftBarButtonItem?.tintColor = .red
+        navigationItem.leftBarButtonItem?.tintColor = UIColor(named: "accent-color")
         
         navigationItem.backButtonTitle = ""
     }
@@ -32,20 +32,19 @@ extension MoodSelectionViewController {
     func setupCollectionView() {
         moodCollectionView.dataSource = self
         moodCollectionView.delegate = self
-        moodCollectionView.register(UINib(nibName: "MoodCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: MoodCollectionViewCell.resueID)
+        moodCollectionView.register(UINib(nibName: "MoodCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: MoodCollectionViewCell.reuseID)
     }
     
     func setupDatePicker() {
         datePicker.maximumDate = Date()
     }
-
-    func createDailyRecord() {
-        if self.dailyRecord == nil {
-            if let entity: NSEntityDescription = NSEntityDescription.entity(forEntityName: "DailyRecord", in: AppDelegate.sharedAppDelegate.coreDataManager.managedContext) {
-                self.dailyRecord = DailyRecord(entity: entity, insertInto: AppDelegate.sharedAppDelegate.coreDataManager.managedContext)
-                self.dailyRecord?.id = UUID()
-            }
+    
+    func setupDailyRecordMetadata() {
+        guard let (currentDate, currentTime) = parseDate(from: Date()) else {
+            return
         }
+        
+        dailyRecordMetadata = DailyRecordMetadata(moodID: Mood.moods[5].id, dateTimestamp: currentDate, timeTimestamp: currentTime)
     }
     
 }

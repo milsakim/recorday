@@ -1,7 +1,7 @@
 {
   "images" : [
     {
-      "filename" : "Group 7.svg",
+      "filename" : "cancel-button-light.svg",
       "idiom" : "universal"
     },
     {
@@ -11,7 +11,7 @@
           "value" : "dark"
         }
       ],
-      "filename" : "Group 53.svg",
+      "filename" : "cancel-button-dark.svg",
       "idiom" : "universal"
     }
   ],

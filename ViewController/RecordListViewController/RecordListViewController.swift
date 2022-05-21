@@ -7,31 +7,22 @@
 
 import UIKit
 import CoreData
+import CoreLocation
 
 class RecordListViewController: UIViewController {
     
     // MARK: - Outlet
     
     @IBOutlet weak var tableView: UITableView!
-    
+    @IBOutlet weak var collectionView: UICollectionView!
+    @IBOutlet weak var collectionViewWidthConstraint: NSLayoutConstraint!
+    @IBOutlet weak var addButton: UIButton!
+
     // MARK: - Property
     
-    lazy var fetchedResultsController: NSFetchedResultsController<DailyRecord>? = {
-        let context = AppDelegate.sharedAppDelegate.coreDataManager.managedContext
-        let fetchRequest: NSFetchRequest = DailyRecord.fetchRequest()
-        fetchRequest.sortDescriptors = [NSSortDescriptor(key: #keyPath(DailyRecord.date), ascending: false), NSSortDescriptor(key: #keyPath(DailyRecord.time), ascending: false)]
-        
-        let fetchedResultsController: NSFetchedResultsController = NSFetchedResultsController(fetchRequest: fetchRequest, managedObjectContext: context, sectionNameKeyPath: #keyPath(DailyRecord.date), cacheName: nil)
-        fetchedResultsController.delegate = self
-        
-        do {
-            try fetchedResultsController.performFetch()
-        } catch  {
-            print("--- Fetched result ---")
-        }
-        
-        return fetchedResultsController
-    }()
+    static let storyboardID: String = "RecordListViewController"
+    
+    let locationManager: CLLocationManager = CLLocationManager()
     
     let dateFormatter: DateFormatter = {
         let dateFormatter: DateFormatter = DateFormatter()
@@ -39,13 +30,15 @@ class RecordListViewController: UIViewController {
         return dateFormatter
     }()
     
+    var viewModel: RecordListViewModel?
+    
+    var dimmedView: UIView?
+    
     // MARK: - Initializer
     
     required init?(coder: NSCoder) {
         super.init(coder: coder)
         print("--- RecordListViewController \(#function) ---")
-        self.title = "Records"
-        self.tabBarItem = UITabBarItem(title: "Home", image: UIImage(systemName: "doc.on.doc"), selectedImage: UIImage(systemName: "doc.on.doc"))
     }
     
     // MARK: - Deinit
@@ -58,21 +51,30 @@ class RecordListViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        print(#function)
-        self.commonInit()
+        commonInit()
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        print(#function)
-        self.fetchChanges()
     }
     
     // MARK: - Set Up RecordListViewController
     
     func commonInit() {
-        self.setUpTableView()
-        NotificationCenter.default.addObserver(self, selector: #selector(fetchChanges), name: .NSPersistentStoreRemoteChange, object: AppDelegate.sharedAppDelegate.coreDataManager.persistentContainer.persistentStoreCoordinator)
+        setUpTableView()
+        setUpLocationManager()
+        setUpNavigation()
+        setUpCollectionView()
+        setUpViewModel()
+        setUpDimmedView()
     }
     
+}
+
+extension RecordListViewController: RecordListViewModeleDelegate {
+    func didUpdateData() {
+        DispatchQueue.main.async {
+            self.tableView.reloadData()
+        }
+    }
 }

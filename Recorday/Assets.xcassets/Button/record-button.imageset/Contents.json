@@ -1,7 +1,7 @@
 {
   "images" : [
     {
-      "filename" : "add-button-red.svg",
+      "filename" : "add-button-light.svg",
       "idiom" : "universal"
     },
     {
@@ -11,7 +11,7 @@
           "value" : "dark"
         }
       ],
-      "filename" : "add-button-white.svg",
+      "filename" : "add-button-dark.svg",
       "idiom" : "universal"
     }
   ],

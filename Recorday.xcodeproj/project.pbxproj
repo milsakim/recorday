@@ -10,58 +10,78 @@
 		1629522327CF5C3E00E599E4 /* MoodSelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1629522227CF5C3E00E599E4 /* MoodSelectionViewController.swift */; };
 		1629522527CF5E0D00E599E4 /* CreatingDailyRecord.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1629522427CF5E0D00E599E4 /* CreatingDailyRecord.storyboard */; };
 		1629525827CF9F6D00E599E4 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1629525627CF9F6D00E599E4 /* Model.xcdatamodeld */; };
-		1629526A27CFBF4300E599E4 /* Activity+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1629526827CFBF4300E599E4 /* Activity+CoreDataClass.swift */; };
-		1629526B27CFBF4300E599E4 /* Activity+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1629526927CFBF4300E599E4 /* Activity+CoreDataProperties.swift */; };
 		1629526D27D0291E00E599E4 /* DailyRecordTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1629526C27D0291E00E599E4 /* DailyRecordTableViewCell.swift */; };
 		1629527027D02A9900E599E4 /* RecordListVC+UITableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1629526F27D02A9900E599E4 /* RecordListVC+UITableViewDataSource.swift */; };
 		1629527327D02BC000E599E4 /* RecordListVC+SetUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1629527227D02BC000E599E4 /* RecordListVC+SetUp.swift */; };
 		16B91C4027CD6FB0005C05A8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16B91C3F27CD6FB0005C05A8 /* AppDelegate.swift */; };
 		16B91C4227CD6FB0005C05A8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16B91C4127CD6FB0005C05A8 /* SceneDelegate.swift */; };
-		16B91C4727CD6FB0005C05A8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 16B91C4527CD6FB0005C05A8 /* Main.storyboard */; };
 		16B91C4927CD6FB2005C05A8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 16B91C4827CD6FB2005C05A8 /* Assets.xcassets */; };
 		16B91C4C27CD6FB2005C05A8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 16B91C4A27CD6FB2005C05A8 /* LaunchScreen.storyboard */; };
 		16B91C5827CD7988005C05A8 /* RecordListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16B91C5727CD7988005C05A8 /* RecordListViewController.swift */; };
 		16B91C5F27CD847B005C05A8 /* RecordListViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 16B91C5E27CD847B005C05A8 /* RecordListViewController.storyboard */; };
 		16B91C6427CD9C50005C05A8 /* TagListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16B91C6327CD9C50005C05A8 /* TagListView.swift */; };
 		16BF2DFC27D11BB600242B07 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16BF2DFB27D11BB600242B07 /* CoreDataManager.swift */; };
-		16BF2DFF27D1852400242B07 /* ActivityCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16BF2DFE27D1852400242B07 /* ActivityCollectionViewCell.swift */; };
 		16BF2E0227D1C3C700242B07 /* MoodButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16BF2E0127D1C3C700242B07 /* MoodButton.swift */; };
 		16BF2E0427D1D0C300242B07 /* Mood.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16BF2E0327D1D0C300242B07 /* Mood.swift */; };
-		16BF2E0827D1EEE200242B07 /* SelectingActivitiesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16BF2E0727D1EEE200242B07 /* SelectingActivitiesViewController.swift */; };
-		16CE95FB27D8BC9900897FFA /* DailyRecord+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16CE95F927D8BC9900897FFA /* DailyRecord+CoreDataClass.swift */; };
-		16CE95FC27D8BC9900897FFA /* DailyRecord+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16CE95FA27D8BC9900897FFA /* DailyRecord+CoreDataProperties.swift */; };
-		16DD0DF627D5EDD800F26FE7 /* SelectingActivitiesVC+Setup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16DD0DF527D5EDD800F26FE7 /* SelectingActivitiesVC+Setup.swift */; };
-		16DD0E1C27D5F86A00F26FE7 /* SelectingActiviesVC+Action.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16DD0E1B27D5F86A00F26FE7 /* SelectingActiviesVC+Action.swift */; };
+		16BF2E0827D1EEE200242B07 /* NoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16BF2E0727D1EEE200242B07 /* NoteViewController.swift */; };
+		16DD0DF627D5EDD800F26FE7 /* NoteVC+Setup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16DD0DF527D5EDD800F26FE7 /* NoteVC+Setup.swift */; };
+		16DD0E1C27D5F86A00F26FE7 /* NoteVC+Action.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16DD0E1B27D5F86A00F26FE7 /* NoteVC+Action.swift */; };
 		16DD0E1E27D6013A00F26FE7 /* MoodSelectionVC+Setup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16DD0E1D27D6013A00F26FE7 /* MoodSelectionVC+Setup.swift */; };
 		16DD0E2127D602A600F26FE7 /* MoodSelectionVC+Action.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16DD0E2027D602A600F26FE7 /* MoodSelectionVC+Action.swift */; };
-		16DD0E2627D624E500F26FE7 /* SelectingActivitiesVC+TableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16DD0E2527D624E500F26FE7 /* SelectingActivitiesVC+TableViewDataSource.swift */; };
 		16DD0E2827D63F2100F26FE7 /* RecordListVC+Action.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16DD0E2727D63F2100F26FE7 /* RecordListVC+Action.swift */; };
 		16E44BAC27CDEE9B00EAD05B /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16E44BAB27CDEE9B00EAD05B /* CloudKit.framework */; };
+		5618D2542824ECF0003B53DD /* UserDefaultsKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5618D2532824ECF0003B53DD /* UserDefaultsKey.swift */; };
+		5618D25828250AD3003B53DD /* DailyRecordCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5618D25628250AD3003B53DD /* DailyRecordCell.swift */; };
+		5618D25928250AD3003B53DD /* DailyRecordCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5618D25728250AD3003B53DD /* DailyRecordCell.xib */; };
+		56209090282E4BBB0033D24B /* NoteVC+TagSuggestionViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5620908F282E4BBB0033D24B /* NoteVC+TagSuggestionViewDelegate.swift */; };
+		5630F7AC283152F400F3D0DA /* OnBoardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5630F7AB283152F400F3D0DA /* OnBoardingViewController.swift */; };
+		5630F7AE2831531200F3D0DA /* OnBoardingViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5630F7AD2831531200F3D0DA /* OnBoardingViewController.storyboard */; };
+		563A6E4D28361BEB002C7B7E /* TagFilterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 563A6E4C28361BEB002C7B7E /* TagFilterView.swift */; };
+		563A6E5028361C63002C7B7E /* TagFilterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 563A6E4F28361C63002C7B7E /* TagFilterView.xib */; };
 		5646275227E0681200BEA213 /* MoodCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5646275027E0681200BEA213 /* MoodCollectionViewCell.swift */; };
 		5646275327E0681200BEA213 /* MoodCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5646275127E0681200BEA213 /* MoodCollectionViewCell.xib */; };
 		5646275627E06A8700BEA213 /* UIColor+hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5646275527E06A8700BEA213 /* UIColor+hex.swift */; };
 		5646275827E06BD700BEA213 /* MoodSelectionCollectionViewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5646275727E06BD700BEA213 /* MoodSelectionCollectionViewLayout.swift */; };
-		5646275E27E07A4800BEA213 /* ActivityInputTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5646275C27E07A4800BEA213 /* ActivityInputTableViewCell.swift */; };
-		5646275F27E07A4800BEA213 /* ActivityInputTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5646275D27E07A4800BEA213 /* ActivityInputTableViewCell.xib */; };
+		5654FEF6281A30A100D02640 /* DailyRecordMetadata.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5654FEF5281A30A100D02640 /* DailyRecordMetadata.swift */; };
+		5654FEF9281A328200D02640 /* NoteVC+TextViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5654FEF8281A328200D02640 /* NoteVC+TextViewDelegate.swift */; };
+		565D83C628339AAB00E7DE18 /* CircularCollectionViewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 565D83C528339AAB00E7DE18 /* CircularCollectionViewLayout.swift */; };
+		565D83C828339C6800E7DE18 /* RecordListVC+UICollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 565D83C728339C6800E7DE18 /* RecordListVC+UICollectionView.swift */; };
+		566F39232827F689003FD24A /* TagSuggestionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 566F39222827F689003FD24A /* TagSuggestionView.swift */; };
+		566F39252827F693003FD24A /* TagSuggestionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 566F39242827F693003FD24A /* TagSuggestionView.xib */; };
+		566F39292827FA6F003FD24A /* TagSuggestionCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 566F39272827FA6F003FD24A /* TagSuggestionCollectionViewCell.swift */; };
+		566F392A2827FA6F003FD24A /* TagSuggestionCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 566F39282827FA6F003FD24A /* TagSuggestionCollectionViewCell.xib */; };
+		567711C128363F3E00D2A242 /* RecordListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 567711C028363F3E00D2A242 /* RecordListViewModel.swift */; };
 		567D000727D9DB3300B4EDE3 /* RecordListVC+FetchedResultsControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 567D000627D9DB3300B4EDE3 /* RecordListVC+FetchedResultsControllerDelegate.swift */; };
-		56B7CC0927E1C5150083B541 /* ActivityInputViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56B7CC0827E1C5150083B541 /* ActivityInputViewController.swift */; };
+		569F77012837BB34009E3F2E /* RecordListVC+TagFilterViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 569F77002837BB34009E3F2E /* RecordListVC+TagFilterViewDelegate.swift */; };
+		56A405A72818DD8A00750D28 /* DailyRecord+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56A4059F2818DD8A00750D28 /* DailyRecord+CoreDataClass.swift */; };
+		56A405A82818DD8A00750D28 /* DailyRecord+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56A405A02818DD8A00750D28 /* DailyRecord+CoreDataProperties.swift */; };
+		56A405A92818DD8A00750D28 /* Tag+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56A405A12818DD8A00750D28 /* Tag+CoreDataClass.swift */; };
+		56A405AA2818DD8A00750D28 /* Tag+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56A405A22818DD8A00750D28 /* Tag+CoreDataProperties.swift */; };
+		56ACC4D62822981F00A97D23 /* Day+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56ACC4D42822981F00A97D23 /* Day+CoreDataClass.swift */; };
+		56ACC4D72822981F00A97D23 /* Day+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56ACC4D52822981F00A97D23 /* Day+CoreDataProperties.swift */; };
+		56ACC5012822E60D00A97D23 /* WeatherAPIResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56ACC5002822E60D00A97D23 /* WeatherAPIResponse.swift */; };
+		56ACC5042822E65200A97D23 /* WeatherAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56ACC5032822E65200A97D23 /* WeatherAPIClient.swift */; };
+		56ACC5072822E80000A97D23 /* RecordListVC+CLLocationManagerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56ACC5062822E80000A97D23 /* RecordListVC+CLLocationManagerDelegate.swift */; };
 		56BD4A9227DA38290050055C /* TagCollectionViewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56BD4A9127DA38290050055C /* TagCollectionViewLayout.swift */; };
+		56C5F7E5280E7EE300E70344 /* EditingDailyRecordViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 56C5F7E4280E7EE300E70344 /* EditingDailyRecordViewController.storyboard */; };
+		56C5F7E8280E7EFF00E70344 /* EditingDailyRecordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56C5F7E7280E7EFF00E70344 /* EditingDailyRecordViewController.swift */; };
+		56C5F7EB280E7FE600E70344 /* RecordListVC+UITableViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56C5F7EA280E7FE600E70344 /* RecordListVC+UITableViewDelegate.swift */; };
+		56D08BA427ED93B10026153E /* DailyRecordListHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56D08BA327ED93B10026153E /* DailyRecordListHeaderView.swift */; };
 		56D2EDBC27DBA09800A83EA0 /* MoodSelectionVC+CollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56D2EDBB27DBA09800A83EA0 /* MoodSelectionVC+CollectionView.swift */; };
+		56E4B4D328180A5200241535 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56E4B4D228180A5200241535 /* SettingsViewController.swift */; };
+		56E4B4D528180A5C00241535 /* SettingsViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 56E4B4D428180A5C00241535 /* SettingsViewController.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1629522227CF5C3E00E599E4 /* MoodSelectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoodSelectionViewController.swift; sourceTree = "<group>"; };
 		1629522427CF5E0D00E599E4 /* CreatingDailyRecord.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CreatingDailyRecord.storyboard; sourceTree = "<group>"; };
 		1629525727CF9F6D00E599E4 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
-		1629526827CFBF4300E599E4 /* Activity+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Activity+CoreDataClass.swift"; sourceTree = "<group>"; };
-		1629526927CFBF4300E599E4 /* Activity+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Activity+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		1629526C27D0291E00E599E4 /* DailyRecordTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyRecordTableViewCell.swift; sourceTree = "<group>"; };
 		1629526F27D02A9900E599E4 /* RecordListVC+UITableViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RecordListVC+UITableViewDataSource.swift"; sourceTree = "<group>"; };
 		1629527227D02BC000E599E4 /* RecordListVC+SetUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RecordListVC+SetUp.swift"; sourceTree = "<group>"; };
 		16B91C3C27CD6FB0005C05A8 /* Recorday.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Recorday.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		16B91C3F27CD6FB0005C05A8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		16B91C4127CD6FB0005C05A8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		16B91C4627CD6FB0005C05A8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		16B91C4827CD6FB2005C05A8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		16B91C4B27CD6FB2005C05A8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		16B91C4D27CD6FB2005C05A8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -69,31 +89,67 @@
 		16B91C5E27CD847B005C05A8 /* RecordListViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = RecordListViewController.storyboard; sourceTree = "<group>"; };
 		16B91C6327CD9C50005C05A8 /* TagListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagListView.swift; sourceTree = "<group>"; };
 		16BF2DFB27D11BB600242B07 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
-		16BF2DFE27D1852400242B07 /* ActivityCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityCollectionViewCell.swift; sourceTree = "<group>"; };
 		16BF2E0127D1C3C700242B07 /* MoodButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoodButton.swift; sourceTree = "<group>"; };
 		16BF2E0327D1D0C300242B07 /* Mood.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mood.swift; sourceTree = "<group>"; };
-		16BF2E0727D1EEE200242B07 /* SelectingActivitiesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectingActivitiesViewController.swift; sourceTree = "<group>"; };
-		16CE95F927D8BC9900897FFA /* DailyRecord+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DailyRecord+CoreDataClass.swift"; sourceTree = "<group>"; };
-		16CE95FA27D8BC9900897FFA /* DailyRecord+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DailyRecord+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		16BF2E0727D1EEE200242B07 /* NoteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteViewController.swift; sourceTree = "<group>"; };
 		16D6A45F27D77BA4004BE58E /* Model 2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "Model 2.xcdatamodel"; sourceTree = "<group>"; };
-		16DD0DF527D5EDD800F26FE7 /* SelectingActivitiesVC+Setup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SelectingActivitiesVC+Setup.swift"; sourceTree = "<group>"; };
-		16DD0E1B27D5F86A00F26FE7 /* SelectingActiviesVC+Action.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SelectingActiviesVC+Action.swift"; sourceTree = "<group>"; };
+		16DD0DF527D5EDD800F26FE7 /* NoteVC+Setup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NoteVC+Setup.swift"; sourceTree = "<group>"; };
+		16DD0E1B27D5F86A00F26FE7 /* NoteVC+Action.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NoteVC+Action.swift"; sourceTree = "<group>"; };
 		16DD0E1D27D6013A00F26FE7 /* MoodSelectionVC+Setup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MoodSelectionVC+Setup.swift"; sourceTree = "<group>"; };
 		16DD0E2027D602A600F26FE7 /* MoodSelectionVC+Action.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MoodSelectionVC+Action.swift"; sourceTree = "<group>"; };
-		16DD0E2527D624E500F26FE7 /* SelectingActivitiesVC+TableViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SelectingActivitiesVC+TableViewDataSource.swift"; sourceTree = "<group>"; };
 		16DD0E2727D63F2100F26FE7 /* RecordListVC+Action.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RecordListVC+Action.swift"; sourceTree = "<group>"; };
 		16E44BA927CDC00400EAD05B /* Recorday.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Recorday.entitlements; sourceTree = "<group>"; };
 		16E44BAB27CDEE9B00EAD05B /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
+		5618D2532824ECF0003B53DD /* UserDefaultsKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsKey.swift; sourceTree = "<group>"; };
+		5618D25628250AD3003B53DD /* DailyRecordCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyRecordCell.swift; sourceTree = "<group>"; };
+		5618D25728250AD3003B53DD /* DailyRecordCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DailyRecordCell.xib; sourceTree = "<group>"; };
+		5620908F282E4BBB0033D24B /* NoteVC+TagSuggestionViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NoteVC+TagSuggestionViewDelegate.swift"; sourceTree = "<group>"; };
+		5630F7AB283152F400F3D0DA /* OnBoardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingViewController.swift; sourceTree = "<group>"; };
+		5630F7AD2831531200F3D0DA /* OnBoardingViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = OnBoardingViewController.storyboard; sourceTree = "<group>"; };
+		563A6E4C28361BEB002C7B7E /* TagFilterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagFilterView.swift; sourceTree = "<group>"; };
+		563A6E4F28361C63002C7B7E /* TagFilterView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TagFilterView.xib; sourceTree = "<group>"; };
 		5646275027E0681200BEA213 /* MoodCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoodCollectionViewCell.swift; sourceTree = "<group>"; };
 		5646275127E0681200BEA213 /* MoodCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MoodCollectionViewCell.xib; sourceTree = "<group>"; };
 		5646275527E06A8700BEA213 /* UIColor+hex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+hex.swift"; sourceTree = "<group>"; };
 		5646275727E06BD700BEA213 /* MoodSelectionCollectionViewLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoodSelectionCollectionViewLayout.swift; sourceTree = "<group>"; };
-		5646275C27E07A4800BEA213 /* ActivityInputTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityInputTableViewCell.swift; sourceTree = "<group>"; };
-		5646275D27E07A4800BEA213 /* ActivityInputTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ActivityInputTableViewCell.xib; sourceTree = "<group>"; };
+		5654FEF5281A30A100D02640 /* DailyRecordMetadata.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyRecordMetadata.swift; sourceTree = "<group>"; };
+		5654FEF8281A328200D02640 /* NoteVC+TextViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NoteVC+TextViewDelegate.swift"; sourceTree = "<group>"; };
+		565D83C528339AAB00E7DE18 /* CircularCollectionViewLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularCollectionViewLayout.swift; sourceTree = "<group>"; };
+		565D83C728339C6800E7DE18 /* RecordListVC+UICollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RecordListVC+UICollectionView.swift"; sourceTree = "<group>"; };
+		566F39222827F689003FD24A /* TagSuggestionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagSuggestionView.swift; sourceTree = "<group>"; };
+		566F39242827F693003FD24A /* TagSuggestionView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TagSuggestionView.xib; sourceTree = "<group>"; };
+		566F39272827FA6F003FD24A /* TagSuggestionCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagSuggestionCollectionViewCell.swift; sourceTree = "<group>"; };
+		566F39282827FA6F003FD24A /* TagSuggestionCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TagSuggestionCollectionViewCell.xib; sourceTree = "<group>"; };
+		567711C028363F3E00D2A242 /* RecordListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordListViewModel.swift; sourceTree = "<group>"; };
 		567D000627D9DB3300B4EDE3 /* RecordListVC+FetchedResultsControllerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RecordListVC+FetchedResultsControllerDelegate.swift"; sourceTree = "<group>"; };
-		56B7CC0827E1C5150083B541 /* ActivityInputViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityInputViewController.swift; sourceTree = "<group>"; };
+		569F77002837BB34009E3F2E /* RecordListVC+TagFilterViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RecordListVC+TagFilterViewDelegate.swift"; sourceTree = "<group>"; };
+		56A4059F2818DD8A00750D28 /* DailyRecord+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DailyRecord+CoreDataClass.swift"; sourceTree = "<group>"; };
+		56A405A02818DD8A00750D28 /* DailyRecord+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DailyRecord+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		56A405A12818DD8A00750D28 /* Tag+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Tag+CoreDataClass.swift"; sourceTree = "<group>"; };
+		56A405A22818DD8A00750D28 /* Tag+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Tag+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		56ACC4D42822981F00A97D23 /* Day+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Day+CoreDataClass.swift"; sourceTree = "<group>"; };
+		56ACC4D52822981F00A97D23 /* Day+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Day+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		56ACC5002822E60D00A97D23 /* WeatherAPIResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherAPIResponse.swift; sourceTree = "<group>"; };
+		56ACC5032822E65200A97D23 /* WeatherAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherAPIClient.swift; sourceTree = "<group>"; };
+		56ACC5062822E80000A97D23 /* RecordListVC+CLLocationManagerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RecordListVC+CLLocationManagerDelegate.swift"; sourceTree = "<group>"; };
 		56BD4A9127DA38290050055C /* TagCollectionViewLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagCollectionViewLayout.swift; sourceTree = "<group>"; };
+		56C5F7E4280E7EE300E70344 /* EditingDailyRecordViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = EditingDailyRecordViewController.storyboard; sourceTree = "<group>"; };
+		56C5F7E7280E7EFF00E70344 /* EditingDailyRecordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditingDailyRecordViewController.swift; sourceTree = "<group>"; };
+		56C5F7EA280E7FE600E70344 /* RecordListVC+UITableViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RecordListVC+UITableViewDelegate.swift"; sourceTree = "<group>"; };
+		56C5F7EC280E82F700E70344 /* Model 3.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "Model 3.xcdatamodel"; sourceTree = "<group>"; };
+		56C760612838D8D600DB5764 /* Pretendard-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Pretendard-Medium.otf"; path = "../../../../../.Trash/Pretendard-Medium.otf"; sourceTree = "<group>"; };
+		56C760622838D8D600DB5764 /* Pretendard-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Pretendard-Regular.otf"; path = "../../../../../.Trash/Pretendard-Regular.otf"; sourceTree = "<group>"; };
+		56C760632838D8D600DB5764 /* Pretendard-SemiBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Pretendard-SemiBold.otf"; path = "../../../../../.Trash/Pretendard-SemiBold.otf"; sourceTree = "<group>"; };
+		56C760642838D8D600DB5764 /* Pretendard-ExtraBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Pretendard-ExtraBold.otf"; path = "../../../../../.Trash/Pretendard-ExtraBold.otf"; sourceTree = "<group>"; };
+		56C760652838D8D600DB5764 /* Pretendard-Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Pretendard-Black.otf"; path = "../../../../../.Trash/Pretendard-Black.otf"; sourceTree = "<group>"; };
+		56C760662838D8D600DB5764 /* Pretendard-Thin.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Pretendard-Thin.otf"; path = "../../../../../.Trash/Pretendard-Thin.otf"; sourceTree = "<group>"; };
+		56C760672838D8D600DB5764 /* Pretendard-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Pretendard-Light.otf"; path = "../../../../../.Trash/Pretendard-Light.otf"; sourceTree = "<group>"; };
+		56C760682838D8D600DB5764 /* Pretendard-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Pretendard-Bold.otf"; path = "../../../../../.Trash/Pretendard-Bold.otf"; sourceTree = "<group>"; };
+		56C760692838D8D600DB5764 /* Pretendard-ExtraLight.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Pretendard-ExtraLight.otf"; path = "../../../../../.Trash/Pretendard-ExtraLight.otf"; sourceTree = "<group>"; };
+		56D08BA327ED93B10026153E /* DailyRecordListHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyRecordListHeaderView.swift; sourceTree = "<group>"; };
 		56D2EDBB27DBA09800A83EA0 /* MoodSelectionVC+CollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MoodSelectionVC+CollectionView.swift"; sourceTree = "<group>"; };
+		56E4B4D228180A5200241535 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		56E4B4D428180A5C00241535 /* SettingsViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SettingsViewController.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,10 +186,14 @@
 		1629522A27CF65DC00E599E4 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
-				1629526F27D02A9900E599E4 /* RecordListVC+UITableViewDataSource.swift */,
 				1629527227D02BC000E599E4 /* RecordListVC+SetUp.swift */,
+				1629526F27D02A9900E599E4 /* RecordListVC+UITableViewDataSource.swift */,
+				56C5F7EA280E7FE600E70344 /* RecordListVC+UITableViewDelegate.swift */,
+				565D83C728339C6800E7DE18 /* RecordListVC+UICollectionView.swift */,
 				16DD0E2727D63F2100F26FE7 /* RecordListVC+Action.swift */,
 				567D000627D9DB3300B4EDE3 /* RecordListVC+FetchedResultsControllerDelegate.swift */,
+				56ACC5062822E80000A97D23 /* RecordListVC+CLLocationManagerDelegate.swift */,
+				569F77002837BB34009E3F2E /* RecordListVC+TagFilterViewDelegate.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -141,9 +201,9 @@
 		1629525C27CFA53100E599E4 /* CoreData */ = {
 			isa = PBXGroup;
 			children = (
-				567D000527D9D7AB00B4EDE3 /* ManagedObject */,
-				1629525627CF9F6D00E599E4 /* Model.xcdatamodeld */,
 				16BF2DFB27D11BB600242B07 /* CoreDataManager.swift */,
+				1629525627CF9F6D00E599E4 /* Model.xcdatamodeld */,
+				567D000527D9D7AB00B4EDE3 /* ManagedObject */,
 			);
 			path = CoreData;
 			sourceTree = "<group>";
@@ -152,6 +212,9 @@
 			isa = PBXGroup;
 			children = (
 				16BF2E0327D1D0C300242B07 /* Mood.swift */,
+				5654FEF5281A30A100D02640 /* DailyRecordMetadata.swift */,
+				56ACC5002822E60D00A97D23 /* WeatherAPIResponse.swift */,
+				5618D2532824ECF0003B53DD /* UserDefaultsKey.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -160,8 +223,7 @@
 			isa = PBXGroup;
 			children = (
 				1629522127CF5B5300E599E4 /* MoodSelectionViewController */,
-				16BF2E0627D1EE6200242B07 /* SelectingActivitiesViewController */,
-				56B7CC0727E1C4BF0083B541 /* ActivityInputViewController */,
+				16BF2E0627D1EE6200242B07 /* NoteViewController */,
 				1629522427CF5E0D00E599E4 /* CreatingDailyRecord.storyboard */,
 			);
 			path = CreatingDailyRecord;
@@ -171,11 +233,14 @@
 			isa = PBXGroup;
 			children = (
 				16B91C5327CD6FBC005C05A8 /* AppDelegate */,
-				16B91C6127CD9C11005C05A8 /* ViewController */,
-				16B91C6027CD88D1005C05A8 /* View */,
 				1629526527CFA6D500E599E4 /* Model */,
+				16B91C6027CD88D1005C05A8 /* View */,
+				16B91C6127CD9C11005C05A8 /* ViewController */,
+				567711BF28363EE700D2A242 /* ViewModel */,
+				56ACC5022822E62900A97D23 /* Networking */,
 				1629525C27CFA53100E599E4 /* CoreData */,
 				5646275427E06A6600BEA213 /* Global */,
+				56D1A96F2833318F005A0431 /* Font */,
 				16B91C3E27CD6FB0005C05A8 /* Recorday */,
 				16B91C3D27CD6FB0005C05A8 /* Products */,
 				16E44BAA27CDEE9B00EAD05B /* Frameworks */,
@@ -206,7 +271,6 @@
 			children = (
 				16B91C3F27CD6FB0005C05A8 /* AppDelegate.swift */,
 				16B91C4127CD6FB0005C05A8 /* SceneDelegate.swift */,
-				16B91C4527CD6FB0005C05A8 /* Main.storyboard */,
 			);
 			path = AppDelegate;
 			sourceTree = "<group>";
@@ -224,6 +288,9 @@
 		16B91C6027CD88D1005C05A8 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				563A6E4E28361C45002C7B7E /* TagFilterView */,
+				566F39212827F66E003FD24A /* TagSuggestionView */,
+				56D08BA227ED93730026153E /* SectionHeader */,
 				56BD4A8F27DA37E60050055C /* Layout */,
 				56BD4A9027DA37F10050055C /* Cell */,
 				16BF2E0027D1C3AD00242B07 /* MoodButton */,
@@ -235,8 +302,11 @@
 		16B91C6127CD9C11005C05A8 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				56303EC42830A367003202E7 /* OnBoardingViewController */,
 				16B91C5427CD793D005C05A8 /* RecordListViewController */,
+				56C5F7E0280E7E9F00E70344 /* EditingDailyRecordViewController */,
 				165B11B727D5EBBD00E29193 /* CreatingDailyRecord */,
+				56E4B4D028180A3800241535 /* SettingsViewController */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -257,21 +327,22 @@
 			path = MoodButton;
 			sourceTree = "<group>";
 		};
-		16BF2E0627D1EE6200242B07 /* SelectingActivitiesViewController */ = {
+		16BF2E0627D1EE6200242B07 /* NoteViewController */ = {
 			isa = PBXGroup;
 			children = (
 				16DD0DF427D5EDC100F26FE7 /* Extension */,
-				16BF2E0727D1EEE200242B07 /* SelectingActivitiesViewController.swift */,
+				16BF2E0727D1EEE200242B07 /* NoteViewController.swift */,
 			);
-			path = SelectingActivitiesViewController;
+			path = NoteViewController;
 			sourceTree = "<group>";
 		};
 		16DD0DF427D5EDC100F26FE7 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
-				16DD0DF527D5EDD800F26FE7 /* SelectingActivitiesVC+Setup.swift */,
-				16DD0E1B27D5F86A00F26FE7 /* SelectingActiviesVC+Action.swift */,
-				16DD0E2527D624E500F26FE7 /* SelectingActivitiesVC+TableViewDataSource.swift */,
+				16DD0DF527D5EDD800F26FE7 /* NoteVC+Setup.swift */,
+				16DD0E1B27D5F86A00F26FE7 /* NoteVC+Action.swift */,
+				5654FEF8281A328200D02640 /* NoteVC+TextViewDelegate.swift */,
+				5620908F282E4BBB0033D24B /* NoteVC+TagSuggestionViewDelegate.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -282,6 +353,33 @@
 				16E44BAB27CDEE9B00EAD05B /* CloudKit.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5618D25528250AB4003B53DD /* DailyRecordCell */ = {
+			isa = PBXGroup;
+			children = (
+				5618D25628250AD3003B53DD /* DailyRecordCell.swift */,
+				5618D25728250AD3003B53DD /* DailyRecordCell.xib */,
+			);
+			path = DailyRecordCell;
+			sourceTree = "<group>";
+		};
+		56303EC42830A367003202E7 /* OnBoardingViewController */ = {
+			isa = PBXGroup;
+			children = (
+				5630F7AB283152F400F3D0DA /* OnBoardingViewController.swift */,
+				5630F7AD2831531200F3D0DA /* OnBoardingViewController.storyboard */,
+			);
+			path = OnBoardingViewController;
+			sourceTree = "<group>";
+		};
+		563A6E4E28361C45002C7B7E /* TagFilterView */ = {
+			isa = PBXGroup;
+			children = (
+				563A6E4C28361BEB002C7B7E /* TagFilterView.swift */,
+				563A6E4F28361C63002C7B7E /* TagFilterView.xib */,
+			);
+			path = TagFilterView;
 			sourceTree = "<group>";
 		};
 		5646274F27E067F700BEA213 /* MoodCollectionViewCell */ = {
@@ -301,32 +399,51 @@
 			path = Global;
 			sourceTree = "<group>";
 		};
-		5646275927E079D900BEA213 /* ActivityInputTableViewCell */ = {
+		566F39212827F66E003FD24A /* TagSuggestionView */ = {
 			isa = PBXGroup;
 			children = (
-				5646275C27E07A4800BEA213 /* ActivityInputTableViewCell.swift */,
-				5646275D27E07A4800BEA213 /* ActivityInputTableViewCell.xib */,
+				566F39222827F689003FD24A /* TagSuggestionView.swift */,
+				566F39242827F693003FD24A /* TagSuggestionView.xib */,
 			);
-			path = ActivityInputTableViewCell;
+			path = TagSuggestionView;
+			sourceTree = "<group>";
+		};
+		566F39262827FA53003FD24A /* TagSuggestionCollectionViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				566F39272827FA6F003FD24A /* TagSuggestionCollectionViewCell.swift */,
+				566F39282827FA6F003FD24A /* TagSuggestionCollectionViewCell.xib */,
+			);
+			path = TagSuggestionCollectionViewCell;
+			sourceTree = "<group>";
+		};
+		567711BF28363EE700D2A242 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				567711C028363F3E00D2A242 /* RecordListViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		567D000527D9D7AB00B4EDE3 /* ManagedObject */ = {
 			isa = PBXGroup;
 			children = (
-				16CE95F927D8BC9900897FFA /* DailyRecord+CoreDataClass.swift */,
-				16CE95FA27D8BC9900897FFA /* DailyRecord+CoreDataProperties.swift */,
-				1629526827CFBF4300E599E4 /* Activity+CoreDataClass.swift */,
-				1629526927CFBF4300E599E4 /* Activity+CoreDataProperties.swift */,
+				56ACC4D42822981F00A97D23 /* Day+CoreDataClass.swift */,
+				56ACC4D52822981F00A97D23 /* Day+CoreDataProperties.swift */,
+				56A4059F2818DD8A00750D28 /* DailyRecord+CoreDataClass.swift */,
+				56A405A02818DD8A00750D28 /* DailyRecord+CoreDataProperties.swift */,
+				56A405A12818DD8A00750D28 /* Tag+CoreDataClass.swift */,
+				56A405A22818DD8A00750D28 /* Tag+CoreDataProperties.swift */,
 			);
 			path = ManagedObject;
 			sourceTree = "<group>";
 		};
-		56B7CC0727E1C4BF0083B541 /* ActivityInputViewController */ = {
+		56ACC5022822E62900A97D23 /* Networking */ = {
 			isa = PBXGroup;
 			children = (
-				56B7CC0827E1C5150083B541 /* ActivityInputViewController.swift */,
+				56ACC5032822E65200A97D23 /* WeatherAPIClient.swift */,
 			);
-			path = ActivityInputViewController;
+			path = Networking;
 			sourceTree = "<group>";
 		};
 		56BD4A8F27DA37E60050055C /* Layout */ = {
@@ -334,6 +451,7 @@
 			children = (
 				56BD4A9127DA38290050055C /* TagCollectionViewLayout.swift */,
 				5646275727E06BD700BEA213 /* MoodSelectionCollectionViewLayout.swift */,
+				565D83C528339AAB00E7DE18 /* CircularCollectionViewLayout.swift */,
 			);
 			path = Layout;
 			sourceTree = "<group>";
@@ -341,12 +459,54 @@
 		56BD4A9027DA37F10050055C /* Cell */ = {
 			isa = PBXGroup;
 			children = (
-				5646275927E079D900BEA213 /* ActivityInputTableViewCell */,
+				566F39262827FA53003FD24A /* TagSuggestionCollectionViewCell */,
+				5618D25528250AB4003B53DD /* DailyRecordCell */,
 				5646274F27E067F700BEA213 /* MoodCollectionViewCell */,
 				1629526C27D0291E00E599E4 /* DailyRecordTableViewCell.swift */,
-				16BF2DFE27D1852400242B07 /* ActivityCollectionViewCell.swift */,
 			);
 			path = Cell;
+			sourceTree = "<group>";
+		};
+		56C5F7E0280E7E9F00E70344 /* EditingDailyRecordViewController */ = {
+			isa = PBXGroup;
+			children = (
+				56C5F7E7280E7EFF00E70344 /* EditingDailyRecordViewController.swift */,
+				56C5F7E4280E7EE300E70344 /* EditingDailyRecordViewController.storyboard */,
+			);
+			path = EditingDailyRecordViewController;
+			sourceTree = "<group>";
+		};
+		56D08BA227ED93730026153E /* SectionHeader */ = {
+			isa = PBXGroup;
+			children = (
+				56D08BA327ED93B10026153E /* DailyRecordListHeaderView.swift */,
+			);
+			path = SectionHeader;
+			sourceTree = "<group>";
+		};
+		56D1A96F2833318F005A0431 /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				56C760652838D8D600DB5764 /* Pretendard-Black.otf */,
+				56C760682838D8D600DB5764 /* Pretendard-Bold.otf */,
+				56C760642838D8D600DB5764 /* Pretendard-ExtraBold.otf */,
+				56C760692838D8D600DB5764 /* Pretendard-ExtraLight.otf */,
+				56C760672838D8D600DB5764 /* Pretendard-Light.otf */,
+				56C760612838D8D600DB5764 /* Pretendard-Medium.otf */,
+				56C760622838D8D600DB5764 /* Pretendard-Regular.otf */,
+				56C760632838D8D600DB5764 /* Pretendard-SemiBold.otf */,
+				56C760662838D8D600DB5764 /* Pretendard-Thin.otf */,
+			);
+			path = Font;
+			sourceTree = "<group>";
+		};
+		56E4B4D028180A3800241535 /* SettingsViewController */ = {
+			isa = PBXGroup;
+			children = (
+				56E4B4D228180A5200241535 /* SettingsViewController.swift */,
+				56E4B4D428180A5C00241535 /* SettingsViewController.storyboard */,
+			);
+			path = SettingsViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -408,12 +568,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				16B91C5F27CD847B005C05A8 /* RecordListViewController.storyboard in Resources */,
+				566F392A2827FA6F003FD24A /* TagSuggestionCollectionViewCell.xib in Resources */,
 				5646275327E0681200BEA213 /* MoodCollectionViewCell.xib in Resources */,
+				5630F7AE2831531200F3D0DA /* OnBoardingViewController.storyboard in Resources */,
+				563A6E5028361C63002C7B7E /* TagFilterView.xib in Resources */,
 				16B91C4C27CD6FB2005C05A8 /* LaunchScreen.storyboard in Resources */,
+				566F39252827F693003FD24A /* TagSuggestionView.xib in Resources */,
 				1629522527CF5E0D00E599E4 /* CreatingDailyRecord.storyboard in Resources */,
-				5646275F27E07A4800BEA213 /* ActivityInputTableViewCell.xib in Resources */,
 				16B91C4927CD6FB2005C05A8 /* Assets.xcassets in Resources */,
-				16B91C4727CD6FB0005C05A8 /* Main.storyboard in Resources */,
+				56E4B4D528180A5C00241535 /* SettingsViewController.storyboard in Resources */,
+				5618D25928250AD3003B53DD /* DailyRecordCell.xib in Resources */,
+				56C5F7E5280E7EE300E70344 /* EditingDailyRecordViewController.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -426,50 +591,60 @@
 			files = (
 				16DD0E2827D63F2100F26FE7 /* RecordListVC+Action.swift in Sources */,
 				16B91C6427CD9C50005C05A8 /* TagListView.swift in Sources */,
+				565D83C828339C6800E7DE18 /* RecordListVC+UICollectionView.swift in Sources */,
 				1629526D27D0291E00E599E4 /* DailyRecordTableViewCell.swift in Sources */,
-				1629526B27CFBF4300E599E4 /* Activity+CoreDataProperties.swift in Sources */,
-				16BF2E0827D1EEE200242B07 /* SelectingActivitiesViewController.swift in Sources */,
+				16BF2E0827D1EEE200242B07 /* NoteViewController.swift in Sources */,
+				56C5F7EB280E7FE600E70344 /* RecordListVC+UITableViewDelegate.swift in Sources */,
+				566F39232827F689003FD24A /* TagSuggestionView.swift in Sources */,
+				56ACC5042822E65200A97D23 /* WeatherAPIClient.swift in Sources */,
+				5654FEF6281A30A100D02640 /* DailyRecordMetadata.swift in Sources */,
 				1629522327CF5C3E00E599E4 /* MoodSelectionViewController.swift in Sources */,
+				56ACC4D72822981F00A97D23 /* Day+CoreDataProperties.swift in Sources */,
 				567D000727D9DB3300B4EDE3 /* RecordListVC+FetchedResultsControllerDelegate.swift in Sources */,
-				16DD0E1C27D5F86A00F26FE7 /* SelectingActiviesVC+Action.swift in Sources */,
-				56B7CC0927E1C5150083B541 /* ActivityInputViewController.swift in Sources */,
+				5618D25828250AD3003B53DD /* DailyRecordCell.swift in Sources */,
+				567711C128363F3E00D2A242 /* RecordListViewModel.swift in Sources */,
+				16DD0E1C27D5F86A00F26FE7 /* NoteVC+Action.swift in Sources */,
+				5618D2542824ECF0003B53DD /* UserDefaultsKey.swift in Sources */,
 				16BF2E0427D1D0C300242B07 /* Mood.swift in Sources */,
-				16DD0DF627D5EDD800F26FE7 /* SelectingActivitiesVC+Setup.swift in Sources */,
+				566F39292827FA6F003FD24A /* TagSuggestionCollectionViewCell.swift in Sources */,
+				56ACC4D62822981F00A97D23 /* Day+CoreDataClass.swift in Sources */,
+				16DD0DF627D5EDD800F26FE7 /* NoteVC+Setup.swift in Sources */,
 				5646275227E0681200BEA213 /* MoodCollectionViewCell.swift in Sources */,
-				16CE95FB27D8BC9900897FFA /* DailyRecord+CoreDataClass.swift in Sources */,
+				56ACC5012822E60D00A97D23 /* WeatherAPIResponse.swift in Sources */,
 				56BD4A9227DA38290050055C /* TagCollectionViewLayout.swift in Sources */,
-				16BF2DFF27D1852400242B07 /* ActivityCollectionViewCell.swift in Sources */,
+				56A405A82818DD8A00750D28 /* DailyRecord+CoreDataProperties.swift in Sources */,
 				16BF2E0227D1C3C700242B07 /* MoodButton.swift in Sources */,
 				16B91C4027CD6FB0005C05A8 /* AppDelegate.swift in Sources */,
-				1629526A27CFBF4300E599E4 /* Activity+CoreDataClass.swift in Sources */,
-				16DD0E2627D624E500F26FE7 /* SelectingActivitiesVC+TableViewDataSource.swift in Sources */,
 				16DD0E1E27D6013A00F26FE7 /* MoodSelectionVC+Setup.swift in Sources */,
+				56A405A72818DD8A00750D28 /* DailyRecord+CoreDataClass.swift in Sources */,
+				5630F7AC283152F400F3D0DA /* OnBoardingViewController.swift in Sources */,
+				56A405A92818DD8A00750D28 /* Tag+CoreDataClass.swift in Sources */,
+				56C5F7E8280E7EFF00E70344 /* EditingDailyRecordViewController.swift in Sources */,
 				1629525827CF9F6D00E599E4 /* Model.xcdatamodeld in Sources */,
 				16DD0E2127D602A600F26FE7 /* MoodSelectionVC+Action.swift in Sources */,
 				16B91C5827CD7988005C05A8 /* RecordListViewController.swift in Sources */,
+				569F77012837BB34009E3F2E /* RecordListVC+TagFilterViewDelegate.swift in Sources */,
+				56209090282E4BBB0033D24B /* NoteVC+TagSuggestionViewDelegate.swift in Sources */,
 				1629527027D02A9900E599E4 /* RecordListVC+UITableViewDataSource.swift in Sources */,
-				5646275E27E07A4800BEA213 /* ActivityInputTableViewCell.swift in Sources */,
+				5654FEF9281A328200D02640 /* NoteVC+TextViewDelegate.swift in Sources */,
+				56A405AA2818DD8A00750D28 /* Tag+CoreDataProperties.swift in Sources */,
 				56D2EDBC27DBA09800A83EA0 /* MoodSelectionVC+CollectionView.swift in Sources */,
-				16CE95FC27D8BC9900897FFA /* DailyRecord+CoreDataProperties.swift in Sources */,
+				56D08BA427ED93B10026153E /* DailyRecordListHeaderView.swift in Sources */,
 				16B91C4227CD6FB0005C05A8 /* SceneDelegate.swift in Sources */,
+				563A6E4D28361BEB002C7B7E /* TagFilterView.swift in Sources */,
 				5646275827E06BD700BEA213 /* MoodSelectionCollectionViewLayout.swift in Sources */,
 				5646275627E06A8700BEA213 /* UIColor+hex.swift in Sources */,
+				56ACC5072822E80000A97D23 /* RecordListVC+CLLocationManagerDelegate.swift in Sources */,
 				16BF2DFC27D11BB600242B07 /* CoreDataManager.swift in Sources */,
+				565D83C628339AAB00E7DE18 /* CircularCollectionViewLayout.swift in Sources */,
 				1629527327D02BC000E599E4 /* RecordListVC+SetUp.swift in Sources */,
+				56E4B4D328180A5200241535 /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		16B91C4527CD6FB0005C05A8 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				16B91C4627CD6FB0005C05A8 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		16B91C4A27CD6FB2005C05A8 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -608,9 +783,10 @@
 				DEVELOPMENT_TEAM = Y2RWZF749M;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Recorday/Info.plist;
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "Need user's location to fetch weather data according to the location.";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Need user's location to fetch weather data according to the location.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -621,6 +797,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.milsakim.Recorday;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZE_OBJECT_LIFETIME = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -637,9 +814,10 @@
 				DEVELOPMENT_TEAM = Y2RWZF749M;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Recorday/Info.plist;
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "Need user's location to fetch weather data according to the location.";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Need user's location to fetch weather data according to the location.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -650,6 +828,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.milsakim.Recorday;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZE_OBJECT_LIFETIME = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -682,10 +861,11 @@
 		1629525627CF9F6D00E599E4 /* Model.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
+				56C5F7EC280E82F700E70344 /* Model 3.xcdatamodel */,
 				16D6A45F27D77BA4004BE58E /* Model 2.xcdatamodel */,
 				1629525727CF9F6D00E599E4 /* Model.xcdatamodel */,
 			);
-			currentVersion = 16D6A45F27D77BA4004BE58E /* Model 2.xcdatamodel */;
+			currentVersion = 56C5F7EC280E82F700E70344 /* Model 3.xcdatamodel */;
 			path = Model.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;

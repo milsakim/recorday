@@ -9,18 +9,14 @@ import UIKit
 
 struct Mood {
     
-    static var moods: [Mood] = {
-        var moods = [
-            Mood(id: "0", title: "happy", emoji: "😄", color: UIColor("#FFDDD3")),
-            Mood(id: "100", title: "good", emoji: "🙂", color: UIColor("#F3BFB3")),
-            Mood(id: "200", title: "so so", emoji: "😐", color: UIColor("#CBE1EF")),
-            Mood(id: "300", title: "bad", emoji: "🙁", color: UIColor("#9ACDE0")),
-            Mood(id: "400", title: "angry", emoji: "😠", color: UIColor("#5EA9BE")),
-            Mood(id: "500", title: "unknown", emoji: "🫥", color: UIColor("#F6F6F6"))
-        ]
-        
-        return moods
-    }()
+    static var moods: [Mood] = [
+        Mood(id: "0", title: "happy", emoji: "😄", color: UIColor("#FFDDD3")),
+        Mood(id: "100", title: "good", emoji: "🙂", color: UIColor("#F3BFB3")),
+        Mood(id: "200", title: "so so", emoji: "😐", color: UIColor("#CBE1EF")),
+        Mood(id: "300", title: "bad", emoji: "🙁", color: UIColor("#9ACDE0")),
+        Mood(id: "400", title: "angry", emoji: "😠", color: UIColor("#5EA9BE"))
+//        Mood(id: "500", title: "unknown", emoji: "🫥", color: UIColor("#F6F6F6"))
+    ]
     
     let id: String
     let title: String

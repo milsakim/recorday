@@ -11,72 +11,41 @@ import CoreData
 extension RecordListViewController: UITableViewDataSource {
     
     func numberOfSections(in tableView: UITableView) -> Int {
-        print("--- \(#function) ---")
-        
-        guard let fetchController = self.fetchedResultsController else {
-            return 0
-        }
-        
-        return fetchController.sections?.count ?? 0
+//        return days.count
+        return viewModel?.days.count ?? 0
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        print(#function)
-        
-        guard let fetchController = self.fetchedResultsController else {
+        guard let timestamp: Double = self.viewModel?.days[section].timestamp else {
             return 0
         }
         
-        return fetchController.sections?[section].numberOfObjects ?? 0
+        return viewModel?.dailyRecords[timestamp]?.count ?? 0
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        print("--- \(#function): \(indexPath) ---")
-        
-        guard let fetchController = self.fetchedResultsController,
-              let cell: DailyRecordTableViewCell = tableView.dequeueReusableCell(withIdentifier: "DailyRecordTableViewCell", for: indexPath) as? DailyRecordTableViewCell else {
+        guard let cell: DailyRecordCell = tableView.dequeueReusableCell(withIdentifier: DailyRecordCell.reuseID, for: indexPath) as? DailyRecordCell else {
             return UITableViewCell(style: .default, reuseIdentifier: nil)
         }
         
-        let dailyRecord: DailyRecord = fetchController.object(at: indexPath)
+        let dayID: Double = viewModel?.days[indexPath.section].timestamp ?? 0
         
-        cell.setMood(of: dailyRecord.mood)
+        guard let dailyRecords: [DailyRecord] = viewModel?.dailyRecords[dayID], indexPath.row < dailyRecords.count else {
+            fatalError("")
+        }
         
-        if indexPath.row == 0 {
-            cell.setContinuousLines(as: .first)
-        }
-        else if let sections = fetchController.sections, indexPath.row == sections[indexPath.section].numberOfObjects - 1 {
-            cell.setContinuousLines(as: .last)
-        }
+        cell.setMood(of: dailyRecords[indexPath.row].mood)
         
         // set up date & time
-        let timeStamp: TimeInterval = fetchController.object(at: indexPath).date + fetchController.object(at: indexPath).time
+        let timeStamp: TimeInterval = dayID + dailyRecords[indexPath.row].timestamp
         cell.timeLabel.text = self.dateFormatter.string(from: Date(timeIntervalSince1970: timeStamp))
         
-        cell.activitiesLabelBackgroundView.layer.cornerRadius = 10.0
-        
-        
-        // set up activities
-        if let activities = fetchController.object(at: indexPath).activities?.compactMap({ $0 as? Activity }) {
-            cell.activityTitles = activities.compactMap({ $0.title }).sorted()
+        // set up note
+        if let note: String = dailyRecords[indexPath.row].note {
+            cell.setNote(note)
         }
         
         return cell
     }
-    
-    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-        guard let sectionInfo = self.fetchedResultsController?.sections?[section] else {
-            return nil
-        }
-        
-        if let timeInterval: TimeInterval = Double(sectionInfo.name) {
-            let sectionDate: Date = Date(timeIntervalSince1970: timeInterval)
-            let formatter: DateFormatter = DateFormatter()
-            formatter.dateFormat = "yyyy/MM/dd"
-            return formatter.string(from: sectionDate)
-        }
-        
-        return nil
-    }
-    
+
 }

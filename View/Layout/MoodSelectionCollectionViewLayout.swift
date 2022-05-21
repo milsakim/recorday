@@ -26,7 +26,7 @@ class MoodSelectionCollectionViewLayout: UICollectionViewLayout {
         }
         
         let insets: UIEdgeInsets = collectionView.contentInset
-        print("--- collection view inset: \(insets) ---")
+//        print("--- collection view inset: \(insets) ---")
         
         return collectionView.bounds.height - (insets.left + insets.right)
     }
@@ -66,11 +66,11 @@ class MoodSelectionCollectionViewLayout: UICollectionViewLayout {
     private var padding: CGFloat = 16
     
     override var collectionViewContentSize: CGSize {
-        guard let collectionView = collectionView else {
+        guard collectionView != nil else {
             return CGSize(width: 270, height: 270)
         }
         
-        print("--- MoodCollectionViewPortraitLayout collectionViewContentSize: \(collectionView.frame.width) ---")
+//        print("--- MoodCollectionViewPortraitLayout collectionViewContentSize: \(collectionView.frame.width) ---")
         
         return CGSize(width: contentWidth, height: contentHeight)
     }
@@ -88,7 +88,7 @@ class MoodSelectionCollectionViewLayout: UICollectionViewLayout {
         let attributes3: UICollectionViewLayoutAttributes = UICollectionViewLayoutAttributes(forCellWith: IndexPath(item: 3, section: 0))
         let attributes4: UICollectionViewLayoutAttributes = UICollectionViewLayoutAttributes(forCellWith: IndexPath(item: 4, section: 0))
         
-        if collectionView.frame.width > collectionView.frame.height {
+        if collectionView.frame.width >= collectionView.frame.height {
             let yOffset: CGFloat = (contentHeight - itemWidth) / 2
             attributes0.frame = CGRect(x: 0, y: yOffset, width: itemWidth, height: itemWidth)
             attributes1.frame = CGRect(x: itemWidth * 1 + padding, y: yOffset + 0, width: itemWidth, height: itemWidth)

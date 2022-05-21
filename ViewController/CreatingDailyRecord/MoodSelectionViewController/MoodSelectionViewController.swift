@@ -22,36 +22,31 @@ class MoodSelectionViewController: UIViewController {
             self.nextButton.isEnabled = true
             
             if let selectedMoodIndex = selectedMoodIndex {
-                dailyRecord?.mood = Mood.moods[selectedMoodIndex.item].id
+//                dailyRecord?.mood = Mood.moods[selectedMoodIndex.item].id
+                dailyRecordMetadata?.moodID = Mood.moods[selectedMoodIndex.item].id
             }
         }
     }
-    
-    var dailyRecord: DailyRecord?
-    
-    let moods: [String] = []
+
+    var dailyRecordMetadata: DailyRecordMetadata?
     
     // MARK: - Deinit
     
     deinit {
-        if dailyRecord != nil {
-            dailyRecord = nil
-        }
-        
         print("--- deinit MoodSelectionViewController ---")
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.generalSetUp()
+        self.commonInit()
     }
     
-    private func generalSetUp() {
+    private func commonInit() {
         nextButton.isEnabled = false
         setupNaviation()
         setupCollectionView()
         setupDatePicker()
-        createDailyRecord()
+        setupDailyRecordMetadata()
     }
     
 }

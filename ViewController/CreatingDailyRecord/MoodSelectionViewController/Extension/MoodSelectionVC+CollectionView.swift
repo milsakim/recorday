@@ -14,12 +14,12 @@ extension MoodSelectionViewController: UICollectionViewDataSource {
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        guard let cell: MoodCollectionViewCell = collectionView.dequeueReusableCell(withReuseIdentifier: MoodCollectionViewCell.resueID, for: indexPath) as? MoodCollectionViewCell else {
+        guard let cell: MoodCollectionViewCell = collectionView.dequeueReusableCell(withReuseIdentifier: MoodCollectionViewCell.reuseID, for: indexPath) as? MoodCollectionViewCell else {
             fatalError()
         }
         
         cell.layer.borderColor = Mood.moods[indexPath.item].color?.cgColor
-        cell.moodLabel.text = Mood.moods[indexPath.item].emoji
+//        cell.moodLabel.text = Mood.moods[indexPath.item].emoji
         
         return cell
     }
@@ -39,7 +39,22 @@ extension MoodSelectionViewController: UICollectionViewDelegate {
             let animator: UIViewPropertyAnimator = UIViewPropertyAnimator(duration: 0.1, curve: .easeOut) {
                 cell.transform = CGAffineTransform(scaleX: 0.9, y: 0.9)
             }
+            /*
+            let labelAnimation: UIViewPropertyAnimator = UIViewPropertyAnimator(duration: 0.7, curve: .easeOut) {
+                cell.moodLabel.transform = CGAffineTransform(rotationAngle: 0.8)
+            }
+            labelAnimation.addAnimations({
+                cell.moodLabel.transform = CGAffineTransform(rotationAngle: -0.8)
+            }, delayFactor: 0.25)
+            labelAnimation.addAnimations({
+                cell.moodLabel.transform = CGAffineTransform(rotationAngle: 0.8)
+            }, delayFactor: 0.5)
+            labelAnimation.addAnimations({
+                cell.moodLabel.transform = CGAffineTransform(rotationAngle: 0)
+            }, delayFactor: 0.75)
+            */
             animator.startAnimation()
+//            labelAnimation.startAnimation()
         }
     }
     
@@ -56,7 +71,7 @@ extension MoodSelectionViewController: UICollectionViewDelegate {
         guard let cell: MoodCollectionViewCell = collectionView.cellForItem(at: indexPath) as? MoodCollectionViewCell else {
             return
         }
-        
+        /*
         if let selected = selectedMoodIndex {
             if selected == indexPath {
                 return
@@ -74,6 +89,7 @@ extension MoodSelectionViewController: UICollectionViewDelegate {
             cell.fillBackground(with: Mood.moods[indexPath.item].color)
             selectedMoodIndex = indexPath
         }
+         */
     }
     
 }

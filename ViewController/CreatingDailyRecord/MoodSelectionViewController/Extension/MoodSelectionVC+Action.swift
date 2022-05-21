@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import CoreData
 
 // MARK: - Action
 
@@ -28,31 +29,24 @@ extension MoodSelectionViewController {
         
         let storyboard: UIStoryboard = UIStoryboard(name: "CreatingDailyRecord", bundle: nil)
         
-        if let selectingActivitiesViewController: SelectingActivitiesViewController = storyboard.instantiateViewController(withIdentifier: "SelectingActivitiesViewController") as? SelectingActivitiesViewController {
-            print("--- Daily Record: \(dailyRecord) ---")
-            selectingActivitiesViewController.dailyRecord = dailyRecord
+        if let selectingActivitiesViewController: NoteViewController = storyboard.instantiateViewController(withIdentifier: "SelectingActivitiesViewController") as? NoteViewController {
+            selectingActivitiesViewController.dailyRecordMetadata = dailyRecordMetadata
             navigationController.pushViewController(selectingActivitiesViewController, animated: true)
         }
     }
     
     @IBAction func datePickerValueChanged(_ sender: Any) {
-        guard let datePicker: UIDatePicker = sender as? UIDatePicker else {
+        print("--- \(#function) ---")
+        
+        guard let datePicker: UIDatePicker = sender as? UIDatePicker, let parsedDate: (date: TimeInterval, time: TimeInterval) = parseDate(from: datePicker.date) else {
             return
         }
         
-        if dailyRecord != nil {
-            let selectedDate: Date = datePicker.date
-            
-            guard let parsedDate: (date: TimeInterval, time: TimeInterval) = parseDate(from: selectedDate) else {
-                return
-            }
-            
-            dailyRecord?.date = parsedDate.date
-            dailyRecord?.time = parsedDate.time
-        }
+        dailyRecordMetadata?.dateTimestamp = parsedDate.date
+        dailyRecordMetadata?.timeTimestamp = parsedDate.time
     }
     
-    private func parseDate(from date: Date) -> (TimeInterval, TimeInterval)? {
+    func parseDate(from date: Date) -> (TimeInterval, TimeInterval)? {
         let dateFormatter: DateFormatter = DateFormatter()
         dateFormatter.dateFormat = "yyyy-MM-dd"
         
@@ -62,6 +56,5 @@ extension MoodSelectionViewController {
         
         return (parsedDate.timeIntervalSince1970, date.timeIntervalSince1970 - parsedDate.timeIntervalSince1970)
     }
-
     
 }

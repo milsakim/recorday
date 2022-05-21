@@ -2,7 +2,7 @@
 //  DailyRecord+CoreDataProperties.swift
 //  Recorday
 //
-//  Created by HyeJee Kim on 2022/03/09.
+//  Created by HyeeJee Kim on 2022/04/27.
 //
 //
 
@@ -16,30 +16,29 @@ extension DailyRecord {
         return NSFetchRequest<DailyRecord>(entityName: "DailyRecord")
     }
 
-    @NSManaged public var date: Double
-    @NSManaged public var id: UUID?
+    @NSManaged public var id: UUID
     @NSManaged public var mood: String?
     @NSManaged public var note: String?
-    @NSManaged public var time: Double
-    @NSManaged public var weather: String?
-    @NSManaged public var activities: NSSet?
+    @NSManaged public var timestamp: Double
+    @NSManaged public var tags: NSSet?
+    @NSManaged public var day: Day?
 
 }
 
-// MARK: Generated accessors for activities
+// MARK: Generated accessors for tags
 extension DailyRecord {
 
-    @objc(addActivitiesObject:)
-    @NSManaged public func addToActivities(_ value: Activity)
+    @objc(addTagsObject:)
+    @NSManaged public func addToTags(_ value: Tag)
 
-    @objc(removeActivitiesObject:)
-    @NSManaged public func removeFromActivities(_ value: Activity)
+    @objc(removeTagsObject:)
+    @NSManaged public func removeFromTags(_ value: Tag)
 
-    @objc(addActivities:)
-    @NSManaged public func addToActivities(_ values: NSSet)
+    @objc(addTags:)
+    @NSManaged public func addToTags(_ values: NSSet)
 
-    @objc(removeActivities:)
-    @NSManaged public func removeFromActivities(_ values: NSSet)
+    @objc(removeTags:)
+    @NSManaged public func removeFromTags(_ values: NSSet)
 
 }
 

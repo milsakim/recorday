@@ -11,6 +11,11 @@ extension RecordListViewController: NSFetchedResultsControllerDelegate {
     
     func controllerDidChangeContent(_ controller: NSFetchedResultsController<NSFetchRequestResult>) {
         print("--- \(#function): \(Thread.current.isMainThread) ---")
+        
+        guard !controller.managedObjectContext.hasChanges else {
+            return
+        }
+        
         self.tableView.reloadData()
     }
     

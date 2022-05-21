@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Pretendard-Light.otf">
+            <string>Pretendard-Light</string>
+        </array>
+        <array key="Pretendard-Regular.otf">
+            <string>Pretendard-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="DailyRecordCell" rowHeight="279" id="KGk-i7-Jjw" customClass="DailyRecordCell" customModule="Recorday" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="643" height="279"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="643" height="279"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FTS-Ff-bmP">
+                        <rect key="frame" x="8" y="8" width="627" height="263"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="AeO-DU-44K">
+                                <rect key="frame" x="10" y="10" width="40" height="40"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="VQK-xJ-4f6"/>
+                                    <constraint firstAttribute="height" constant="40" id="WBy-Pn-5B4"/>
+                                </constraints>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" verticalCompressionResistancePriority="1000" scrollEnabled="NO" editable="NO" text="adfds" translatesAutoresizingMaskIntoConstraints="NO" id="479-dK-X3a">
+                                <rect key="frame" x="58" y="10" width="559" height="222.5"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="textColor" name="accent-color"/>
+                                <fontDescription key="fontDescription" name="Pretendard-Regular" family="Pretendard" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kaM-qX-rQw">
+                                <rect key="frame" x="593" y="240.5" width="24" height="12.5"/>
+                                <fontDescription key="fontDescription" name="Pretendard-Light" family="Pretendard" pointSize="10"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="kaM-qX-rQw" firstAttribute="top" secondItem="479-dK-X3a" secondAttribute="bottom" constant="8" id="3vA-cg-AnY"/>
+                            <constraint firstAttribute="trailing" secondItem="kaM-qX-rQw" secondAttribute="trailing" constant="10" id="BQY-yJ-WTh"/>
+                            <constraint firstItem="AeO-DU-44K" firstAttribute="top" secondItem="FTS-Ff-bmP" secondAttribute="top" constant="10" id="Na4-6X-hEk"/>
+                            <constraint firstItem="AeO-DU-44K" firstAttribute="leading" secondItem="FTS-Ff-bmP" secondAttribute="leading" constant="10" id="TQS-Or-ycJ"/>
+                            <constraint firstItem="479-dK-X3a" firstAttribute="leading" secondItem="AeO-DU-44K" secondAttribute="trailing" constant="8" id="X9s-t3-lyN"/>
+                            <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="AeO-DU-44K" secondAttribute="bottom" constant="20" id="Ydh-nG-uZR"/>
+                            <constraint firstAttribute="bottom" secondItem="kaM-qX-rQw" secondAttribute="bottom" constant="10" id="c7C-2f-Jz0"/>
+                            <constraint firstItem="479-dK-X3a" firstAttribute="top" secondItem="FTS-Ff-bmP" secondAttribute="top" constant="10" id="oNy-kS-z7k"/>
+                            <constraint firstAttribute="trailing" secondItem="479-dK-X3a" secondAttribute="trailing" constant="10" id="utj-LB-RxM"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="FTS-Ff-bmP" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="73H-t1-WvL"/>
+                    <constraint firstItem="FTS-Ff-bmP" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="IXz-2B-cPr"/>
+                    <constraint firstAttribute="bottom" secondItem="FTS-Ff-bmP" secondAttribute="bottom" constant="8" id="sei-KD-Xkx"/>
+                    <constraint firstAttribute="trailing" secondItem="FTS-Ff-bmP" secondAttribute="trailing" constant="8" id="x6Y-wp-nFx"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="contentBackground" destination="FTS-Ff-bmP" id="0vn-3H-Oqc"/>
+                <outlet property="moodImageView" destination="AeO-DU-44K" id="90b-z5-QgP"/>
+                <outlet property="textView" destination="479-dK-X3a" id="1Kb-0Y-n1I"/>
+                <outlet property="timeLabel" destination="kaM-qX-rQw" id="pZB-hT-RAO"/>
+            </connections>
+            <point key="canvasLocation" x="371.73913043478262" y="231.36160714285714"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <namedColor name="accent-color">
+            <color red="0.039215686274509803" green="0.039215686274509803" blue="0.039215686274509803" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

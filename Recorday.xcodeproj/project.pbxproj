@@ -34,6 +34,15 @@
 		5618D25828250AD3003B53DD /* DailyRecordCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5618D25628250AD3003B53DD /* DailyRecordCell.swift */; };
 		5618D25928250AD3003B53DD /* DailyRecordCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5618D25728250AD3003B53DD /* DailyRecordCell.xib */; };
 		56209090282E4BBB0033D24B /* NoteVC+TagSuggestionViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5620908F282E4BBB0033D24B /* NoteVC+TagSuggestionViewDelegate.swift */; };
+		5625C4832839275000BD7138 /* Pretendard-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 5625C47A2839275000BD7138 /* Pretendard-Bold.otf */; };
+		5625C4842839275000BD7138 /* Pretendard-ExtraBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 5625C47B2839275000BD7138 /* Pretendard-ExtraBold.otf */; };
+		5625C4852839275000BD7138 /* Pretendard-ExtraLight.otf in Resources */ = {isa = PBXBuildFile; fileRef = 5625C47C2839275000BD7138 /* Pretendard-ExtraLight.otf */; };
+		5625C4862839275000BD7138 /* Pretendard-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = 5625C47D2839275000BD7138 /* Pretendard-Black.otf */; };
+		5625C4872839275000BD7138 /* Pretendard-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 5625C47E2839275000BD7138 /* Pretendard-Medium.otf */; };
+		5625C4882839275000BD7138 /* Pretendard-Thin.otf in Resources */ = {isa = PBXBuildFile; fileRef = 5625C47F2839275000BD7138 /* Pretendard-Thin.otf */; };
+		5625C4892839275000BD7138 /* Pretendard-SemiBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 5625C4802839275000BD7138 /* Pretendard-SemiBold.otf */; };
+		5625C48A2839275000BD7138 /* Pretendard-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 5625C4812839275000BD7138 /* Pretendard-Regular.otf */; };
+		5625C48B2839275000BD7138 /* Pretendard-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 5625C4822839275000BD7138 /* Pretendard-Light.otf */; };
 		5630F7AC283152F400F3D0DA /* OnBoardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5630F7AB283152F400F3D0DA /* OnBoardingViewController.swift */; };
 		5630F7AE2831531200F3D0DA /* OnBoardingViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5630F7AD2831531200F3D0DA /* OnBoardingViewController.storyboard */; };
 		563A6E4D28361BEB002C7B7E /* TagFilterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 563A6E4C28361BEB002C7B7E /* TagFilterView.swift */; };
@@ -104,6 +113,15 @@
 		5618D25628250AD3003B53DD /* DailyRecordCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyRecordCell.swift; sourceTree = "<group>"; };
 		5618D25728250AD3003B53DD /* DailyRecordCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DailyRecordCell.xib; sourceTree = "<group>"; };
 		5620908F282E4BBB0033D24B /* NoteVC+TagSuggestionViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NoteVC+TagSuggestionViewDelegate.swift"; sourceTree = "<group>"; };
+		5625C47A2839275000BD7138 /* Pretendard-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Bold.otf"; sourceTree = "<group>"; };
+		5625C47B2839275000BD7138 /* Pretendard-ExtraBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-ExtraBold.otf"; sourceTree = "<group>"; };
+		5625C47C2839275000BD7138 /* Pretendard-ExtraLight.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-ExtraLight.otf"; sourceTree = "<group>"; };
+		5625C47D2839275000BD7138 /* Pretendard-Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Black.otf"; sourceTree = "<group>"; };
+		5625C47E2839275000BD7138 /* Pretendard-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Medium.otf"; sourceTree = "<group>"; };
+		5625C47F2839275000BD7138 /* Pretendard-Thin.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Thin.otf"; sourceTree = "<group>"; };
+		5625C4802839275000BD7138 /* Pretendard-SemiBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-SemiBold.otf"; sourceTree = "<group>"; };
+		5625C4812839275000BD7138 /* Pretendard-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Regular.otf"; sourceTree = "<group>"; };
+		5625C4822839275000BD7138 /* Pretendard-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Light.otf"; sourceTree = "<group>"; };
 		5630F7AB283152F400F3D0DA /* OnBoardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingViewController.swift; sourceTree = "<group>"; };
 		5630F7AD2831531200F3D0DA /* OnBoardingViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = OnBoardingViewController.storyboard; sourceTree = "<group>"; };
 		563A6E4C28361BEB002C7B7E /* TagFilterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagFilterView.swift; sourceTree = "<group>"; };
@@ -137,15 +155,6 @@
 		56C5F7E7280E7EFF00E70344 /* EditingDailyRecordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditingDailyRecordViewController.swift; sourceTree = "<group>"; };
 		56C5F7EA280E7FE600E70344 /* RecordListVC+UITableViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RecordListVC+UITableViewDelegate.swift"; sourceTree = "<group>"; };
 		56C5F7EC280E82F700E70344 /* Model 3.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "Model 3.xcdatamodel"; sourceTree = "<group>"; };
-		56C760612838D8D600DB5764 /* Pretendard-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Pretendard-Medium.otf"; path = "../../../../../.Trash/Pretendard-Medium.otf"; sourceTree = "<group>"; };
-		56C760622838D8D600DB5764 /* Pretendard-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Pretendard-Regular.otf"; path = "../../../../../.Trash/Pretendard-Regular.otf"; sourceTree = "<group>"; };
-		56C760632838D8D600DB5764 /* Pretendard-SemiBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Pretendard-SemiBold.otf"; path = "../../../../../.Trash/Pretendard-SemiBold.otf"; sourceTree = "<group>"; };
-		56C760642838D8D600DB5764 /* Pretendard-ExtraBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Pretendard-ExtraBold.otf"; path = "../../../../../.Trash/Pretendard-ExtraBold.otf"; sourceTree = "<group>"; };
-		56C760652838D8D600DB5764 /* Pretendard-Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Pretendard-Black.otf"; path = "../../../../../.Trash/Pretendard-Black.otf"; sourceTree = "<group>"; };
-		56C760662838D8D600DB5764 /* Pretendard-Thin.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Pretendard-Thin.otf"; path = "../../../../../.Trash/Pretendard-Thin.otf"; sourceTree = "<group>"; };
-		56C760672838D8D600DB5764 /* Pretendard-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Pretendard-Light.otf"; path = "../../../../../.Trash/Pretendard-Light.otf"; sourceTree = "<group>"; };
-		56C760682838D8D600DB5764 /* Pretendard-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Pretendard-Bold.otf"; path = "../../../../../.Trash/Pretendard-Bold.otf"; sourceTree = "<group>"; };
-		56C760692838D8D600DB5764 /* Pretendard-ExtraLight.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Pretendard-ExtraLight.otf"; path = "../../../../../.Trash/Pretendard-ExtraLight.otf"; sourceTree = "<group>"; };
 		56D08BA327ED93B10026153E /* DailyRecordListHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyRecordListHeaderView.swift; sourceTree = "<group>"; };
 		56D2EDBB27DBA09800A83EA0 /* MoodSelectionVC+CollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MoodSelectionVC+CollectionView.swift"; sourceTree = "<group>"; };
 		56E4B4D228180A5200241535 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
@@ -487,15 +496,15 @@
 		56D1A96F2833318F005A0431 /* Font */ = {
 			isa = PBXGroup;
 			children = (
-				56C760652838D8D600DB5764 /* Pretendard-Black.otf */,
-				56C760682838D8D600DB5764 /* Pretendard-Bold.otf */,
-				56C760642838D8D600DB5764 /* Pretendard-ExtraBold.otf */,
-				56C760692838D8D600DB5764 /* Pretendard-ExtraLight.otf */,
-				56C760672838D8D600DB5764 /* Pretendard-Light.otf */,
-				56C760612838D8D600DB5764 /* Pretendard-Medium.otf */,
-				56C760622838D8D600DB5764 /* Pretendard-Regular.otf */,
-				56C760632838D8D600DB5764 /* Pretendard-SemiBold.otf */,
-				56C760662838D8D600DB5764 /* Pretendard-Thin.otf */,
+				5625C47D2839275000BD7138 /* Pretendard-Black.otf */,
+				5625C47A2839275000BD7138 /* Pretendard-Bold.otf */,
+				5625C47B2839275000BD7138 /* Pretendard-ExtraBold.otf */,
+				5625C47C2839275000BD7138 /* Pretendard-ExtraLight.otf */,
+				5625C4822839275000BD7138 /* Pretendard-Light.otf */,
+				5625C47E2839275000BD7138 /* Pretendard-Medium.otf */,
+				5625C4812839275000BD7138 /* Pretendard-Regular.otf */,
+				5625C4802839275000BD7138 /* Pretendard-SemiBold.otf */,
+				5625C47F2839275000BD7138 /* Pretendard-Thin.otf */,
 			);
 			path = Font;
 			sourceTree = "<group>";
@@ -567,17 +576,26 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5625C4832839275000BD7138 /* Pretendard-Bold.otf in Resources */,
 				16B91C5F27CD847B005C05A8 /* RecordListViewController.storyboard in Resources */,
+				5625C4842839275000BD7138 /* Pretendard-ExtraBold.otf in Resources */,
+				5625C4882839275000BD7138 /* Pretendard-Thin.otf in Resources */,
+				5625C4872839275000BD7138 /* Pretendard-Medium.otf in Resources */,
+				5625C4892839275000BD7138 /* Pretendard-SemiBold.otf in Resources */,
 				566F392A2827FA6F003FD24A /* TagSuggestionCollectionViewCell.xib in Resources */,
 				5646275327E0681200BEA213 /* MoodCollectionViewCell.xib in Resources */,
 				5630F7AE2831531200F3D0DA /* OnBoardingViewController.storyboard in Resources */,
 				563A6E5028361C63002C7B7E /* TagFilterView.xib in Resources */,
 				16B91C4C27CD6FB2005C05A8 /* LaunchScreen.storyboard in Resources */,
+				5625C48B2839275000BD7138 /* Pretendard-Light.otf in Resources */,
 				566F39252827F693003FD24A /* TagSuggestionView.xib in Resources */,
 				1629522527CF5E0D00E599E4 /* CreatingDailyRecord.storyboard in Resources */,
 				16B91C4927CD6FB2005C05A8 /* Assets.xcassets in Resources */,
 				56E4B4D528180A5C00241535 /* SettingsViewController.storyboard in Resources */,
+				5625C4852839275000BD7138 /* Pretendard-ExtraLight.otf in Resources */,
 				5618D25928250AD3003B53DD /* DailyRecordCell.xib in Resources */,
+				5625C48A2839275000BD7138 /* Pretendard-Regular.otf in Resources */,
+				5625C4862839275000BD7138 /* Pretendard-Black.otf in Resources */,
 				56C5F7E5280E7EE300E70344 /* EditingDailyRecordViewController.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

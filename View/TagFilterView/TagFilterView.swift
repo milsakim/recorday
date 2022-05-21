@@ -111,7 +111,7 @@ extension TagFilterView: UICollectionViewDelegate {
 extension TagFilterView: TagCollectionViewLayoutDelegate {
     
     func collectionView(_ collectionView: UICollectionView, widthForTagLabelAtIndexPath indexPath: IndexPath) -> CGFloat {
-        return UILabel.textWidth(font: .systemFont(ofSize: 14), text: self.tags[indexPath.item])
+        return UILabel.textWidth(font: UIFont(name: "Pretendard-Regular", size: 14) ?? .systemFont(ofSize: 14), text: self.tags[indexPath.item])
     }
     
 }

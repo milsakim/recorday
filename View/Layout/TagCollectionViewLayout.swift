@@ -115,4 +115,8 @@ class TagCollectionViewLayout: UICollectionViewLayout {
         cache.removeAll()
     }
     
+    override func shouldInvalidateLayout(forBoundsChange newBounds: CGRect) -> Bool {
+        return true
+    }
+    
 }
